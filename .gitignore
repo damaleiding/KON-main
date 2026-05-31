@@ -105,6 +105,15 @@ tools/nuke-auto-keyer/**
 tools/prompt-audit/**
 
 # Root-level one-off local artifacts
+temp_*.md
+temp_*.txt
+*.log
+*.tmp
+*.bak
+*.backup
+*.orig
+*.swp
+*.swo
 temp_script*.py
 clean_merged.py
 recount_merged*.py
