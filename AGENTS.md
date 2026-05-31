@@ -11,7 +11,7 @@
 - 文件系统是事实层，聊天历史不是事实层。
 - 新任务优先读取最小上下文，不默认全仓扫描。
 - 项目规则、作品设定、正文版本、提示词、账本和索引必须可追踪、可复现、可交接。
-- 大型媒体文件、缓存和临时输出不默认进入 Git；Git 优先保存文本、索引、决策记录和可复现配置。
+- 大型外部资料、缓存和临时输出不默认进入 Git；Git 优先保存文本、索引、决策记录和可复现配置。
 - 目录和文件命名优先稳定、可检索、可脚本处理。
 - 修改规则、目录结构或同步边界时，必须同步更新对应 README、索引或规则文档。
 
@@ -60,14 +60,14 @@ projects/<project-name>/
 - `WORKFLOW.md`：给 Agent 读的项目工作流。
 - `<project-name>_project-brief.html`：给人类读的静态项目纲要，必须和 `PROJECT.md` 同级。
 - `_pipeline/`：项目级上下文路由、工具索引和技能索引。
-- `_ledger/`：生产账本、prompt 索引、审稿决策和 media manifest。
+- `_ledger/`：生产账本、prompt 索引、审稿决策和文本版本清单。
 
 ## 安全底线
 
 - 不提交密钥、token、cookie、账号凭据、私钥和未脱敏内部链接。
 - 不把真实 API Key 写入 `AGENTS.md`、`README.md`、`.env.example`、项目文档或任何可同步文件。
 - 真实本地配置只放 `.env`；`.env` 必须被 Git 忽略。
-- 不默认提交大型图片、视频、PSD、EXR、压缩包、缓存、下载目录和临时输出。
+- 不默认提交大型外部资料、压缩包、缓存、下载目录和临时输出。
 
 
 ## 生成与记录底线
@@ -88,7 +88,7 @@ projects/<project-name>/
 - Claude 子 Agent 默认模型：`claude-opus-4-7`，适合主方案、长上下文归纳、prompt 精修、代码审查和高质量改写。
 - DeepSeek 子 Agent 默认模型：`deepseek-v4-pro-260425`，适合反方审查、边界条件、测试缺口、鲁棒性和风险检查。
 - 子 Agent 输出不能直接作为最终事实层；必须由 Trae 主模型复查、筛选、改写和落盘。
-- 不把密钥、token、cookie、未脱敏客户资料或大体积媒体发送给子 Agent。
+- 不把密钥、token、cookie、未脱敏客户资料或大体积外部资料发送给子 Agent。
 
 ## 高优先级扩展规则
 
@@ -97,7 +97,7 @@ projects/<project-name>/
 - `docs/agent-rules/project-structure.md`：目录结构、项目入口、人类 HTML 纲要、索引职责。
 - `docs/agent-rules/ai-production.md`：AI 写作、prompt、参考资料和审稿记录规则。
 - `docs/agent-rules/subagent-collaboration.md`：Claude / DeepSeek 子 Agent 触发、分工、复查和跳过条件。
-- `docs/agent-rules/git-security.md`：Git 同步边界、安全隐私、媒体与密钥处理。
+- `docs/agent-rules/git-security.md`：Git 同步边界、安全隐私、外部资料与密钥处理。
 - `docs/agent-rules/writing-and-modification.md`：语言命名、修改联动、新项目/新工具要求。
 
 ## 修改规则

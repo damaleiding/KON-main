@@ -67,6 +67,7 @@ __pycache__/
 # Project generated outputs
 projects/**/outputs/**
 projects/**/trash/**
+projects/**/_tmp/**
 projects/**/_backups/**
 projects/**/review/data/**
 projects/**/_review/data/**
@@ -75,7 +76,9 @@ projects/**/90_工具/google-docs-sync/Content.js
 projects/**/references/**/*.txt
 projects/**/references/**/fetch*.py
 projects/**/refs/**/*.txt
+projects/**/refs/**/fetch*.py
 projects/**/references/**/fetch_*cookie*.py
+projects/**/refs/**/fetch_*cookie*.py
 projects/**/review/generate_report.py
 projects/**/曲影番外二/modify_*.py
 projects/**/曲影番外二/recount.py
@@ -83,6 +86,8 @@ projects/**/曲影番外二/recount.py
 # Keep generated facts, prompts, and ledgers trackable
 !projects/**/outputs/**/.gitkeep
 !projects/**/outputs/**/_prompts/**
+!projects/**/_tmp/
+!projects/**/_tmp/README.md
 !projects/**/_ledger/**
 !projects/**/_pipeline/**
 !projects/**/prompts/**
@@ -124,3 +129,6 @@ page.html
 # Exclude oversized source document kept only for local reference
 projects/A1video/docs/source/GPT Image 2 进阶使用：为什么你的图总是脏、糊、有噪点？.docx
 temp_*.py
+**/_tmp/**
+**/_temp/**
+**/logs/**

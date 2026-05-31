@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>曲影番外二｜主干第一版润色｜前七章多子 Agent 复检</title>
+  <style>
+    :root {
+      --bg: #f7f3ee;
+      --paper: #fffdf9;
+      --ink: #241a14;
+      --muted: #7b6b5e;
+      --line: #e4d8ca;
+      --p0: #b42318;
+      --p1: #b54708;
+      --p2: #7a5a00;
+      --ok: #216e39;
+      --tag: #efe5d8;
+      --link: #7a2e1f;
+    }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif;
+    }
+    main {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 36px 24px 72px;
+    }
+    header {
+      background: linear-gradient(135deg, #3a2419, #6f3828);
+      color: #fff8ef;
+      border-radius: 22px;
+      padding: 34px 38px;
+      box-shadow: 0 18px 45px rgba(58, 36, 25, .18);
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 30px;
+      line-height: 1.25;
+      letter-spacing: .02em;
+    }
+    h2 {
+      margin: 34px 0 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--line);
+      font-size: 23px;
+    }
+    h3 {
+      margin: 24px 0 10px;
+      font-size: 18px;
+    }
+    p {
+      margin: 8px 0;
+    }
+    a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid rgba(122, 46, 31, .35);
+    }
+    a:hover {
+      border-bottom-color: var(--link);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+    .meta span, .tag {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      background: rgba(255, 248, 239, .16);
+      border: 1px solid rgba(255, 248, 239, .24);
+      padding: 4px 12px;
+      font-size: 13px;
+    }
+    .panel {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px 24px;
+      margin: 18px 0;
+      box-shadow: 0 10px 28px rgba(70, 48, 31, .06);
+    }
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .stat {
+      background: var(--paper);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 16px;
+    }
+    .stat strong {
+      display: block;
+      font-size: 28px;
+      line-height: 1.1;
+    }
+    .stat span {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 14px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+    }
+    th, td {
+      vertical-align: top;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+      padding: 11px 12px;
+    }
+    th {
+      background: #efe5d8;
+      font-weight: 700;
+    }
+    tr:last-child td {
+      border-bottom: 0;
+    }
+    .severity {
+      display: inline-flex;
+      min-width: 42px;
+      justify-content: center;
+      border-radius: 8px;
+      padding: 2px 8px;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .p0 { background: var(--p0); }
+    .p1 { background: var(--p1); }
+    .p2 { background: var(--p2); }
+    .ok { background: var(--ok); }
+    .finding {
+      border-left: 5px solid var(--line);
+      padding: 16px 18px;
+      background: var(--paper);
+      border-radius: 14px;
+      margin: 14px 0;
+      border-top: 1px solid var(--line);
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+    .finding.p0-border { border-left-color: var(--p0); }
+    .finding.p1-border { border-left-color: var(--p1); }
+    .finding.p2-border { border-left-color: var(--p2); }
+    .finding-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+      font-weight: 700;
+      font-size: 17px;
+    }
+    .loc {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 6px 0;
+    }
+    ul {
+      padding-left: 22px;
+      margin: 8px 0;
+    }
+    li {
+      margin: 4px 0;
+    }
+    code {
+      background: var(--tag);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      padding: 1px 5px;
+      font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+      font-size: .92em;
+    }
+    .small {
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>曲影番外二｜主干第一版润色｜前七章多子 Agent 复检</h1>
+    <p>本报告汇总 4 个子 Agent 的独立检查结果，覆盖设定连续性、文风规则、章节衔接重复、角色关系与称呼。报告只列问题与建议，未修改正文。</p>
+    <div class="meta">
+      <span>检查日期：2026-06-01</span>
+      <span>范围：前七章</span>
+      <span>版本：主干 / 第一版润色</span>
+      <span>输出：HTML review</span>
+    </div>
+  </header>
+
+  <section class="summary-grid">
+    <div class="stat"><strong>7</strong><span>检查章节</span></div>
+    <div class="stat"><strong>4</strong><span>子 Agent 分工</span></div>
+    <div class="stat"><strong>9</strong><span>P0 高优先级问题</span></div>
+    <div class="stat"><strong>16</strong><span>P1/P2 建议项</span></div>
+  </section>
+
+  <section class="panel">
+    <h2>总体结论</h2>
+    <p>前七章的核心设定大方向已经成立：曲影金融行业、第五章认主与身体标记、第六七章共同沉沦、陈星服务型手艺人等主轴基本保留。但仍有若干会影响阅读连续性的硬问题。</p>
+    <ul>
+      <li>最需要先修的是 <strong>第四章视角断裂</strong>、<strong>第五章“林先生”误称</strong>、<strong>第七章外部机械装置偏离身体拆分主旨</strong>。</li>
+      <li>文风层面最突出的残留是 <strong>章尾升华/宣判式总结</strong>，第一、三、四、五章都存在。</li>
+      <li>结构层面第六章结尾和第七章开头仍有重复摆场问题，第一章末和第二章开头也有轻度复述。</li>
+      <li>角色关系没有回到极端互骂，但第六、七章仍有“攀比/嫉妒/竞争关系”残余，建议继续改为“闺蜜互相带下去”。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>P0 高优先级</h2>
+
+    <article class="finding p0-border">
+      <div class="finding-title"><span class="severity p0">P0</span>第四章陈宇离场后仍继续现场观察</div>
+      <p>第四章前段写陈宇要去上班并走出客房，后文又出现“我跟着走出去时”并继续观察工作间深处，叙述者位置发生断裂。</p>
+      <p class="loc">定位：<a href="../../../projects/pixiv%20novel/%E6%9B%B2%E5%BD%B1%E7%95%AA%E5%A4%96%E4%BA%8C/%E4%B8%BB%E5%B9%B2/%E7%AC%AC%E4%B8%80%E7%89%88%E6%B6%A6%E8%89%B2/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9A%E7%A7%A9%E5%BA%8F%E7%9A%84%E8%A3%82%E7%BC%9D%E4%B8%8E%E6%B2%89%E6%B2%A6%E7%9A%84%E7%99%BD%E6%98%BC.md#L33-L87">04_第四章:L33-L87</a></p>
+      <p>建议：二选一处理。要么陈宇此时还没离开，延后“上班去”；要么后续观察改为曲影视角或事后转述。</p>
+    </article>
+
+    <article class="finding p0-border">
+      <div class="finding-title"><span class="severity p0">P0</span>第五章陈宇被误称为“林先生”</div>
+      <p>宠物转让仪式中陈星对陈宇说“放心吧，林先生”，这是明确人名错位，会造成身份混乱。</p>
+      <p class="loc">定位：<a href="../../../projects/pixiv%20novel/%E6%9B%B2%E5%BD%B1%E7%95%AA%E5%A4%96%E4%BA%8C/%E4%B8%BB%E5%B9%B2/%E7%AC%AC%E4%B8%80%E7%89%88%E6%B6%A6%E8%89%B2/05_%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E5%90%8D%E5%AA%9B%E7%9A%84%E5%BD%92%E5%AE%BF%E4%B8%8E%E5%B7%A5%E5%9D%8A%E6%97%A5%E5%B8%B8.md#L66-L74">05_第五章:L66-L74</a></p>
+      <p>建议：改为“陈先生”或“陈宇先生”。</p>
+    </article>
+
+    <article class="finding p0-border">
+      <div class="finding-title"><span class="severity p0">P0</span>第三章过早使用“影奴”</div>
+      <p>曲影尚未在第五章完成牵引绳转让和正式认主，第三章已出现陈星称呼“影奴”。这会破坏认主节点。</p>
+      <p class="loc">定位：<a href="../../../projects/pixiv%20novel/%E6%9B%B2%E5%BD%B1%E7%95%AA%E5%A4%96%E4%BA%8C/%E4%B8%BB%E5%B9%B2/%E7%AC%AC%E4%B8%80%E7%89%88%E6%B6%A6%E8%89%B2/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9A%E6%8B%86%E8%A7%A3%E4%B8%8E%E5%88%9D%E6%AC%A1%E5%8D%8F%E5%95%86.md#L157-L170">03_第三章:L157-L170</a></p>
+      <p>建议：第三、四章改为“曲女士/曲影/这位客人”，第五章正式认主后再稳定使用“影奴”。</p>
+    </article>
+
+    <article class="finding p0-border">
+      <div class="finding-title"><span class="severity p0">P0</span>第七章外部机械装置偏离身体拆分主旨</div>
+      <p>“双头连接器”“开关”“伸缩震动”等外部机械化装置接近普通情趣器械，偏离“快感来源主要基于身体拆分特性”的规则。</p>
+      <p class="loc">定位：<a href="../../../projects/pixiv%20novel/%E6%9B%B2%E5%BD%B1%E7%95%AA%E5%A4%96%E4%BA%8C/%E4%B8%BB%E5%B9%B2/%E7%AC%AC%E4%B8%80%E7%89%88%E6%B6%A6%E8%89%B2/07_%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9A%E9%87%8D%E7%BB%84%E4%B8%8E%E5%8F%8C%E9%87%8D%E9%9B%8C%E4%BC%8F.md#L153-L169">07_第七章:L153-L169</a></p>
+      <p>建议：改为陈星手工重组、断口触觉短路、肢体错接、两具身体互相贴合摩擦等“手艺”驱动。</p>
+    </article>
+
+    <article class="finding p0-border">
+      <div class="finding-title"><span class="severity p0">P0</span>章尾升华残留较多</div>
+      <p>第一、三、四、五章结尾仍有“从那一刻起”“彻底沦陷”“从今天开始”“永无止境”等宣判式总结，违背“章尾用具体动作收束”的新规则。</p>
+      <p class="loc">定位：<a href="../../../projects/pixiv%20novel/%E6%9B%B2%E5%BD%B1%E7%95%AA%E5%A4%96%E4%BA%8C/%E4%B8%BB%E5%B9%B2/%E7%AC%AC%E4%B8%80%E7%89%88%E6%B6%A6%E8%89%B2/01_%E7%AC%AC%E4%B8%80%E7%AB%A0%EF%BC%9A%E5%AE%8C%E7%BE%8E%E7%9A%84%E5%81%87%E9%9D%A2.md#L361">01:L361</a>；<a href="../../../projects/pixiv%20novel/%E6%9B%B2%E5%BD%B1%E7%95%AA%E5%A4%96%E4%BA%8C/%E4%B8%BB%E5%B9%B2/%E7%AC%AC%E4%B8%80%E7%89%88%E6%B6%A6%E8%89%B2/03_%E7%AC%AC%E4%B8%89%E7%AB%A0%EF%BC%9A%E6%8B%86%E8%A7%A3%E4%B8%8E%E5%88%9D%E6%AC%A1%E5%8D%8F%E5%95%86.md#L303-L329">03:L303-L329</a>；<a href="../../../projects/pixiv%20novel/%E6%9B%B2%E5%BD%B1%E7%95%AA%E5%A4%96%E4%BA%8C/%E4%B8%BB%E5%B9%B2/%E7%AC%AC%E4%B8%80%E7%89%88%E6%B6%A6%E8%89%B2/04_%E7%AC%AC%E5%9B%9B%E7%AB%A0%EF%BC%9A%E7%A7%A9%E5%BA%8F%E7%9A%84%E8%A3%82%E7%BC%9D%E4%B8%8E%E6%B2%89%E6%B2%A6%E7%9A%84%E7%99%BD%E6%98%BC.md#L281-L299">04:L281-L299</a>；<a href="../../../projects/pixiv%20novel/%E6%9B%B2%E5%BD%B1%E7%95%AA%E5%A4%96%E4%BA%8C/%E4%B8%BB%E5%B9%B2/%E7%AC%AC%E4%B8%80%E7%89%88%E6%B6%A6%E8%89%B2/05_%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E5%90%8D%E5%AA%9B%E7%9A%84%E5%BD%92%E5%AE%BF%E4%B8%8E%E5%B7%A5%E5%9D%8A%E6%97%A5%E5%B8%B8.md#L198-L202">05:L198-L202</a></p>
+      <p>建议：分别改成车内沉默、短信确认、工具收纳、排风扇声、毛巾/手机/项圈等具体动作或物件收束。</p>
+    </article>
+
+    <article class="finding p0-border">
+      <div class="finding-title"><span class="severity p0">P0</span>第六章尾与第七章首重复同一现场</div>
+      <p>第六章已停在排风扇、潮热气味、两颗头颅并排呼吸；第七章又重新铺同一密室气味、擦拭、工作台全景，形成章首复述。</p>
+      <p class="loc">定位：<a href="../../../projects/pixiv%20novel/%E6%9B%B2%E5%BD%B1%E7%95%AA%E5%A4%96%E4%BA%8C/%E4%B8%BB%E5%B9%B2/%E7%AC%AC%E4%B8%80%E7%89%88%E6%B6%A6%E8%89%B2/06_%E7%AC%AC%E5%85%AD%E7%AB%A0%EF%BC%9A%E5%BD%92%E5%B7%A2%E7%9A%84%E4%BB%AA%E5%BC%8F%E4%B8%8E%E4%BA%89%E5%AE%A0%E7%9A%84%E6%9A%97%E6%B5%81.md#L285-L297">06:L285-L297</a>；<a href="../../../projects/pixiv%20novel/%E6%9B%B2%E5%BD%B1%E7%95%AA%E5%A4%96%E4%BA%8C/%E4%B8%BB%E5%B9%B2/%E7%AC%AC%E4%B8%80%E7%89%88%E6%B6%A6%E8%89%B2/07_%E7%AC%AC%E4%B8%83%E7%AB%A0%EF%BC%9A%E9%87%8D%E7%BB%84%E4%B8%8E%E5%8F%8C%E9%87%8D%E9%9B%8C%E4%BC%8F.md#L3-L19">07:L3-L19</a></p>
+      <p>建议：第七章开头直接写“皮垫换好后/排风扇转了几分钟后”的新动作，删去工作台状态总览。</p>
+    </article>
+
+    <article class="finding p0-border">
+      <div class="finding-title"><span class="severity p0">P0</span>第五章小雨与成人场景距离过近</div>
+      <p>第五章开头明确“小雨在隔壁次卧熟睡”，紧接着进入夫妻成人场景。虽然未性化小雨，但近距离提示不必要，存在边界风险。</p>
+      <p class="loc">定位：<a href="../../../projects/pixiv%20novel/%E6%9B%B2%E5%BD%B1%E7%95%AA%E5%A4%96%E4%BA%8C/%E4%B8%BB%E5%B9%B2/%E7%AC%AC%E4%B8%80%E7%89%88%E6%B6%A6%E8%89%B2/05_%E7%AC%AC%E4%BA%94%E7%AB%A0%EF%BC%9A%E5%90%8D%E5%AA%9B%E7%9A%84%E5%BD%92%E5%AE%BF%E4%B8%8E%E5%B7%A5%E5%9D%8A%E6%97%A5%E5%B8%B8.md#L11-L18">05_第五章:L11-L18</a></p>
+      <p>建议：改成“小雨这晚住在外婆家”，或直接不提孩子。</p>
+    </article>
+  </section>
+
+  <section>
+    <h2>P1 中优先级</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>编号</th>
+          <th>问题</th>
+          <th>定位</th>
+          <th>建议</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>QY2-P1-01</td>
+          <td>工坊地点在旧厂房/高档别墅区之间跳变，哈士奇、后勤阿姨和留宿客房更偏别墅体系。</td>
+          <td>03:L3-L17；04:L3-L5；05:L58-L60；06:L29-L33</td>
+          <td>统一为“高档别墅区地下工坊，入口/外观伪装成旧厂房或仓库感”。</td>
+        </tr>
+        <tr>
+          <td>QY2-P1-02</td>
+          <td>工坊气味多次写“机油味”，和环境设定中的木料、防腐剂、皮革、消毒水不一致。</td>
+          <td>04:L3-L6；05:L58-L60；06:L29-L33</td>
+          <td>统一替换为木料、皮革护理剂、消毒水、灰尘或淡淡防腐剂。</td>
+        </tr>
+        <tr>
+          <td>QY2-P1-03</td>
+          <td>林蔓对陈星称呼不统一，已被驯服后仍出现“陈师傅/陈先生”。</td>
+          <td>06:L35-L41；06:L118-L119；07:L125-L131</td>
+          <td>林蔓台词统一称“主人”；旁白可保留“陈星”。</td>
+        </tr>
+        <tr>
+          <td>QY2-P1-04</td>
+          <td>陈星在第三章部分台词偏粗俗场控，不像服务型手艺人。</td>
+          <td>03:L179-L180；03:L223-L228</td>
+          <td>改为流程提示、观察反应、调整垫子、确认是否继续等动作。</td>
+        </tr>
+        <tr>
+          <td>QY2-P1-05</td>
+          <td>陈星在第七章后段出现“不容抗拒”“宣判”式强制支配口吻。</td>
+          <td>07:L215-L221</td>
+          <td>改为平稳安排下一项服务，使用“影奴”，减少审判词。</td>
+        </tr>
+        <tr>
+          <td>QY2-P1-06</td>
+          <td>第一章末与第二章首对照片上传、评论滚动、手机查看复述偏多。</td>
+          <td>01:L329-L361；02:L3-L21</td>
+          <td>第二章从车窗、手机沉默或周末余波起笔，删掉已上传说明。</td>
+        </tr>
+        <tr>
+          <td>QY2-P1-07</td>
+          <td>第三、四、五章连续出现手机/工作事务打断，功能重复。</td>
+          <td>03:L319-L329；04:L201-L215；05:L192-L196</td>
+          <td>保留第四章电话为唯一强桥段；第五章只写陈星扫一眼来电并扣屏，不解释“重复削弱刺激”。</td>
+        </tr>
+        <tr>
+          <td>QY2-P1-08</td>
+          <td>第五章开头“两周日常裂痕”说明和床上对话重复表达普通生活无法满足。</td>
+          <td>05:L3-L19；05:L31-L45</td>
+          <td>开头保留一两个职场细节即可，真正渴望交给对话和动作。</td>
+        </tr>
+        <tr>
+          <td>QY2-P1-09</td>
+          <td>第四章秘书电话金融词重复：“并购补充协议的紧急补充协议”。</td>
+          <td>04:L215-L224</td>
+          <td>统一为“东亚区并购项目的补充协议/风控口径/授权录音”。</td>
+        </tr>
+        <tr>
+          <td>QY2-P1-10</td>
+          <td>问卷段信息密度像设定表，流程文档感强。</td>
+          <td>02:L65-L99</td>
+          <td>压缩题目展示，多写曲影反应和她与陈宇的对话。</td>
+        </tr>
+        <tr>
+          <td>QY2-P1-11</td>
+          <td>第五章修剪/魔术机制直接解释过多。</td>
+          <td>05:L84-L104；05:L143-L176</td>
+          <td>把“基础修剪/高阶体验/手艺秘密”等名词说明拆成动作、工具、反应和短句提示。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>P2 低优先级</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>编号</th>
+          <th>问题</th>
+          <th>建议</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>QY2-P2-01</td>
+          <td>曲影眼型在“桃花眼/丹凤眼”之间不一致，第六章出现丹凤眼。</td>
+          <td>统一回“桃花眼”，或写入人物卡明确最终眼型。</td>
+        </tr>
+        <tr>
+          <td>QY2-P2-02</td>
+          <td>曲影职级在“副总裁/女总裁/铁面女总/集团副总裁”之间混用。</td>
+          <td>正式身份统一“副总裁/曲副总”，戏谑语境可用“女高管”。</td>
+        </tr>
+        <tr>
+          <td>QY2-P2-03</td>
+          <td>第六章“攀比/较劲/嫉妒”仍偏旧竞争关系。</td>
+          <td>改为林蔓先来者从容、曲影被闺蜜带着一起下沉的羞耻期待。</td>
+        </tr>
+        <tr>
+          <td>QY2-P2-04</td>
+          <td>第七章“异性恋、对女人没有性趣”削弱闺蜜共同沉沦。</td>
+          <td>改为“她从未把闺蜜当成欲望对象，但身体边界被拆解后，同谋感压过旧习惯”。</td>
+        </tr>
+        <tr>
+          <td>QY2-P2-05</td>
+          <td>第六章文件名是“争宠的暗流”，正文和目录是“共同沉沦的暗流”。</td>
+          <td>建议统一文件名、目录和正文标题。</td>
+        </tr>
+        <tr>
+          <td>QY2-P2-06</td>
+          <td>第五章时间跨度“两周/周四/周日深夜”略压缩。</td>
+          <td>补一句“接下来的两个工作周里”或“隔了两个周末后”。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>明显病句与错字</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>级别</th>
+          <th>位置</th>
+          <th>问题</th>
+          <th>建议</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="severity p0">P0</span></td>
+          <td>01:L311</td>
+          <td><code>她她急促地喘息着</code></td>
+          <td>删除一个“她”。</td>
+        </tr>
+        <tr>
+          <td><span class="severity p0">P0</span></td>
+          <td>03:L251</td>
+          <td><code>这根本这一夜被拉得很长</code></td>
+          <td>疑似残句，需重写为自然承接句。</td>
+        </tr>
+        <tr>
+          <td><span class="severity p0">P0</span></td>
+          <td>07:L101</td>
+          <td><code>好闺蜜司的手指</code></td>
+          <td>改为“好闺蜜的手指”或“曲影的手指”。</td>
+        </tr>
+        <tr>
+          <td><span class="severity p1">P1</span></td>
+          <td>01:L55</td>
+          <td><code>日常的结界</code> 偏二次元/魔幻。</td>
+          <td>改成更生活化的“那点日常秩序”。</td>
+        </tr>
+        <tr>
+          <td><span class="severity p1">P1</span></td>
+          <td>06:L130</td>
+          <td><code>高级乐高玩具</code> 跳戏。</td>
+          <td>改成“被拆开的昂贵摆件/身体部件”。</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="panel">
+    <h2>建议修复顺序</h2>
+    <ol>
+      <li>先修 P0 硬错误：第四章视角、第五章“林先生”、第三章过早“影奴”、第五章小雨近距离提示。</li>
+      <li>再修结构问题：第一/二章复述、第六/七章重复摆场、第三到第五章电话/工作打断重复。</li>
+      <li>再修文风问题：第一、三、四、五章章尾升华；第四到七章硬讲设定；高频“彻底/极致/灵魂/深渊/防线/崩塌/瓦解”。</li>
+      <li>最后统一设定细节：工坊地点与气味、曲影眼型、曲影职级、第六章标题与文件名。</li>
+    </ol>
+  </section>
+
+  <section class="panel">
+    <h2>本轮子 Agent 分工</h2>
+    <ul>
+      <li>设定连续性 Agent：检查时间线、身体状态、地点、人物身份和设定冲突。</li>
+      <li>文风规则 Agent：检查 AI 味、章尾升华、硬讲设定、怪词和病句。</li>
+      <li>衔接重复 Agent：检查相邻章节首尾、重复桥段、重复电话/拍照/说明。</li>
+      <li>角色关系 Agent：检查陈星服务型、曲影林蔓关系、称呼、金融行业语境。</li>
+    </ul>
+    <p class="small">备注：报告中的行号基于当前合并第一章后的 `主干/第一版润色` 文件结构；后续若修改正文，行号可能变化。</p>
+  </section>
+</main>
+</body>
+</html>

@@ -62,8 +62,8 @@ Options:
   -Help                 Show this help.
 
 Examples:
-  .\tools\word-count\word-count.ps1 .\projects\novel\outputs\chapter01.md
-  .\tools\word-count\word-count.ps1 -Mode cjk -Json .\projects\novel\outputs
+  .\tools\word-count\word-count.ps1 ".\projects\pixiv novel\outputs\chapter01.md"
+  .\tools\word-count\word-count.ps1 -Mode cjk -Json ".\projects\pixiv novel\outputs"
   "第一章开始。" | .\tools\word-count\word-count.ps1 -Stdin
 '@
   exit 0

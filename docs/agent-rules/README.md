@@ -13,5 +13,5 @@
 - `project-structure.md`：目录、项目入口、HTML 项目纲要、索引和账本职责。
 - `ai-production.md`：AI 写作、prompt、参考资料、审稿和生产记录。
 - `subagent-collaboration.md`：Claude / DeepSeek 子 Agent 使用规则。
-- `git-security.md`：Git 同步边界、安全隐私、媒体和临时输出处理。
+- `git-security.md`：Git 同步边界、安全隐私、外部资料和临时输出处理。
 - `writing-and-modification.md`：语言命名、修改联动、新项目和新工具规则。

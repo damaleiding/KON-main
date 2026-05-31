@@ -1,8 +1,8 @@
-﻿import os
+import os
 
 files = [
-    r'c:\Users\Admin\Documents\trae_projects\novel\人偶番外\第十一章（成人化重设·上）.md',
-    r'c:\Users\Admin\Documents\trae_projects\novel\人偶番外\第十一章（成人化重设·下）.md'
+    r'projects\pixiv novel\人偶番外\分支\后日谈\第十一章（成人化重设·上）.md',
+    r'projects\pixiv novel\人偶番外\分支\后日谈\第十一章（成人化重设·下）.md'
 ]
 
 replacements = {

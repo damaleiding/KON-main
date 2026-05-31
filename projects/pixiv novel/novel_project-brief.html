@@ -1,81 +1,56 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Novel 小说创作工程纲要</title>
+  <title>Pixiv Novel 小说创作项目纲要</title>
   <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.65;
-      color: #202124;
-      background: #f7f5f0;
-    }
-    main {
-      max-width: 920px;
-      margin: 0 auto;
-      padding: 40px 24px 64px;
-    }
-    section {
-      margin: 20px 0;
-      padding: 20px 24px;
-      background: #fffdf8;
-      border: 1px solid #e5dece;
-      border-radius: 14px;
-    }
-    h1, h2 {
-      line-height: 1.25;
-      color: #34251a;
-    }
-    code {
-      padding: 2px 5px;
-      border-radius: 5px;
-      background: #efe7d8;
-    }
-    ul {
-      padding-left: 1.2em;
-    }
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.65; color: #202124; background: #f7f5f0; }
+    main { max-width: 920px; margin: 0 auto; padding: 40px 24px 64px; }
+    section { margin: 20px 0; padding: 20px 24px; background: #fffdf8; border: 1px solid #e5dece; border-radius: 14px; }
+    h1, h2 { line-height: 1.25; color: #34251a; }
+    code { padding: 2px 5px; border-radius: 5px; background: #efe7d8; }
+    ul { padding-left: 1.2em; }
   </style>
 </head>
 <body>
   <main>
-    <h1>Novel 小说创作工程纲要</h1>
+    <h1>Pixiv Novel 小说创作项目纲要</h1>
     <section>
       <h2>项目目标</h2>
-      <p>本项目用于把 KVA 工作区改造成面向小说创作的协作工程，统一管理既有作品、设定、正文主干、分支稿、发布稿、写作 prompt、审稿记录和版本流转。</p>
+      <p>本目录是 KVA 的整体小说创作项目，用于统一管理多部小说作品、通用写作经验、设定资料、正文版本、分支稿、发布稿、提示词、审稿记录和工具流程。</p>
     </section>
     <section>
-      <h2>核心资产</h2>
+      <h2>核心文本</h2>
       <ul>
-        <li><code>人偶番外/</code>：原文、设定、主干章节、重设分支、增补分支和发布稿。</li>
-        <li><code>曲影/</code>：原文、设定资料和润色主干。</li>
-        <li><code>曲影番外二/</code>：导入原文、拆章主干、设定资料和人物卡。</li>
-        <li><code>柠檬/</code>：原文、设定资料、拆章主干和新作分支。</li>
+        <li><code>曲影番外二/</code>：当前重点生产作品，已有设定、人物卡、拆章主干、局部账本和 Google Docs 同步稿，优先沉淀可复用流程。</li>
+        <li><code>人偶番外/</code>：已有原文、设定、主干章节、重设分支、增补分支和发布稿。</li>
+        <li><code>柠檬/</code>：已有原文、设定资料、拆章主干和新作分支。</li>
+        <li><code>曲影/</code>：已有原文、人物卡、设定资料和润色主干，可作为曲影系列基础设定来源。</li>
       </ul>
     </section>
     <section>
       <h2>阅读入口</h2>
       <ul>
-        <li><code>AGENTS.md</code>：项目长期规则。</li>
+        <li><code>AGENTS.md</code>：项目级规则，强调最小上下文、触发式工作流和经验复用。</li>
         <li><code>PROJECT.md</code>：项目记忆和当前状态。</li>
-        <li><code>WORKFLOW.md</code>：写作、润色、合并和发布流程。</li>
+        <li><code>WORKFLOW.md</code>：项目整理、写作、润色、合并、发布和方法沉淀流程。</li>
         <li><code>_pipeline/context-routes.md</code>：不同任务的最小上下文读取路线。</li>
-        <li><code>_pipeline/chapter-self-check-workflow.md</code>：生成后复查和指定章节检查的自检流程。</li>
-        <li><code>_ledger/</code>：写作记录、审稿决策和版本流转记录。</li>
+        <li><code>docs/current-layout.md</code>：当前目录映射和整理建议。</li>
+        <li><code>_ledger/</code>：写作记录、审稿决策和版本流转记录；默认不整目录读取。</li>
       </ul>
     </section>
     <section>
       <h2>当前状态</h2>
-      <p>项目已补齐标准入口和骨架目录，但既有正文暂时保留原路径，避免破坏已有 skill、脚本或人工习惯。下一步应为每个作品建立单独索引，再决定是否进行物理迁移。</p>
+      <p>项目入口和骨架目录已建立，规则已收敛为轻量路由。既有正文暂时保留原路径，避免破坏已有 skill、脚本、Google Docs 同步稿或人工路径习惯。</p>
     </section>
     <section>
       <h2>下一步建议</h2>
       <ul>
+        <li>从 <code>曲影番外二/</code> 沉淀项目级写作流程、审稿规则、提示词和同步方法。</li>
         <li>为每个作品补齐作品索引和当前状态表。</li>
         <li>把可复用 prompt 整理到 <code>prompts/</code>。</li>
-        <li>把重要改写、合并和发布动作记录到 <code>_ledger/</code>。</li>
-        <li>移动正文文件前先生成迁移表并确认风险。</li>
+        <li>移动正文文件前先生成迁移表并确认引用风险和回滚方式。</li>
       </ul>
     </section>
   </main>

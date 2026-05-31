@@ -1,22 +1,63 @@
-{
+﻿{
   "kind": "novel_project_tool_index",
   "schema_version": 1,
-  "project": "novel",
+  "project": "pixiv novel",
   "rule": "Load tools lazily. Do not run scripts or modify manuscripts unless the task matches.",
+  "status_values": [
+    "existing",
+    "existing-needs-review",
+    "workflow",
+    "template-needs-review"
+  ],
   "tools": [
     {
       "id": "replace-script",
-      "path": "90_\u5de5\u5177/replace_script.py",
+      "path": "90_工具/replace_script.py",
       "category": "text-maintenance",
       "purpose": "Text replacement helper. Confirm input, output, and backup strategy before use.",
       "status": "existing-needs-review"
     },
     {
       "id": "verify-npm-global-path",
-      "path": "90_\u5de5\u5177/scripts/verify-npm-global-path.ps1",
+      "path": "90_工具/scripts/verify-npm-global-path.ps1",
       "category": "environment-check",
       "purpose": "Check npm global path environment.",
       "status": "existing"
+    },
+    {
+      "id": "split-lemon-cards",
+      "path": "90_工具/scripts/split_lemon_cards.py",
+      "category": "text-maintenance",
+      "purpose": "Project-specific helper moved from workspace root; review input/output before reuse.",
+      "status": "existing-needs-review"
+    },
+    {
+      "id": "text-version-backup-workflow",
+      "path": "_pipeline/text-version-backup-workflow.md",
+      "category": "workflow",
+      "purpose": "Workflow for backing up manuscript files before overwriting, splitting, merging, formatting, encoding fixes, or word-count updates.",
+      "status": "workflow"
+    },
+    {
+      "id": "character-card-workflow",
+      "path": "_pipeline/character-card-workflow.md",
+      "category": "workflow",
+      "purpose": "Workflow for reading and updating character cards when character state, relationship, secret, or continuity changes.",
+      "status": "workflow"
+    },
+    {
+      "id": "chapter-self-check-workflow",
+      "path": "_pipeline/chapter-self-check-workflow.md",
+      "category": "workflow",
+      "purpose": "Workflow for chapter review, continuity checks, style checks, and post-generation self-checks.",
+      "status": "workflow"
+    },
+    {
+      "id": "gemini-assisted-writing-workflow",
+      "path": "_pipeline/gemini-assisted-writing-workflow.md",
+      "category": "workflow",
+      "purpose": "Workflow for assisted writing and review with Gemini when requested by the user.",
+      "status": "workflow"
     },
     {
       "id": "google-docs-clasp-sync-workflow",
@@ -27,10 +68,10 @@
     },
     {
       "id": "google-docs-sync-tool",
-      "path": "90_\u5de5\u5177/google-docs-sync",
+      "path": "90_工具/google-docs-sync",
       "category": "publishing-sync",
       "purpose": "Apps Script template and PowerShell builder for packaging local Markdown and syncing it to Google Docs with clasp.",
-      "status": "template"
+      "status": "template-needs-review"
     }
   ]
 }
