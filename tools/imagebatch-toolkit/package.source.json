@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js",
+    "harness:verify": "node harness/run.js verify",
+    "liblib:list-model": "node tools/liblib_smart_image_v2.mjs list-model",
+    "liblib:generate": "node tools/liblib_smart_image_v2.mjs generate",
+    "gpt-image2:grsai": "node tools/gpt_image_2_router.mjs grsai",
+    "gpt-image2:xstx": "node tools/gpt_image_2_router.mjs xstx"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "sharp": "^0.34.5"
+  }
+}

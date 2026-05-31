@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>曲影番外二｜陈星与章节结构｜追加反馈</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 980px; margin: 2rem auto; padding: 0 1rem; color: #2b2b2b; line-height: 1.65; }
+  h1 { border-bottom: 2px solid #ddd; padding-bottom: .5rem; }
+  .summary { background: #f7f7f9; border: 1px solid #e5e5e5; border-radius: 10px; padding: 1rem; margin: 1rem 0 1.5rem; }
+  .card { border: 1px solid #ddd; border-radius: 10px; margin: 1rem 0; overflow: hidden; background: #fff; }
+  .card-header { padding: 1rem; cursor: pointer; display: flex; justify-content: space-between; gap: 1rem; background: #fcfcfc; }
+  .card-header:hover { background: #f0f4f8; }
+  .card-body { display: none; padding: 1rem; border-top: 1px solid #ddd; background: #fafafa; }
+  .status { border-radius: 999px; padding: .2rem .65rem; font-size: .85rem; font-weight: 700; white-space: nowrap; }
+  .pending { background: #fff3cd; color: #996404; }
+  .resolved { background: #d4edda; color: #16794c; text-decoration: line-through; }
+  .high { color: #b42318; font-weight: 700; }
+  .medium { color: #9a6700; font-weight: 700; }
+  .quote { background: #fff; border-left: 4px solid #a6b3c2; padding: .75rem; margin: .6rem 0; }
+  .bad { background: #ffe9e9; color: #b42318; padding: 0 .2rem; }
+  .ok { background: #e9f7ef; color: #16794c; padding: 0 .2rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+  th, td { border: 1px solid #ddd; padding: .55rem; vertical-align: top; }
+  th { background: #f1f3f5; }
+  code { background: #f4f4f4; padding: .1rem .25rem; border-radius: 4px; }
+</style>
+</head>
+<body>
+<h1>曲影番外二｜主干第一版润色｜陈星设定、章节结构与问卷逻辑追加反馈</h1>
+<div class="summary">
+  <p><strong>检查日期：</strong>2026-05-31</p>
+  <p><strong>检查范围：</strong><code>主干/第一版润色</code> 全部润色稿。</p>
+  <p><strong>总论：</strong>当前文本存在“陈星被写得过度工业化”的倾向；第二章标题过重；<code>03</code> 与 <code>04</code> 应合并为新的第二章；问卷应改为更像现实 SM/BDSM 协商表，同时保留少量魔术异常项。</p>
+  <p><strong>处理状态：</strong>本报告只记录反馈与修改建议，已按反馈完成正文修改。</p>
+</div>
+
+<h2>用户要求概括</h2>
+<ul>
+  <li>陈星应是“普通 DOM + 真实特异功能/魔术背景”，不是工业化“大工匠”。</li>
+  <li>减少或替换 <code>大工匠</code>、<code>材料</code>、<code>身体底子</code>、<code>加工</code>、<code>工序</code>、<code>质检</code>、<code>机械化</code>、<code>零件</code> 等词。</li>
+  <li>第二章标题需要重起，当前 <code>第二章：大工匠的邀约</code> 太夸张。</li>
+  <li><code>03_第一章：完美的假面（三）.md</code> 与 <code>04_第二章：大工匠的邀约.md</code> 应合并为同一章，即新的第二章。</li>
+  <li>陈星问卷应参考现实 BDSM/SM 协商表：角色、边界、安全词、健康顾虑、心理目标、事后照护等，再加入少量魔术异常项。</li>
+</ul>
+
+<h2>任务清单</h2>
+
+<div class="card">
+  <div class="card-header" ondblclick="toggle('q1')">
+    <strong>QY2-R3-001｜陈星称呼和形容词过度工业化</strong>
+    <span class="status resolved">已修复</span>
+  </div>
+  <div class="card-body" id="q1">
+    <p><strong>严重度：</strong><span class="high">高</span></p>
+    <p><strong>位置：</strong><code>03</code>、<code>04</code>、<code>06</code>、<code>07</code>、<code>08</code>、<code>09</code></p>
+    <div class="quote">触发词包括：<span class="bad">大工匠</span>、<span class="bad">材料</span>、<span class="bad">身体底子</span>、<span class="bad">加工</span>、<span class="bad">工序</span>、<span class="bad">质检</span>、<span class="bad">机械化</span>、<span class="bad">零件</span>。</div>
+    <p><strong>判断：</strong>这些词会把陈星写成“工业化身体工厂老板”，偏离“普通 DOM + 魔术师”的角色定位。</p>
+    <p><strong>建议：</strong>主称改用 <span class="ok">陈星</span>、<span class="ok">那位先生</span>、<span class="ok">他</span>；动作和语言改写为观察、确认边界、给规矩、暗示、等待反应。</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header" ondblclick="toggle('q2')">
+    <strong>QY2-R3-002｜第二章标题过重</strong>
+    <span class="status resolved">已修复</span>
+  </div>
+  <div class="card-body" id="q2">
+    <p><strong>严重度：</strong><span class="medium">中</span></p>
+    <p><strong>位置：</strong><code>04_第二章：大工匠的邀约.md</code></p>
+    <p><strong>建议标题：</strong>首选 <code>第二章：周日三点</code>；备选 <code>第二章：灰色邀请</code>、<code>第二章：陈星的规矩</code>、<code>第二章：邀约</code>。</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header" ondblclick="toggle('q3')">
+    <strong>QY2-R3-003｜03 与 04 应合并为第二章</strong>
+    <span class="status resolved">已修复</span>
+  </div>
+  <div class="card-body" id="q3">
+    <p><strong>严重度：</strong><span class="high">高</span></p>
+    <p><strong>判断：</strong><code>03</code> 已进入微醺的猫、陈星、问卷和邀约，不再属于第一章酒吧段落；<code>04</code> 是同一条邀约线的继续。</p>
+    <p><strong>建议结构：</strong>第一章保留 <code>01</code>、<code>02</code>；将当前 <code>03</code> 与 <code>04</code> 合并为 <code>03_第二章：周日三点.md</code>；后续序号顺延。</p>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header" ondblclick="toggle('q4')">
+    <strong>QY2-R3-004｜问卷逻辑需要重写</strong>
+    <span class="status resolved">已修复</span>
+  </div>
+  <div class="card-body" id="q4">
+    <p><strong>严重度：</strong><span class="high">高</span></p>
+    <p><strong>依据：</strong>公开 BDSM 协商资料强调角色、边界、软硬限制、安全词、健康顾虑、时长、事后照护与复盘，而不是工业筛选。</p>
+    <table>
+      <tr><th>现实协商项</th><th>可转化成小说问卷的方向</th></tr>
+      <tr><td>角色与称呼</td><td>希望如何被称呼？哪些称呼会出戏？</td></tr>
+      <tr><td>硬限制/软限制</td><td>哪些绝对不碰？哪些可以在信任建立后谨慎尝试？</td></tr>
+      <tr><td>安全词/信号</td><td>能说话和不能说话时分别如何暂停？</td></tr>
+      <tr><td>健康与触发点</td><td>旧伤、恐慌触发、不能留痕、不能久跪等。</td></tr>
+      <tr><td>心理目标</td><td>想被照顾、命令、观察、评价，还是暂时卸下现实身份？</td></tr>
+      <tr><td>魔术异常项</td><td>是否接受短时间感官错位、身体位置感变化、看见但暂时不能控制等演示？</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header" ondblclick="toggle('q5')">
+    <strong>QY2-R3-005｜其他章节存在同类词汇倾向</strong>
+    <span class="status resolved">已修复</span>
+  </div>
+  <div class="card-body" id="q5">
+    <p><strong>严重度：</strong><span class="medium">中</span></p>
+    <p><strong>位置：</strong><code>06</code>、<code>07</code>、<code>08</code>、<code>09</code>。</p>
+    <p><strong>建议：</strong>后续章节保留工坊作为空间，但降低“工厂/零件/加工”词密度，把权力来源转为规矩、观察、边界确认、暗示和魔术演示。</p>
+  </div>
+</div>
+
+<h2>参考链接</h2>
+<ul>
+  <li><a href="https://jissbon.com/blogs/news/how-to-get-started-in-bdsm">BDSM for Beginners</a></li>
+  <li><a href="https://sexpaddle.com/blogs/beginner-bdsm/hard-limits-soft-limits-bdsm-guide">Hard Limits vs Soft Limits</a></li>
+  <li><a href="https://worksheets.clipart-library.com/worksheet/negotiation-worksheet-34.html">Kink Negotiation Worksheet</a></li>
+  <li><a href="https://www.cuffstore.com/blogs/lifestyle/should-a-d-s-dynamic-have-written-agreements">D/s Written Agreements</a></li>
+</ul>
+
+<script>
+function toggle(id) {
+  const el = document.getElementById(id);
+  el.style.display = el.style.display === "block" ? "none" : "block";
+}
+</script>
+</body>
+</html>

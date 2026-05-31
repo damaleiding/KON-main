@@ -1,0 +1,76 @@
+# Google Docs Sync Tool
+
+通过 `clasp` 和 Google Apps Script，把本地 Markdown 同步到 Google Docs。
+
+## 前置条件
+
+- 已安装 Node.js 和 npm。
+- 已安装 `clasp`：`npm install -g @google/clasp`
+- 已执行 `clasp login`。
+- 已在 Google 账号中开启 Apps Script API。
+
+## 使用方式
+
+1. 进入本目录。
+2. 复制 `.clasp.json.example` 为 `.clasp.json`，填入 Apps Script 项目的 `scriptId`；或用 `clasp create --type standalone` 新建项目。
+3. 生成内容文件：
+
+```powershell
+.\build-content.ps1 -SourceMarkdown "..\..\曲影番外二\发布\GoogleDocs\曲影番外二_主干第一版润色_GoogleDocs同步稿.md" -Title "曲影番外二：主干第一版润色"
+```
+
+4. 推送脚本：
+
+```powershell
+clasp push
+```
+
+5. 新建 Google 文档：
+
+```powershell
+clasp run createDocFromContent
+```
+
+6. 如需后续覆盖同一个文档，先设置目标文档 ID：
+
+```powershell
+clasp run setTargetDocumentId -p '["你的Google文档ID"]'
+clasp run overwriteConfiguredDoc
+```
+
+## Drive 上传备用方式
+
+如果 `clasp run` 提示需要 API executable，可直接使用 `clasp login` 生成的 OAuth 凭据，通过 Drive API 上传并转换为 Google Docs：
+
+```powershell
+node .\upload-markdown-to-drive-doc.js `
+  --mode create `
+  --source "..\..\曲影番外二\发布\GoogleDocs\曲影番外二_主干第一版润色_GoogleDocs同步稿.md" `
+  --title "曲影番外二：主干第一版润色" `
+  --paragraph-mode loose `
+  --claspHome "c:\Trae\KON-main\tokens\clasp-home" `
+  --state "c:\Trae\KON-main\tokens\google-docs-sync\曲影番外二_主干第一版润色.json"
+```
+
+后续覆盖同一个文档：
+
+```powershell
+node .\upload-markdown-to-drive-doc.js `
+  --mode update `
+  --source "..\..\曲影番外二\发布\GoogleDocs\曲影番外二_主干第一版润色_GoogleDocs同步稿.md" `
+  --title "曲影番外二：主干第一版润色" `
+  --paragraph-mode loose `
+  --claspHome "c:\Trae\KON-main\tokens\clasp-home" `
+  --state "c:\Trae\KON-main\tokens\google-docs-sync\曲影番外二_主干第一版润色.json"
+```
+
+排版参数：
+
+- `--paragraph-mode loose`：默认；保留标题、分隔线和本地段落，并把过长自然段按中文标点温和拆段，方便审阅。
+- `--paragraph-mode preserve`：尽量严格保留 Markdown 段落，不额外拆分长段。
+
+## 注意事项
+
+- `Content.js` 是由本地稿件生成的同步中间文件，不应手动编辑。
+- 不要把 OAuth token、cookie、API Key 或其他凭据写入本目录。
+- Google Docs 是发布或协作副本；本地 `主干/` 或 `发布/` 文件仍是事实层。

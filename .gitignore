@@ -1,0 +1,116 @@
+# Local configuration and secrets
+*.local
+*.local.*
+.env
+.env.*
+!.env.example
+secrets/
+tokens/
+credentials/
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Dependency and cache directories
+node_modules/
+.cache/
+.tmp/
+tmp/
+temp/
+dist/
+build/
+coverage/
+.venv/
+venv/
+env/
+tools/**/.venv/
+tools/**/venv/
+__pycache__/
+*.pyc
+*.pyo
+.trae/
+*.heapsnapshot
+*.hprof
+
+# Large media assets
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.bmp
+*.tif
+*.tiff
+*.psd
+*.psb
+*.exr
+*.hdr
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.wav
+*.mp3
+*.flac
+*.aiff
+*.zip
+*.rar
+*.7z
+
+# Allow lightweight documentation images if explicitly placed here
+!docs/assets/**/*.svg
+!docs/assets/**/*.md
+
+# Project generated outputs
+projects/**/outputs/**
+projects/**/trash/**
+projects/**/_backups/**
+projects/**/review/data/**
+projects/**/_review/data/**
+projects/**/90_工具/google-docs-sync/.clasp.json
+projects/**/90_工具/google-docs-sync/Content.js
+projects/**/references/**/*.txt
+projects/**/references/**/fetch*.py
+projects/**/refs/**/*.txt
+projects/**/references/**/fetch_*cookie*.py
+projects/**/review/generate_report.py
+projects/**/曲影番外二/modify_*.py
+projects/**/曲影番外二/recount.py
+
+# Keep generated facts, prompts, and ledgers trackable
+!projects/**/outputs/**/.gitkeep
+!projects/**/outputs/**/_prompts/**
+!projects/**/_ledger/**
+!projects/**/_pipeline/**
+!projects/**/prompts/**
+!projects/**/review/**/*.md
+!projects/**/review/**/*.json
+!projects/**/review/**/*.html
+
+# Media manifests and indexes should stay trackable
+!projects/**/_media/**
+!projects/**/refs/_index/**
+!projects/**/refs/**/*.md
+!projects/**/refs/**/*.json
+
+# Tool reports and temporary fixtures
+tools/**/reports/**
+tools/**/tmp/**
+!tools/**/reports/.gitignore
+tools/nuke-alpha-avi-exporter/**
+tools/nuke-auto-keyer/**
+tools/prompt-audit/**
+
+# Root-level one-off local artifacts
+temp_script*.py
+clean_merged.py
+recount_merged*.py
+imagine-cli-*-eval-result*.json
+page.html
+第一版润色/
+
+# Exclude oversized source document kept only for local reference
+projects/A1video/docs/source/GPT Image 2 进阶使用：为什么你的图总是脏、糊、有噪点？.docx

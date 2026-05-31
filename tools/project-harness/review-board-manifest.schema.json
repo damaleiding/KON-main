@@ -1,0 +1,92 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project harness Review Board manifest",
+  "type": "object",
+  "required": [
+    "kind",
+    "schemaVersion",
+    "generator",
+    "generatorVersion",
+    "dataSchemaVersion",
+    "generatedAt",
+    "projectRoot",
+    "ledger",
+    "ledgerHash",
+    "sourceHash",
+    "htmlHash",
+    "output",
+    "dataFile",
+    "jsonDataFile",
+    "shotFiles",
+    "counts"
+  ],
+  "properties": {
+    "kind": {
+      "const": "review_board_manifest"
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "generator": {
+      "type": "string"
+    },
+    "generatorVersion": {
+      "type": "integer"
+    },
+    "dataSchemaVersion": {
+      "type": "integer"
+    },
+    "generatedAt": {
+      "type": "string"
+    },
+    "projectRoot": {
+      "type": "string"
+    },
+    "ledger": {
+      "type": "string"
+    },
+    "ledgerHash": {
+      "type": "string"
+    },
+    "decisionLog": {
+      "type": "string"
+    },
+    "decisionLogHash": {
+      "type": "string"
+    },
+    "sourceHash": {
+      "type": "string"
+    },
+    "dataHash": {
+      "type": "string"
+    },
+    "htmlHash": {
+      "type": "string"
+    },
+    "output": {
+      "type": "string"
+    },
+    "dataFile": {
+      "type": "string"
+    },
+    "jsonDataFile": {
+      "type": "string"
+    },
+    "launcherFiles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "shotFiles": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "counts": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

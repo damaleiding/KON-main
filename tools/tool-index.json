@@ -1,0 +1,238 @@
+﻿{
+    "kind":  "kva_workspace_tool_index",
+    "schema_version":  1,
+    "generated_at":  "2026-05-30",
+    "rule":  "Load tools lazily. Do not load tool source or generated data unless a task matches.",
+    "tools":  [
+                  {
+                      "id":  "project-harness",
+                      "source":  "tools/project-harness",
+                      "purpose":  "工作区 doctor/self-test、上下文索引、参考图索引、Review Board、media manifest、generation capture、token meter",
+                      "deps":  [
+                                   "Node.js",
+                                   "Git",
+                                   "PowerShell/Bash"
+                               ],
+                      "category":  "workflow",
+                      "status":  "imported-needs-kva-adaptation"
+                  },
+                  {
+                      "id":  "word-count",
+                      "source":  "tools/word-count",
+                      "purpose":  "字数统计 CLI；用于章节、稿件、目录文本长度统计。Agent 遇到字数统计需求必须调用本工具，不用模型估算。",
+                      "deps":  [
+                                   "PowerShell",
+                                   "Node.js optional for word-count.mjs/Bash entry"
+                               ],
+                      "category":  "text",
+                      "status":  "active"
+                  },
+                  {
+                      "id":  "production-ledger",
+                      "source":  "tools/production-ledger",
+                      "purpose":  "JSONL 生产账本、ingest、validate、find、recipe、prompt index",
+                      "deps":  [
+                                   "Node.js",
+                                   "PowerShell/Bash"
+                               ],
+                      "category":  "ledger",
+                      "status":  "imported-needs-kva-adaptation"
+                  },
+                  {
+                      "id":  "imagine-cli-healthcheck",
+                      "source":  "tools/imagine-cli-healthcheck",
+                      "purpose":  "Imagine CLI 登录态、网络、DNS、TLS、VPN 与真实提交链路检查",
+                      "deps":  [
+                                   "Node.js",
+                                   "Imagine CLI"
+                               ],
+                      "category":  "generation",
+                      "status":  "imported"
+                  },
+                  {
+                      "id":  "imagine-video-async",
+                      "source":  "tools/imagine-video-async",
+                      "purpose":  "sd2 视频异步 submit/status/fetch、manifest 与媒体校验",
+                      "deps":  [
+                                   "Node.js",
+                                   "Imagine CLI",
+                                   "ffprobe optional"
+                               ],
+                      "category":  "generation",
+                      "status":  "imported"
+                  },
+                  {
+                      "id":  "imagebatch-toolkit",
+                      "source":  "tools/imagebatch-toolkit",
+                      "purpose":  "批量图像生成 provider、GPT Image 2 路由、Liblib adapter、命名和 harness 校验",
+                      "deps":  [
+                                   "Node.js",
+                                   "Python optional",
+                                   "API keys"
+                               ],
+                      "category":  "generation",
+                      "status":  "promoted-from-project"
+                  },
+                  {
+                      "id":  "prompt-audit",
+                      "source":  "tools/prompt-audit",
+                      "purpose":  "视频 prompt 审计、HTML 报告抽取、禁用项/覆盖项校验、词条模板",
+                      "deps":  [
+                                   "Python"
+                               ],
+                      "category":  "prompt",
+                      "status":  "promoted-from-project"
+                  },
+                  {
+                      "id":  "after-effects-js",
+                      "source":  "tools/after-effects-js",
+                      "purpose":  "AE ExtendScript 脚本：抽帧、掉帧、运动拖影、脚本模板",
+                      "deps":  [
+                                   "Adobe After Effects"
+                               ],
+                      "category":  "dcc",
+                      "status":  "imported"
+                  },
+                  {
+                      "id":  "nuke-auto-keyer",
+                      "source":  "tools/nuke-auto-keyer",
+                      "purpose":  "Nuke 自动 keying 工程生成",
+                      "deps":  [
+                                   "Nuke",
+                                   "Python",
+                                   "PowerShell"
+                               ],
+                      "category":  "dcc",
+                      "status":  "imported-needs-path-cleanup"
+                  },
+                  {
+                      "id":  "nuke-alpha-avi-exporter",
+                      "source":  "tools/nuke-alpha-avi-exporter",
+                      "purpose":  "Nuke alpha AVI / Sofdec 相关导出",
+                      "deps":  [
+                                   "Nuke",
+                                   "Windows VFW",
+                                   "Sofdec optional"
+                               ],
+                      "category":  "dcc",
+                      "status":  "imported-needs-path-cleanup"
+                  },
+                  {
+                      "id":  "git-workflow",
+                      "source":  "tools/git-workflow",
+                      "purpose":  "Git 提交前检查与核心文件暂存辅助",
+                      "deps":  [
+                                   "Git",
+                                   "PowerShell/Bash"
+                               ],
+                      "category":  "workflow",
+                      "status":  "imported-needs-kva-adaptation"
+                  },
+                  {
+                      "id":  "animatic-maker",
+                      "source":  "tools/animatic-maker",
+                      "purpose":  "分镜 animatic/GIF 生成辅助",
+                      "deps":  [
+                                   "Swift",
+                                   "macOS"
+                               ],
+                      "category":  "storyboard",
+                      "status":  "imported-macos-only"
+                  },
+                  {
+                      "id":  "storyboard-panel-strip",
+                      "source":  "tools/storyboard-panel-strip",
+                      "purpose":  "分镜 panel strip 导出辅助",
+                      "deps":  [
+                                   "Swift",
+                                   "macOS"
+                               ],
+                      "category":  "storyboard",
+                      "status":  "imported-macos-only"
+                  },
+                  {
+                      "id":  "video-concat",
+                      "source":  "tools/video-concat",
+                      "purpose":  "视频拼接辅助",
+                      "deps":  [
+                                   "Swift",
+                                   "macOS"
+                               ],
+                      "category":  "video",
+                      "status":  "imported-macos-only"
+                  },
+                  {
+                      "id":  "ai-debate",
+                      "source":  "tools/ai-debate",
+                      "purpose":  "多专家辩论 CLI 与 SearXNG helper",
+                      "deps":  [
+                                   "Python",
+                                   "httpx",
+                                   "rich",
+                                   "API keys",
+                                   "Docker optional"
+                               ],
+                      "category":  "research",
+                      "status":  "imported-lightweight"
+                  },
+                  {
+                      "id":  "gui-split",
+                      "source":  "tools/gui-split",
+                      "purpose":  "HTML UI 组件截图拆分、透明/实色背景合成",
+                      "deps":  [
+                                   "Python",
+                                   "Playwright",
+                                   "Pillow"
+                               ],
+                      "category":  "ui-art",
+                      "status":  "imported-lightweight"
+                  },
+                  {
+                      "id":  "corridorkey",
+                      "source":  "tools/corridorkey",
+                      "purpose":  "绿幕/视频抠像与 AI unmixing/keying 工具源码",
+                      "deps":  [
+                                   "uv",
+                                   "Python 3.10+",
+                                   "PyTorch",
+                                   "模型权重外部下载"
+                               ],
+                      "category":  "video-keying",
+                      "status":  "imported-without-weights-media"
+                  },
+                  {
+                      "id":  "midjourney-proxy",
+                      "source":  "tools/midjourney-proxy",
+                      "purpose":  "Midjourney Discord API 代理服务源码",
+                      "deps":  [
+                                   "Java 17",
+                                   "Maven",
+                                   "Discord/MJ accounts",
+                                   "Docker optional"
+                               ],
+                      "category":  "generation-service",
+                      "status":  "imported-without-logs-media"
+                  },
+                  {
+                      "id":  "midjourney-proxy-clients",
+                      "source":  "tools/midjourney-proxy-clients",
+                      "purpose":  "Midjourney proxy Python 客户端/生成脚本",
+                      "deps":  [
+                                   "Python",
+                                   "midjourney-proxy service"
+                               ],
+                      "category":  "generation-service",
+                      "status":  "imported-lightweight"
+                  },
+                  {
+                      "id":  "gui-result-saver",
+                      "category":  "ui-art",
+                      "source":  "tools/gui-result-saver/save-result.js",
+                      "purpose":  "GUI 结果保存脚本，可作为 UI 生成/拆图流程的结果落盘辅助",
+                      "deps":  [
+                                   "Node.js 或浏览器脚本环境"
+                               ],
+                      "status":  "imported-lightweight"
+                  }
+              ]
+}

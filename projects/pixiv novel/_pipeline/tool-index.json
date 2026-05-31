@@ -1,0 +1,36 @@
+{
+  "kind": "novel_project_tool_index",
+  "schema_version": 1,
+  "project": "novel",
+  "rule": "Load tools lazily. Do not run scripts or modify manuscripts unless the task matches.",
+  "tools": [
+    {
+      "id": "replace-script",
+      "path": "90_\u5de5\u5177/replace_script.py",
+      "category": "text-maintenance",
+      "purpose": "Text replacement helper. Confirm input, output, and backup strategy before use.",
+      "status": "existing-needs-review"
+    },
+    {
+      "id": "verify-npm-global-path",
+      "path": "90_\u5de5\u5177/scripts/verify-npm-global-path.ps1",
+      "category": "environment-check",
+      "purpose": "Check npm global path environment.",
+      "status": "existing"
+    },
+    {
+      "id": "google-docs-clasp-sync-workflow",
+      "path": "_pipeline/google-docs-clasp-sync-workflow.md",
+      "category": "publishing-sync",
+      "purpose": "Workflow for syncing approved manuscripts to Google Docs through clasp and Google Apps Script.",
+      "status": "workflow"
+    },
+    {
+      "id": "google-docs-sync-tool",
+      "path": "90_\u5de5\u5177/google-docs-sync",
+      "category": "publishing-sync",
+      "purpose": "Apps Script template and PowerShell builder for packaging local Markdown and syncing it to Google Docs with clasp.",
+      "status": "template"
+    }
+  ]
+}

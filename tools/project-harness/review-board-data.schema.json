@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Project harness Review Board data bundle",
+  "type": "object",
+  "required": [
+    "kind",
+    "schemaVersion",
+    "generatorVersion",
+    "projectRoot",
+    "ledger",
+    "ledgerHash",
+    "sourceHash",
+    "generatedAt",
+    "assets",
+    "byShot",
+    "counts"
+  ],
+  "properties": {
+    "kind": {
+      "enum": [
+        "review_board_data",
+        "review_board_shot_data"
+      ]
+    },
+    "schemaVersion": {
+      "const": 1
+    },
+    "generatorVersion": {
+      "type": "integer"
+    },
+    "projectRoot": {
+      "type": "string"
+    },
+    "ledger": {
+      "type": "string"
+    },
+    "ledgerHash": {
+      "type": "string"
+    },
+    "decisionLog": {
+      "type": "string"
+    },
+    "decisionLogHash": {
+      "type": "string"
+    },
+    "sourceHash": {
+      "type": "string"
+    },
+    "syncToken": {
+      "type": "string"
+    },
+    "generatedAt": {
+      "type": "string"
+    },
+    "board": {
+      "type": "object"
+    },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "entryId",
+          "title",
+          "kind",
+          "model",
+          "outputPath",
+          "href",
+          "review",
+          "promptState"
+        ],
+        "properties": {
+          "entryId": {
+            "type": "string"
+          },
+          "shotId": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "kind": {
+            "type": "string"
+          },
+          "model": {
+            "type": "string"
+          },
+          "outputPath": {
+            "type": "string"
+          },
+          "href": {
+            "type": "string"
+          },
+          "review": {
+            "type": "string"
+          },
+          "savedMark": {
+            "type": "string"
+          },
+          "savedDecision": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "promptState": {
+            "enum": [
+              "full",
+              "summary_only",
+              "missing"
+            ]
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "byShot": {
+      "type": "object"
+    },
+    "counts": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

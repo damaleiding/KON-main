@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>曲影番外二 全章节自检建议</title>
+  <style>
+    :root { --bg:#17130f; --paper:#fff8ef; --ink:#2c2118; --muted:#77695c; --red:#b94a48; --amber:#c48735; --green:#5f8a62; --line:#eadcc8; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--ink); background:linear-gradient(135deg,#1b1410,#3a2a20 55%,#17130f); }
+    main { max-width:1180px; margin:0 auto; padding:32px 22px 64px; }
+    .hero { display:grid; grid-template-columns:1.2fr .8fr; gap:24px; align-items:stretch; }
+    .panel { background:rgba(255,248,239,.96); border:1px solid var(--line); border-radius:18px; box-shadow:0 18px 50px rgba(0,0,0,.25); }
+    .intro { padding:28px; }
+    h1 { margin:0 0 12px; font-size:32px; }
+    .sub { color:var(--muted); line-height:1.75; }
+    .hero img { width:100%; height:100%; min-height:260px; object-fit:cover; border-radius:18px; }
+    .stats { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin:18px 0 0; }
+    .stat { padding:14px; background:#fff; border:1px solid var(--line); border-radius:14px; }
+    .num { display:block; font-size:28px; font-weight:800; }
+    .label { color:var(--muted); font-size:13px; }
+    section { margin-top:24px; padding:24px; }
+    .legend { display:flex; gap:10px; flex-wrap:wrap; }
+    .pill { padding:6px 10px; border-radius:999px; background:#fff; border:1px solid var(--line); font-size:13px; }
+    .workflow { display:grid; grid-template-columns:repeat(4,1fr); gap:12px; }
+    .step { padding:16px; border-radius:14px; background:#fff; border:1px solid var(--line); }
+    .step b { display:block; margin-bottom:6px; }
+    .issues { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+    .issue { padding:18px; border-radius:16px; background:#fff; border:1px solid var(--line); position:relative; cursor:pointer; transition:.18s ease; }
+    .issue:hover { transform:translateY(-2px); box-shadow:0 10px 24px rgba(59,39,24,.14); }
+    .issue.high { border-left:6px solid var(--red); }
+    .issue.medium { border-left:6px solid var(--amber); }
+    .issue.low { border-left:6px solid var(--green); }
+    .issue.fixed { opacity:.68; }
+    .issue.fixed h3, .issue.fixed > p { text-decoration:line-through; }
+    .issue.expanded { grid-column:1 / -1; cursor:default; }
+    .issue-head { display:flex; gap:8px; align-items:center; margin-bottom:8px; }
+    .task-id { font-family:ui-monospace,Consolas,monospace; font-weight:700; }
+    .badge, .status { padding:3px 8px; border-radius:999px; font-size:12px; color:white; }
+    .badge.high { background:var(--red); } .badge.medium { background:var(--amber); } .badge.low { background:var(--green); }
+    .status { background:#6b6259; }
+    .issue h3 { margin:8px 0 10px; font-size:18px; }
+    .issue p { line-height:1.65; margin:10px 0; }
+    .checkbox { display:block; margin-top:12px; color:var(--muted); font-size:13px; }
+    .quote { background:#fff; border-left:4px solid #7d5b45; padding:12px 14px; border-radius:10px; line-height:1.7; }
+    .issue-details { display:none; margin-top:14px; padding:16px; border-radius:14px; background:#fff7e7; border:1px dashed #d4a65f; text-decoration:none; }
+    .issue.expanded .issue-details { display:block; }
+    .issue-details h4 { margin:8px 0 10px; font-size:16px; }
+    .evidence-table { width:100%; border-collapse:collapse; margin:12px 0 18px; background:#fff; border-radius:12px; overflow:hidden; }
+    .evidence-table th, .evidence-table td { border:1px solid var(--line); padding:10px 12px; text-align:left; vertical-align:top; }
+    .evidence-table th { background:#f2e6d6; }
+    .evidence-table code { white-space:normal; line-height:1.6; }
+    .quote-card { margin:10px 0; padding:12px 14px; border-radius:12px; background:#fffdf8; border-left:4px solid #c48735; line-height:1.75; }
+    .quote-card.problem { background:#fff0df; border-left-color:var(--red); }
+    .hit { color:#a5231f; background:#ffe1dc; padding:0 3px; border-radius:4px; font-weight:800; }
+    .suspect { background:#fff3b8; box-shadow:inset 0 -2px 0 #e0a82e; }
+    .note { display:block; margin-top:8px; color:#6d4b2e; font-size:13px; }
+    .hint { margin-top:10px; color:var(--muted); font-size:13px; }
+    footer { color:#dccbbb; margin-top:18px; font-size:13px; }
+    @media (max-width:900px) { .hero,.issues,.workflow,.stats { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <div class="panel intro">
+      <h1>曲影番外二｜全章节自检建议</h1>
+      <p class="sub">检查范围：主干拆章原文，已由 52 个文件整理为 39 个文件。模式：修改后复查；肉戏情节不反馈、不复述；本报告只显示结构、设定、角色、对话和格式问题。字数口径：非空白 Unicode 字符数；全文合计：73776 字。后续生成方向已整理为统一提示词。</p>
+      <div class="stats">
+        <div class="stat"><span class="num">39</span><span class="label">拆章文件</span></div>
+        <div class="stat"><span class="num">0</span><span class="label">标题错位</span></div>
+        <div class="stat"><span class="num">0</span><span class="label">非正文痕迹</span></div>
+        <div class="stat"><span class="num">6</span><span class="label">待办问题</span></div>
+      </div>
+    </div>
+    <img src="https://copilot-cn.bytedance.net/api/ide/v1/text_to_image?prompt=abstract%20story%20editing%20dashboard%20with%20chapter%20cards%2C%20red%20thread%20timeline%2C%20manuscript%20pages%2C%20elegant%20warm%20light%2C%20no%20people%2C%20editorial%20review%20board%2C%20high%20quality&image_size=landscape_16_9" alt="抽象的章节自检看板图">
+  </div>
+
+  <section class="panel">
+    <h2>使用方式</h2>
+    <div class="workflow">
+      <div class="step"><b>1. 先确认目录</b>解决标题/文件错位，确定真正主线。</div>
+      <div class="step"><b>2. 清理正文</b>移走说明、规划、响应痕迹。</div>
+      <div class="step"><b>3. 统一角色</b>把角色网收束到当前设定。</div>
+      <div class="step"><b>4. 逐章补对话</b>按角色功能增强对白味道。</div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>安全证据引用</h2>
+    <p class="quote">文件名/标题证据：例如“01_第一章：完美的假面（一）.md”的文件内一级标题不是同名标题；这类非露骨结构证据足以证明目录错位。</p>
+    <p class="quote">设定证据：角色卡固定核心角色为曲影、陈宇、陈星、林蔓；若章节混入旧版本人物或其他故事线，应先标为待确认。</p>
+  </section>
+
+  <section class="panel">
+    <h2>问题任务清单</h2>
+    <div class="legend">
+      <span class="pill">状态：未处理</span>
+      <span class="pill">双击问题卡：展开/收起详情</span>
+      <span class="pill">用户确认修复后：保留并加删除线</span>
+      <span class="pill">不直接改正文</span>
+    </div>
+    <div class="issues">
+      
+      <article class="issue high fixed" id="QY2-ALL-001" tabindex="0" title="双击展开/收起详情">
+        <div class="issue-head">
+          <span class="task-id">QY2-ALL-001</span>
+          <span class="badge high">高</span>
+          <span class="status">已修复</span>
+        </div>
+        <h3>主干目录和正文错位</h3>
+        <p><strong>位置：</strong>00_拆章索引.md 与多个拆章文件</p>
+        <p><strong>证据引用：</strong>已处理：原 01-13 废稿删除留档；原 14-52 已按文件内一级标题重排为 01-39。复查：39 个正文文件，标题错位 0 个。</p>
+        <p><strong>修改建议：</strong>已执行：按文件内一级标题重建目录和索引；后续仍需处理重复分段与非正文痕迹。</p>
+        <div class="issue-details">
+          <h4>详情与复查</h4>
+          <p class="quote-card problem"><span class="suspect">原 01-13 被判定为废稿</span>，已留档后删除；原 14-52 已按一级标题重排为新 01-39。<span class="note">注释：这是已修复的结构问题，保留卡片用于追溯第一轮重排。</span></p>
+        </div>
+        <label class="checkbox"><input type="checkbox" disabled> 用户确认已改掉后，将本项标记为已修复并保留删除线</label>
+      </article>
+    
+      <article class="issue high fixed" id="QY2-ALL-002" tabindex="0" title="双击展开/收起详情">
+        <div class="issue-head">
+          <span class="task-id">QY2-ALL-002</span>
+          <span class="badge high">高</span>
+          <span class="status">已修复</span>
+        </div>
+        <h3>混入非正文材料</h3>
+        <p><strong>位置：</strong>部分拆章文件</p>
+        <p><strong>证据引用：</strong>已处理：旧的“本次响应字数统计”等非标准统计行已清理，并统一替换为每章末尾唯一标准字数统计行。</p>
+        <p><strong>修改建议：</strong>已执行：保留每章标准字数统计行；其余旧生成痕迹不再保留在正文中。</p>
+        <div class="issue-details">
+          <h4>原文引用与标注</h4>
+          <p class="hint">这些是清理前的历史证据。红色为触发词，黄色背景为非正文统计行；当前正文已替换为标准字数统计。</p>
+          <p class="quote-card problem"><b>32_第五章：归巢的仪式与雌竞的暗流（一）.md:43</b><br><span class="suspect"><span class="hit">本次响应</span>字数统计：1264字</span><span class="note">注释：“本次响应”属于生成过程说明，不应进入小说正文。</span></p>
+          <p class="quote-card problem"><b>33_第五章：归巢的仪式与雌竞的暗流（二）.md:51</b><br><span class="suspect"><span class="hit">本次响应</span>字数统计：1518字</span><span class="note">注释：同上，已统一清理。</span></p>
+          <p class="quote-card problem"><b>34_第五章：归巢的仪式与雌竞的暗流（三）.md:37</b><br><span class="suspect"><span class="hit">本次响应</span>字数统计：1235字</span></p>
+          <p class="quote-card problem"><b>35_第五章：归巢的仪式与雌竞的暗流（四）.md:49</b><br><span class="suspect"><span class="hit">本次响应</span>字数统计：1422字</span></p>
+          <p class="quote-card problem"><b>36_第五章：归巢的仪式与雌竞的暗流（五）.md:35 / 83</b><br><span class="suspect"><span class="hit">本次响应</span>字数统计：1158字</span><br><span class="suspect"><span class="hit">本次响应</span>字数统计：1642字</span><span class="note">注释：同一文件出现两条旧统计，说明此前可能有合并残留。</span></p>
+          <p class="quote-card problem"><b>38_第六章：拼图的重组与双重雌伏（一）.md:123</b><br><span class="suspect">本章（第五、六章连续剧情）<span class="hit">字数统计</span>：2945字</span><span class="note">注释：统计说明本身可以保留，但格式不统一，已替换为标准行。</span></p>
+          <p class="quote-card problem"><b>39_第六章：合璧的极乐与多重嵌套的日常（一）.md:97</b><br><span class="suspect"><span class="hit">本次响应</span>字数统计：2615字</span></p>
+        </div>
+        <label class="checkbox"><input type="checkbox" disabled> 用户确认已改掉后，将本项标记为已修复并保留删除线</label>
+      </article>
+    
+      <article class="issue high fixed" id="QY2-ALL-003" tabindex="0" title="双击展开/收起详情">
+        <div class="issue-head">
+          <span class="task-id">QY2-ALL-003</span>
+          <span class="badge high">高</span>
+          <span class="status">已确认保留</span>
+        </div>
+        <h3>角色体系串线（小雨已确认无问题）</h3>
+        <p><strong>位置：</strong>全章节</p>
+        <p><strong>证据引用：</strong>已确认：小雨是曲影与陈宇的女儿，属于合理家庭设定；已同步到角色卡、角色关系总览和当前状态。</p>
+        <p><strong>修改建议：</strong>已执行：保留小雨作为现实家庭、母亲身份和生活牵绊背景；不得参与成人凝视、亲密场景或性化描写。</p>
+        <div class="issue-details">
+          <h4>原文引用与标注</h4>
+          <p class="hint">用户已确认“小雨”无问题。以下短引保留为设定确认依据，而非问题证据。</p>
+          <p class="quote-card problem"><b>02_第一章：完美的假面（一）.md:5</b><br><span class="suspect">今晚是个难得的属于我们夫妻的特殊日子，女儿<span class="hit">小雨</span>这周被送到了外婆家，家里的牵绊暂时切断。</span><span class="note">注释：已确认小雨是曲影与陈宇的女儿，作为现实牵绊保留。</span></p>
+          <p class="quote-card problem"><b>09_第一章：完美的假面（八）.md:5</b><br><span class="suspect">她放下了公司所有的业务，陪着女儿<span class="hit">小雨</span>在游乐园里玩了整整一天。</span><span class="note">注释：这里强化曲影的母亲身份，可用于生活铺垫和体面/失控反差。</span></p>
+        </div>
+        <label class="checkbox"><input type="checkbox" disabled> 用户确认已改掉后，将本项标记为已修复并保留删除线</label>
+      </article>
+    
+      <article class="issue medium open" id="QY2-ALL-004" tabindex="0" title="双击展开/收起详情">
+        <div class="issue-head">
+          <span class="task-id">QY2-ALL-004</span>
+          <span class="badge medium">中</span>
+          <span class="status">未处理</span>
+        </div>
+        <h3>曲影转变台阶不足</h3>
+        <p><strong>位置：</strong>第一章至第三章衔接段</p>
+        <p><strong>证据引用：</strong>人物卡要求曲影保留体面、羞耻、自尊和智识背景；现有文本部分段落从体面状态跳到结果状态过快。</p>
+        <p><strong>修改建议：</strong>每章补 1-2 个心理台阶：维持体面、找借口、被一句话刺中、自我说服、把责任转移给规则或陈宇。</p>
+        <div class="issue-details">
+          <h4>检查说明</h4>
+          <p class="quote-card">建议后续逐章补充安全短引：优先找“曲影从体面状态过快进入结果状态”的非露骨心理段落，用黄色标出跳跃处。</p>
+        </div>
+        <label class="checkbox"><input type="checkbox" disabled> 用户确认已改掉后，将本项标记为已修复并保留删除线</label>
+      </article>
+    
+      <article class="issue medium open" id="QY2-ALL-005" tabindex="0" title="双击展开/收起详情">
+        <div class="issue-head">
+          <span class="task-id">QY2-ALL-005</span>
+          <span class="badge medium">中</span>
+          <span class="status">未处理</span>
+        </div>
+        <h3>陈宇视角功能可增强</h3>
+        <p><strong>位置：</strong>陈宇在场章节</p>
+        <p><strong>证据引用：</strong>陈宇人物卡定位为丈夫、旁观者、推动者；现有段落里他有时更像观察镜头。</p>
+        <p><strong>修改建议：</strong>关键场景前后加入陈宇的选择感：默许、推动、后悔、嫉妒、占有欲或自我说服。</p>
+        <div class="issue-details">
+          <h4>检查说明</h4>
+          <p class="quote-card">建议后续逐章抽取陈宇在场但缺少选择/心理反应的段落，标注“镜头化旁观”位置。</p>
+        </div>
+        <label class="checkbox"><input type="checkbox" disabled> 用户确认已改掉后，将本项标记为已修复并保留删除线</label>
+      </article>
+    
+      <article class="issue medium open" id="QY2-ALL-006" tabindex="0" title="双击展开/收起详情">
+        <div class="issue-head">
+          <span class="task-id">QY2-ALL-006</span>
+          <span class="badge medium">中</span>
+          <span class="status">未处理</span>
+        </div>
+        <h3>陈星声音不够稳定</h3>
+        <p><strong>位置：</strong>陈星主导章节</p>
+        <p><strong>证据引用：</strong>陈星人物卡要求语言自然、不使用生硬工业词；现有文本里部分台词偏讲解或流程发布。</p>
+        <p><strong>修改建议：</strong>减少解释型台词，让陈星多用短句、判断句、日常化命令；设定说明通过动作和反应体现。</p>
+        <div class="issue-details">
+          <h4>检查说明</h4>
+          <p class="quote-card">建议后续定位陈星台词中过度解释规则的句子，标红解释性词组，并给出更自然的短句方向。</p>
+        </div>
+        <label class="checkbox"><input type="checkbox" disabled> 用户确认已改掉后，将本项标记为已修复并保留删除线</label>
+      </article>
+    
+      <article class="issue medium open" id="QY2-ALL-007" tabindex="0" title="双击展开/收起详情">
+        <div class="issue-head">
+          <span class="task-id">QY2-ALL-007</span>
+          <span class="badge medium">中</span>
+          <span class="status">未处理</span>
+        </div>
+        <h3>林蔓功能可更清晰</h3>
+        <p><strong>位置：</strong>第五章以后</p>
+        <p><strong>证据引用：</strong>林蔓人物卡定位为竞争参照、同伴、催化剂；现有文本中她有时更像场景附属角色。</p>
+        <p><strong>修改建议：</strong>每次林蔓出现都给一个明确功能：刺激曲影、映照曲影、抢夺注意力、轻微竞争或推进关系变化。</p>
+        <div class="issue-details">
+          <h4>检查说明</h4>
+          <p class="quote-card">建议后续定位林蔓出场但没有推动关系/竞争/映照功能的段落，标注“功能不足”。</p>
+        </div>
+        <label class="checkbox"><input type="checkbox" disabled> 用户确认已改掉后，将本项标记为已修复并保留删除线</label>
+      </article>
+    
+      <article class="issue medium open" id="QY2-ALL-008" tabindex="0" title="双击展开/收起详情">
+        <div class="issue-head">
+          <span class="task-id">QY2-ALL-008</span>
+          <span class="badge medium">中</span>
+          <span class="status">未处理</span>
+        </div>
+        <h3>对话味道不足</h3>
+        <p><strong>位置：</strong>全章节，尤其旁白推进较多的段落</p>
+        <p><strong>证据引用：</strong>用户偏好：对话更有味道、更多对话内容。统计中部分章节对话标记密度偏低。</p>
+        <p><strong>修改建议：</strong>每章增加 2-4 组有角色功能的对话：曲影嘴硬/自辩，陈宇试探/停顿，陈星短句定规则，林蔓轻微竞争。</p>
+        <div class="issue-details">
+          <h4>检查说明</h4>
+          <p class="quote-card">建议后续按章节抽样对话密度：对旁白推进过长的段落，用背景色标出可插入对话的位置。</p>
+        </div>
+        <label class="checkbox"><input type="checkbox" disabled> 用户确认已改掉后，将本项标记为已修复并保留删除线</label>
+      </article>
+    
+      <article class="issue low open" id="QY2-ALL-009" tabindex="0" title="双击展开/收起详情">
+        <div class="issue-head">
+          <span class="task-id">QY2-ALL-009</span>
+          <span class="badge low">低</span>
+          <span class="status">未处理</span>
+        </div>
+        <h3>章节标题词汇可统一</h3>
+        <p><strong>位置：</strong>部分章节标题和术语</p>
+        <p><strong>证据引用：</strong>风格指南要求语言正常、不装腔；个别标题或术语偏机械。</p>
+        <p><strong>修改建议：</strong>保留“魔术/工坊/拼图”的核心意象，减少机械化词汇，让标题更偏叙事和人物状态。</p>
+        <div class="issue-details">
+          <h4>检查说明</h4>
+          <p class="quote-card">建议后续汇总偏机械的标题/术语，用红色标出词汇，旁注给出更偏人物状态的替代方向。</p>
+        </div>
+        <label class="checkbox"><input type="checkbox" disabled> 用户确认已改掉后，将本项标记为已修复并保留删除线</label>
+      </article>
+    
+    </div>
+  </section>
+
+  <footer>生成日期：2026-05-31｜报告路径：review/20260531_曲影番外二_主干拆章原文_全章节_自检建议.html</footer>
+</main>
+
+<script>
+  document.querySelectorAll('.issue').forEach((card) => {
+    const toggle = () => card.classList.toggle('expanded');
+    card.addEventListener('dblclick', (event) => {
+      if (event.target.closest('a, button, input, label')) return;
+      toggle();
+    });
+    card.addEventListener('keydown', (event) => {
+      if (event.key === 'Enter') toggle();
+    });
+  });
+</script>
+</body>
+</html>

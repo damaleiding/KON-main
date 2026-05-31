@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>曲影番外二 | 第一版润色 | 全章节 | 自检建议</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; color: #333; line-height: 1.6; }
+  h1 { border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
+  .summary { background: #f8f9fa; padding: 1rem; border-radius: 8px; margin-bottom: 2rem; }
+  .card { border: 1px solid #ddd; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+  .card-header { padding: 1rem; background: #fff; cursor: pointer; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; }
+  .card-header:hover { background: #f1f3f5; }
+  .card-body { padding: 1rem; border-top: 1px solid #ddd; display: none; background: #fafafa; border-radius: 0 0 8px 8px; }
+  .status { font-size: 0.85rem; padding: 0.25rem 0.6rem; border-radius: 20px; font-weight: bold; }
+  .status.pending { background: #ffeeba; color: #d39e00; }
+  .status.resolved { background: #d4edda; color: #28a745; text-decoration: line-through; }
+  .status.info { background: #e2e3e5; color: #383d41; }
+  .highlight-red { color: red; font-weight: bold; }
+  .highlight-yellow { background-color: #fff3cd; padding: 0 4px; }
+  .evidence { background: #fff; padding: 0.8rem; border-left: 4px solid #6c757d; margin: 0.5rem 0; font-family: monospace; }
+  .strike { text-decoration: line-through; color: #888; }
+</style>
+</head>
+<body>
+
+<h1>曲影番外二 | 第一版润色 | 全章节 | 自检建议</h1>
+
+<div class="summary">
+  <h3>总览</h3>
+  <ul>
+    <li><strong>检查对象：</strong>曲影番外二 主干/第一版润色（第1章至第6章，共9个文件）</li>
+    <li><strong>检查日期：</strong>2026-05-31</li>
+    <li><strong>结论：</strong>通过。大部分设定、文风与性格已严格落实。未发现设定/角色/风格严重冲突。</li>
+    <li><strong>建议模式：</strong>只给修改意见，未改正文。</li>
+  </ul>
+</div>
+
+<h3>任务清单</h3>
+
+<div class="card" id="QY2-R2-001">
+  <div class="card-header" onclick="toggleBody('body-1')">
+    <div><strong>[QY2-R2-001] 设定检查：林蔓的称呼一致性</strong></div>
+    <div><span class="status resolved">已修复</span></div>
+  </div>
+  <div class="card-body" id="body-1">
+    <p><strong>严重度：</strong>低</p>
+    <p><strong>位置：</strong>08_第六章：归巢的仪式与雌竞的暗流.md / 09_第七章：重组与双重雌伏.md</p>
+    <p><strong>问题：</strong><span class="strike">原问题为【微醺的猫】本名在部分章节中出现旧名/新名混用。</span> 当前已统一为“林蔓”。</p>
+    <p><strong>依据：</strong>角色卡一致性要求。</p>
+    <p><strong>证据引用：</strong></p>
+    <div class="evidence">
+      08_第五章.md: "在闺蜜<span class="highlight-yellow">林蔓</span>面前产生的雌竞..."<br>
+      09_第六章.md: "曲影与<span class="highlight-yellow">林蔓</span>的互动..."
+    </div>
+    <p><strong>修改建议：</strong>已全局统一替换为“林蔓”。</p>
+  </div>
+</div>
+
+<div class="card" id="QY2-R2-002">
+  <div class="card-header" onclick="toggleBody('body-2')">
+    <div><strong>[QY2-R2-002] 风格检查：未发现违规词汇</strong></div>
+    <div><span class="status resolved">已修复</span></div>
+  </div>
+  <div class="card-body" id="body-2">
+    <p><strong>结论：</strong>本次生成的第1章至第6章中，未发现“极致反差”、“形体复建”、“白虎”、“巨乳”等违禁词。</p>
+    <p><strong>依据：</strong>风格指南与后续统一提示词约束。</p>
+    <p><strong>备注：</strong>词汇过滤已全面达标。</p>
+  </div>
+</div>
+
+<h3>待同步项</h3>
+<ul>
+  <li><strong>当前状态：</strong>第一版润色已全部生成完毕，剧情推进至第六章大工坊重组结束。</li>
+  <li><strong>伏笔表：</strong>大工匠的真实身份与林蔓的隐藏动机。</li>
+</ul>
+
+<script>
+  function toggleBody(id) {
+    var body = document.getElementById(id);
+    if (body.style.display === 'block') {
+      body.style.display = 'none';
+    } else {
+      body.style.display = 'block';
+    }
+  }
+</script>
+
+</body>
+</html>

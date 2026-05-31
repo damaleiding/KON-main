@@ -1,0 +1,32 @@
+use_default_settings: true
+
+general:
+  instance_name: "Local SearXNG"
+  donation_url: false
+  contact_url: false
+  privacypolicy_url: false
+
+search:
+  safe_search: 0
+  autocomplete: ""
+  default_lang: "auto"
+  formats:
+    - html
+    - json
+
+server:
+  base_url: "http://localhost:8080/"
+  limiter: false
+  public_instance: false
+  image_proxy: false
+  method: "GET"
+
+valkey:
+  url: valkey://valkey:6379/0
+
+ui:
+  default_theme: simple
+
+outgoing:
+  request_timeout: 6.0
+  enable_http2: true

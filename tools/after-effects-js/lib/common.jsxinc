@@ -1,0 +1,21 @@
+function aeLog(message) {
+    $.writeln("[after-effects-js] " + message);
+}
+
+function aeRequireProject() {
+    if (!app.project) {
+        app.newProject();
+    }
+
+    return app.project;
+}
+
+function aeGetActiveComp() {
+    var item = app.project.activeItem;
+
+    if (item && item instanceof CompItem) {
+        return item;
+    }
+
+    return null;
+}
