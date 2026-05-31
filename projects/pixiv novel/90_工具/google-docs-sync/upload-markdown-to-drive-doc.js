@@ -10,37 +10,55 @@ async function main() {
   const statePath = args.state;
   const claspHome = args.claspHome || process.env.HOME || process.env.USERPROFILE;
   const paragraphMode = args.paragraphMode || args['paragraph-mode'] || 'loose';
+  const syncedAt = getTimestamp();
 
   if (!claspHome) {
     throw new Error('Missing clasp home. Set --clasp-home or HOME/USERPROFILE.');
   }
 
-  const token = readClaspToken(claspHome);
-  const accessToken = await refreshAccessToken(token);
-  const markdown = fs.readFileSync(source, 'utf8');
-  const html = markdownToHtml(markdown, title, { paragraphMode });
-
   let result;
-  if (mode === 'update') {
+  if (mode === 'pending') {
+    const currentState = readState(statePath);
+    result = {
+      id: args.documentId || currentState.documentId || null,
+      name: currentState.name || title,
+      webViewLink: currentState.webViewLink || null,
+      status: 'pending'
+    };
+  } else if (mode === 'update') {
+    const token = readClaspToken(claspHome);
+    const accessToken = await refreshAccessToken(token);
+    const markdown = fs.readFileSync(source, 'utf8');
+    const html = markdownToHtml(markdown, title, { paragraphMode });
     const documentId = args.documentId || readState(statePath).documentId;
     if (!documentId) {
       throw new Error('Missing document id for update mode.');
     }
     result = await uploadDoc(accessToken, title, html, documentId);
   } else if (mode === 'create') {
+    const token = readClaspToken(claspHome);
+    const accessToken = await refreshAccessToken(token);
+    const markdown = fs.readFileSync(source, 'utf8');
+    const html = markdownToHtml(markdown, title, { paragraphMode });
     result = await uploadDoc(accessToken, title, html);
   } else {
     throw new Error(`Unsupported mode: ${mode}`);
   }
 
   if (statePath) {
+    const currentState = readState(statePath);
     writeState(statePath, {
+      ...currentState,
       documentId: result.id,
       name: result.name,
       webViewLink: result.webViewLink,
-      mode,
+      status: mode === 'pending' ? 'pending' : 'synced',
+      lastMode: mode,
       paragraphMode,
-      updatedAt: new Date().toISOString()
+      pendingSinceLocal: mode === 'pending' ? syncedAt.local : null,
+      pendingSinceIso: mode === 'pending' ? syncedAt.iso : null,
+      syncedAtLocal: mode === 'pending' ? currentState.syncedAtLocal : syncedAt.local,
+      syncedAtIso: mode === 'pending' ? currentState.syncedAtIso : syncedAt.iso
     });
   }
 
@@ -48,8 +66,13 @@ async function main() {
     documentId: result.id,
     name: result.name,
     webViewLink: result.webViewLink,
+    status: mode === 'pending' ? 'pending' : 'synced',
     mode,
-    paragraphMode
+    paragraphMode,
+    pendingSinceLocal: mode === 'pending' ? syncedAt.local : undefined,
+    pendingSinceIso: mode === 'pending' ? syncedAt.iso : undefined,
+    syncedAtLocal: mode === 'pending' ? undefined : syncedAt.local,
+    syncedAtIso: mode === 'pending' ? undefined : syncedAt.iso
   }, null, 2));
 }
 
@@ -271,6 +294,37 @@ function readState(statePath) {
 function writeState(statePath, state) {
   fs.mkdirSync(path.dirname(statePath), { recursive: true });
   fs.writeFileSync(statePath, `${JSON.stringify(state, null, 2)}\n`, 'utf8');
+}
+
+function getTimestamp() {
+  const date = new Date();
+  return {
+    local: formatLocalTimestamp(date),
+    iso: date.toISOString()
+  };
+}
+
+function formatLocalTimestamp(date) {
+  const pad = value => String(Math.trunc(Math.abs(value))).padStart(2, '0');
+  const offsetMinutes = -date.getTimezoneOffset();
+  const sign = offsetMinutes >= 0 ? '+' : '-';
+  const offsetHours = pad(offsetMinutes / 60);
+  const offsetRemainder = pad(offsetMinutes % 60);
+  return [
+    date.getFullYear(),
+    '-',
+    pad(date.getMonth() + 1),
+    '-',
+    pad(date.getDate()),
+    ' ',
+    pad(date.getHours()),
+    ':',
+    pad(date.getMinutes()),
+    ':',
+    pad(date.getSeconds()),
+    ' ',
+    `${sign}${offsetHours}:${offsetRemainder}`
+  ].join('');
 }
 
 main().catch(error => {

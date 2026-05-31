@@ -114,3 +114,4 @@ page.html
 
 # Exclude oversized source document kept only for local reference
 projects/A1video/docs/source/GPT Image 2 进阶使用：为什么你的图总是脏、糊、有噪点？.docx
+temp_*.py

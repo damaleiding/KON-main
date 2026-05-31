@@ -48,8 +48,8 @@ node .\upload-markdown-to-drive-doc.js `
   --source "..\..\曲影番外二\发布\GoogleDocs\曲影番外二_主干第一版润色_GoogleDocs同步稿.md" `
   --title "曲影番外二：主干第一版润色" `
   --paragraph-mode loose `
-  --claspHome "c:\Trae\KON-main\tokens\clasp-home" `
-  --state "c:\Trae\KON-main\tokens\google-docs-sync\曲影番外二_主干第一版润色.json"
+  --claspHome "<repo-root>\tokens\clasp-home" `
+  --state "<repo-root>\tokens\google-docs-sync\曲影番外二_主干第一版润色.json"
 ```
 
 后续覆盖同一个文档：
@@ -60,14 +60,38 @@ node .\upload-markdown-to-drive-doc.js `
   --source "..\..\曲影番外二\发布\GoogleDocs\曲影番外二_主干第一版润色_GoogleDocs同步稿.md" `
   --title "曲影番外二：主干第一版润色" `
   --paragraph-mode loose `
-  --claspHome "c:\Trae\KON-main\tokens\clasp-home" `
-  --state "c:\Trae\KON-main\tokens\google-docs-sync\曲影番外二_主干第一版润色.json"
+  --claspHome "<repo-root>\tokens\clasp-home" `
+  --state "<repo-root>\tokens\google-docs-sync\曲影番外二_主干第一版润色.json"
 ```
+
+正文修改后仅标记待同步，不上传：
+
+```powershell
+node .\upload-markdown-to-drive-doc.js `
+  --mode pending `
+  --source "..\..\曲影番外二\发布\GoogleDocs\曲影番外二_主干第一版润色_GoogleDocs同步稿.md" `
+  --title "曲影番外二：主干第一版润色" `
+  --paragraph-mode loose `
+  --claspHome "<repo-root>\tokens\clasp-home" `
+  --state "<repo-root>\tokens\google-docs-sync\曲影番外二_主干第一版润色.json"
+```
+
+上传触发条件：
+
+- 本轮修改结束，进入稳定稿。
+- 用户明确说“上传”“同步”或“发布一下”。
+- 仍在连续修改时，只写入 `pending` 状态，不访问 Google Drive。
 
 排版参数：
 
 - `--paragraph-mode loose`：默认；保留标题、分隔线和本地段落，并把过长自然段按中文标点温和拆段，方便审阅。
 - `--paragraph-mode preserve`：尽量严格保留 Markdown 段落，不额外拆分长段。
+
+记录规则：
+
+- 每次上传/覆盖都会在 `--state` 指定的本地状态文件中写入 `syncedAtLocal` 和 `syncedAtIso`。
+- 每次待同步标记都会写入 `pendingSinceLocal` 和 `pendingSinceIso`。
+- `syncedAtLocal` 格式为 `YYYY-MM-DD HH:mm:ss zzz`，时间精确到秒。
 
 ## 注意事项
 
