@@ -1,0 +1,4 @@
+﻿*.txt
+!README.md
+!source-declaration.md
+

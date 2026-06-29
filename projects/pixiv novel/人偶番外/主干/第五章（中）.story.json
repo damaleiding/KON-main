@@ -1,0 +1,168 @@
+{
+  "schema_version": 1,
+  "source_file": "第五章（中）.md",
+  "source_path": "projects/pixiv novel/人偶番外/主干/第五章（中）.md",
+  "source_hash": "74c02996fe1fb0bd",
+  "title": "第五章：代行者的自我解析与崩坏的初体验（中）",
+  "chapter_title": "第五章：代行者的自我解析与崩坏的初体验",
+  "chapter_key": "0005::第五章：代行者的自我解析与崩坏的初体验",
+  "chapter_no": 5,
+  "part_label": "中",
+  "block_count": 15,
+  "primary_count": 2104,
+  "canvas_position": null,
+  "part_reroll_slots": [],
+  "blocks": [
+    {
+      "id": "B001",
+      "type": "heading",
+      "start_line": 1,
+      "end_line": 1,
+      "primary_count": 22,
+      "text_hash": "b68a31deba1819b0",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B002",
+      "type": "plot",
+      "start_line": 3,
+      "end_line": 4,
+      "primary_count": 137,
+      "text_hash": "f830ebe6f707f8b1",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B003",
+      "type": "plot",
+      "start_line": 6,
+      "end_line": 8,
+      "primary_count": 142,
+      "text_hash": "0d56792ab5391635",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B004",
+      "type": "plot",
+      "start_line": 10,
+      "end_line": 12,
+      "primary_count": 145,
+      "text_hash": "59fc800e1ccc70b9",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B005",
+      "type": "plot",
+      "start_line": 14,
+      "end_line": 16,
+      "primary_count": 161,
+      "text_hash": "39b71e47b90713d8",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B006",
+      "type": "plot",
+      "start_line": 18,
+      "end_line": 22,
+      "primary_count": 253,
+      "text_hash": "cd20aa26a949cf19",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B007",
+      "type": "plot",
+      "start_line": 24,
+      "end_line": 25,
+      "primary_count": 147,
+      "text_hash": "49d6edf69b06d944",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B008",
+      "type": "plot",
+      "start_line": 27,
+      "end_line": 30,
+      "primary_count": 127,
+      "text_hash": "caa93cda078cb32e",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B009",
+      "type": "plot",
+      "start_line": 32,
+      "end_line": 35,
+      "primary_count": 128,
+      "text_hash": "98f0521bf50b4e6f",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B010",
+      "type": "plot",
+      "start_line": 37,
+      "end_line": 40,
+      "primary_count": 140,
+      "text_hash": "79fb1956d50ac31a",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B011",
+      "type": "plot",
+      "start_line": 42,
+      "end_line": 43,
+      "primary_count": 150,
+      "text_hash": "01ecfa4a0e1a9b3b",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B012",
+      "type": "plot",
+      "start_line": 45,
+      "end_line": 48,
+      "primary_count": 181,
+      "text_hash": "c3f4021873c6cf90",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B013",
+      "type": "plot",
+      "start_line": 50,
+      "end_line": 52,
+      "primary_count": 166,
+      "text_hash": "a01808595d49a91b",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B014",
+      "type": "plot",
+      "start_line": 54,
+      "end_line": 58,
+      "primary_count": 205,
+      "text_hash": "e7a86e01c543d905",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B015",
+      "type": "heading",
+      "start_line": 60,
+      "end_line": 61,
+      "primary_count": 20,
+      "text_hash": "37806f3cb9a33ab6",
+      "notes": "",
+      "reroll_slots": []
+    }
+  ],
+  "updated_at": "2026-06-28T15:58:54.834Z"
+}

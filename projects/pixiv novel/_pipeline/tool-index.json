@@ -1,4 +1,4 @@
-﻿{
+{
   "kind": "novel_project_tool_index",
   "schema_version": 1,
   "project": "pixiv novel",
@@ -50,6 +50,62 @@
       "path": "_pipeline/chapter-self-check-workflow.md",
       "category": "workflow",
       "purpose": "Workflow for chapter review, continuity checks, style checks, and post-generation self-checks.",
+      "status": "workflow"
+    },
+    {
+      "id": "rule-router",
+      "path": "_pipeline/rule-router.md",
+      "category": "workflow",
+      "purpose": "Route tasks to the smallest relevant rule set for writing, chapter continuity, style checks, avoidance lexicons, and text organization.",
+      "status": "workflow"
+    },
+    {
+      "id": "story-canvas-workflow",
+      "path": "_pipeline/story-canvas-workflow.md",
+      "category": "workflow",
+      "purpose": "Workflow for story canvas chapter nodes, dragged continuation drafts, generation requests, workspace autosave, draft deletion, node reroll, segment reroll, setting delta tables, 10-chapter arcs, and 50-chapter volumes.",
+      "status": "workflow"
+    },
+    {
+      "id": "story-canvas-app",
+      "path": "../../tools/story-canvas/server.mjs",
+      "category": "visual-planning",
+      "purpose": "Local web app for scanning novel folders, grouping chapter parts into draggable canvas nodes, dragging out continuation drafts, recording generation requests, autosaving workspace state, deleting draft nodes, showing numbered story blocks, and writing sidecar JSON beside each article.",
+      "status": "existing"
+    },
+    {
+      "id": "chapter-planning-workflow",
+      "path": "_pipeline/chapter-planning-workflow.md",
+      "category": "workflow",
+      "purpose": "Workflow for planning a three-chapter story unit with 3000-6000 character chapter targets, main plot, subplots, hooks, and sync items.",
+      "status": "workflow"
+    },
+    {
+      "id": "chapter-continuity-workflow",
+      "path": "_pipeline/chapter-continuity-workflow.md",
+      "category": "workflow",
+      "purpose": "Workflow for checking whether adjacent chapter endings and openings connect without repetition or summary-style closure.",
+      "status": "workflow"
+    },
+    {
+      "id": "style-quality-check-workflow",
+      "path": "_pipeline/style-quality-check-workflow.md",
+      "category": "workflow",
+      "purpose": "Workflow for checking narrative voice, rhythm, dialogue, exposition, rhetoric density, and work-specific style fit.",
+      "status": "workflow"
+    },
+    {
+      "id": "avoidance-lexicon-workflow",
+      "path": "_pipeline/avoidance-lexicon-workflow.md",
+      "category": "workflow",
+      "purpose": "Workflow for maintaining and scanning banned, cautious, replacement, and allowed expression lists.",
+      "status": "workflow"
+    },
+    {
+      "id": "text-organization-workflow",
+      "path": "_pipeline/text-organization-workflow.md",
+      "category": "workflow",
+      "purpose": "Workflow for text organization, migration tables, directory boundaries, backups, and rule/framework extraction.",
       "status": "workflow"
     },
     {

@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "source_file": "第九章（上）.md",
+  "source_path": "projects/pixiv novel/人偶番外/主干/第九章（上）.md",
+  "source_hash": "d0296128cfb8e3dd",
+  "title": "第九章：暑期深养、软质皓齿与低频共振（上）",
+  "chapter_title": "第九章：暑期深养、软质皓齿与低频共振",
+  "chapter_key": "0009::第九章：暑期深养、软质皓齿与低频共振",
+  "chapter_no": 9,
+  "part_label": "上",
+  "block_count": 11,
+  "primary_count": 1817,
+  "canvas_position": null,
+  "part_reroll_slots": [],
+  "blocks": [
+    {
+      "id": "B001",
+      "type": "heading",
+      "start_line": 1,
+      "end_line": 1,
+      "primary_count": 21,
+      "text_hash": "5e40c98d15b90139",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B002",
+      "type": "plot",
+      "start_line": 3,
+      "end_line": 4,
+      "primary_count": 116,
+      "text_hash": "b5fdceb95c909c84",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B003",
+      "type": "plot",
+      "start_line": 6,
+      "end_line": 7,
+      "primary_count": 124,
+      "text_hash": "73ec076c6ca699d8",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B004",
+      "type": "plot",
+      "start_line": 9,
+      "end_line": 11,
+      "primary_count": 142,
+      "text_hash": "616e7c39ff1a8e44",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B005",
+      "type": "plot",
+      "start_line": 13,
+      "end_line": 17,
+      "primary_count": 166,
+      "text_hash": "5eded3388a812307",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B006",
+      "type": "plot",
+      "start_line": 19,
+      "end_line": 22,
+      "primary_count": 241,
+      "text_hash": "a291a32c5fa12404",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B007",
+      "type": "plot",
+      "start_line": 24,
+      "end_line": 29,
+      "primary_count": 187,
+      "text_hash": "f3c48fb34078ff05",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B008",
+      "type": "plot",
+      "start_line": 31,
+      "end_line": 36,
+      "primary_count": 169,
+      "text_hash": "ffd7d947871ba409",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B009",
+      "type": "plot",
+      "start_line": 38,
+      "end_line": 45,
+      "primary_count": 258,
+      "text_hash": "41642a6d551b8e75",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B010",
+      "type": "plot",
+      "start_line": 47,
+      "end_line": 54,
+      "primary_count": 290,
+      "text_hash": "e4adaed2f4f568bb",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B011",
+      "type": "plot",
+      "start_line": 56,
+      "end_line": 59,
+      "primary_count": 103,
+      "text_hash": "afade72017b4b75a",
+      "notes": "",
+      "reroll_slots": []
+    }
+  ],
+  "updated_at": "2026-06-28T15:58:53.646Z"
+}

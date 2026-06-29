@@ -13,19 +13,19 @@
 Windows PowerShell（当前工作区优先入口，无需 Node.js）：
 
 ```powershell
-.\tools\word-count\word-count.ps1 ".\projects\pixiv novel\outputs\chapter01.md"
+.\tools\word-count\word-count.ps1 ".\projects\story-engine\outputs\chapter01.md"
 ```
 
 跨平台 Node.js：
 
 ```bash
-node tools/word-count/word-count.mjs "projects/pixiv novel/outputs/chapter01.md"
+node tools/word-count/word-count.mjs "projects/story-engine/outputs/chapter01.md"
 ```
 
 macOS / Linux：
 
 ```bash
-./tools/word-count/word-count.sh "projects/pixiv novel/outputs/chapter01.md"
+./tools/word-count/word-count.sh "projects/story-engine/outputs/chapter01.md"
 ```
 
 ## 统计口径
@@ -58,7 +58,7 @@ Structure: files 1 | lines 1 | paragraphs 1
 需要机器读取时使用：
 
 ```powershell
-.\tools\word-count\word-count.ps1 -Json ".\projects\pixiv novel\outputs"
+.\tools\word-count\word-count.ps1 -Json ".\projects\story-engine\outputs"
 ```
 
 ## 最小示例
@@ -72,13 +72,13 @@ Structure: files 1 | lines 1 | paragraphs 1
 统计目录并显示每个文件：
 
 ```powershell
-.\tools\word-count\word-count.ps1 -Details ".\projects\pixiv novel\outputs"
+.\tools\word-count\word-count.ps1 -Details ".\projects\story-engine\outputs"
 ```
 
 只统计汉字：
 
 ```powershell
-.\tools\word-count\word-count.ps1 -Mode cjk ".\projects\pixiv novel\outputs\chapter01.md"
+.\tools\word-count\word-count.ps1 -Mode cjk ".\projects\story-engine\outputs\chapter01.md"
 ```
 
 ## Agent 使用规则

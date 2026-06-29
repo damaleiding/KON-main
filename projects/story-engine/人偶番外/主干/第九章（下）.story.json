@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "source_file": "第九章（下）.md",
+  "source_path": "projects/story-engine/人偶番外/主干/第九章（下）.md",
+  "source_hash": "41131b1d28a61d62",
+  "title": "第九章：四十八小时的逻辑重构与痴傻的初醒（下）",
+  "chapter_title": "第九章：四十八小时的逻辑重构与痴傻的初醒",
+  "chapter_key": "0009::第九章：四十八小时的逻辑重构与痴傻的初醒",
+  "chapter_no": 9,
+  "part_label": "下",
+  "block_count": 12,
+  "primary_count": 2635,
+  "canvas_position": null,
+  "part_reroll_slots": [],
+  "blocks": [
+    {
+      "id": "B001",
+      "type": "heading",
+      "start_line": 1,
+      "end_line": 1,
+      "primary_count": 23,
+      "text_hash": "061e5feccd5fb5f8",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B002",
+      "type": "plot",
+      "start_line": 3,
+      "end_line": 4,
+      "primary_count": 95,
+      "text_hash": "3570cb81db496955",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B003",
+      "type": "plot",
+      "start_line": 6,
+      "end_line": 8,
+      "primary_count": 143,
+      "text_hash": "afa0fc7a4cdeb384",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B004",
+      "type": "plot",
+      "start_line": 10,
+      "end_line": 12,
+      "primary_count": 182,
+      "text_hash": "b9ab0617d66b4c0c",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B005",
+      "type": "plot",
+      "start_line": 14,
+      "end_line": 19,
+      "primary_count": 200,
+      "text_hash": "89b2fa4d767fa131",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B006",
+      "type": "plot",
+      "start_line": 21,
+      "end_line": 26,
+      "primary_count": 274,
+      "text_hash": "50bdbe1b990bfbbf",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B007",
+      "type": "plot",
+      "start_line": 28,
+      "end_line": 31,
+      "primary_count": 173,
+      "text_hash": "e5ac86b1b39c9680",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B008",
+      "type": "plot",
+      "start_line": 33,
+      "end_line": 42,
+      "primary_count": 299,
+      "text_hash": "b50d792b25051637",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B009",
+      "type": "plot",
+      "start_line": 44,
+      "end_line": 50,
+      "primary_count": 275,
+      "text_hash": "cbb3bb8deb1dab32",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B010",
+      "type": "plot",
+      "start_line": 52,
+      "end_line": 58,
+      "primary_count": 362,
+      "text_hash": "1874b39aa7812d0a",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B011",
+      "type": "plot",
+      "start_line": 60,
+      "end_line": 68,
+      "primary_count": 375,
+      "text_hash": "ad1c3496d533e5b8",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B012",
+      "type": "plot",
+      "start_line": 70,
+      "end_line": 74,
+      "primary_count": 234,
+      "text_hash": "4094ca0d7097a916",
+      "notes": "",
+      "reroll_slots": []
+    }
+  ],
+  "updated_at": "2026-06-28T15:58:53.707Z"
+}

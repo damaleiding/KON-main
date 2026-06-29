@@ -10,6 +10,9 @@
 | --- | --- |
 | `AGENTS.md` | 工作区最高层核心规则，只保留最通用、最必要的约束和扩展规则索引。 |
 | `docs/` | 工作区级长期文档、架构说明、同步策略、周报、交接资料和高优先级扩展规则。 |
+| `docs/agent-rules/` | Agent 高优先级扩展规则，按项目入口、AI 生产、章节治理、文风规避、文本整理等主题拆分。 |
+| `docs/migration/` | 工作区级项目拆分、改名、跨项目迁移和目录边界调整设计文档。 |
+| `docs/standards/` | 编码、中文文本、脚本和流程事故复盘等跨项目工程规范。 |
 | `methods/` | 可复用写作方法论，例如长篇规划、章节拆分、润色流程、分支合并和发布整理。 |
 | `projects/` | 具体小说项目或作品集，每个项目保存自己的规则、设定、正文、分支、账本和工作流。 |
 | `tools/` | 工作区级可复用工具，例如启动简报、账本、索引、文本拆分、批量替换和发布整理脚本。 |
@@ -39,10 +42,20 @@
 `AGENTS.md` 只放最高优先级核心规则。更细的规则放在 `docs/agent-rules/`：
 
 - `project-structure.md`：目录、项目入口、HTML 项目纲要、索引和账本职责。
+- `project-entry-governance.md`：项目 `AGENTS.md` / `PROJECT.md` / `WORKFLOW.md` 的职责边界、规则落点和修改流程。
 - `ai-production.md`：AI 写作、prompt、参考资料、审稿和生产记录。
+- `prompt-generation.md`：Prompt 生成、修改、审稿、保存和段落扩写提示词运行规则。
 - `subagent-collaboration.md`：Claude / DeepSeek 子 Agent 使用规则。
 - `git-security.md`：Git 同步边界、安全隐私、外部资料和临时输出处理。
 - `writing-and-modification.md`：语言命名、修改联动、新项目和新工具规则。
+- `novel-writing.md`：小说续写、润色、重写、设定呈现、角色一致性和首尾衔接。
+- `plot-and-chapter-planning.md`：三章剧情单元、主线/分线、章节长度和写作前规划。
+- `story-canvas.md`：无限画布、章节节点、reroll、角色变化表、10章篇章和50章卷。
+- `chapter-governance.md`：章节确定、拆分、合并、命名、相邻章节检查和版本流转。
+- `style-and-avoidance.md`：文风校验、规避词表、禁用/慎用表达和替换建议治理。
+- `text-organization.md`：原文、设定、主干、分支、发布、输出、账本和临时文件边界。
+
+总体拆分说明见 `docs/novel-framework.md`。根规则不承载长词表、章节细则或单轮生产记录；这些内容应进入项目 `docs/rules/`、作品 `设定/`、`_pipeline/`、`_ledger/` 或 `review/`。
 
 ## 推荐项目结构
 
@@ -110,7 +123,7 @@ projects/<project-name>/
 推荐把复杂项目拆成多个协作窗口：
 
 - 设定窗口：整理世界观、角色、阵营、场景、道具、叙事规则和风格规则。
-- Prompt 窗口：把写作目标转成模型可执行的续写、润色、改写或审稿 prompt。
+- Prompt 窗口：按 `prompt-generation.md` 把写作目标转成模型可执行、可审稿、可复用的续写、润色、改写、段落扩写或审稿 prompt。
 - 生成窗口：调用文本生成、拆章、替换或整理工具，记录输出和生成配方。
 - 审稿窗口：对比候选稿、标记可用版本、记录否决原因和返工方向。
 - 写作窗口：处理剧情、章节、角色台词、伏笔回收和交接文档。
@@ -156,8 +169,8 @@ projects/<project-name>/
 
 这是 `KVA` 小说创作工作区的当前框架。下一步建议补齐和收敛：
 
-1. `templates/project-template/`：新项目模板。
-2. `methods/`：长篇规划、章节拆分、润色、分支合并和多窗口写作方法论。
-3. `docs/git-sync.md`：每日 GitHub 同步规则。
-4. `.gitignore`：大型外部资料、缓存、临时输出和本机配置排除规则。
-5. 持续维护 `projects/pixiv novel/` 为整体小说创作项目，通过轻量索引管理内部作品模块，并沉淀可复用写作方法。
+1. 维护 `templates/project-template/`：新小说项目模板。
+2. 持续沉淀 `methods/`：长篇规划、章节拆分、润色、分支合并和多窗口写作方法论。
+3. 细化 `projects/story-engine/docs/rules/`：项目级文风、章节、规避词和文本整理规则。
+4. 补充 `docs/git-sync.md`：每日 GitHub 同步规则。
+5. 以 `projects/story-engine/` 和 `projects/story-canvas/` 作为生成层与工具层的默认入口；旧 `projects/pixiv novel/` 与 `tools/story-canvas/` 仅作为历史归档/回滚入口。

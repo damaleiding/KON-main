@@ -1,0 +1,1352 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-06-27T14:07:25.365Z",
+  "project": "pixiv novel",
+  "work": "人偶番外",
+  "source_policy": "节点只保存来源路径、行号和统计，不复制整章正文；在工具中按节点载入正文文件后再做剧情段 reroll。",
+  "count_definition": "nonspace Unicode characters, measured by tools/word-count/word-count.mjs after stripping trailing chapter count blocks.",
+  "structure": {
+    "chapters_per_arc": 10,
+    "arcs_per_volume": 5,
+    "chapters_per_volume": 50
+  },
+  "volumes": [
+    {
+      "id": "renou-v01",
+      "title": "人偶番外：正式完结线",
+      "core_direction": "前四章沿用发布线既有事实，第五章至终章采用成人化重设正式完结线；后日谈不进入本卷核心方向。",
+      "direction_locked": true,
+      "arcs": [
+        {
+          "id": "renou-v01-a01",
+          "title": "篇章一：前四章与第五章转折",
+          "node_range": "001-010"
+        },
+        {
+          "id": "renou-v01-a02",
+          "title": "篇章二：正式线推进与完结",
+          "node_range": "011-020"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "id": "renou-v01-a01-n001",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a01",
+      "chapter_no": 1,
+      "canonical_chapter_no": 1,
+      "part_label": "上",
+      "title": "第一章：防腐剂、死物与冷光长廊（上）",
+      "target_chars": "当前 3299 / 目标 3000-6000",
+      "current_chars": 3299,
+      "paragraph_count": 2,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/发布/发布版_人偶番外.md",
+      "source_file_name": "发布版_人偶番外.md",
+      "source_branch": "发布正式线前四章",
+      "source_line_start": 14,
+      "source_line_end": 88,
+      "mainline_step": "发布正式线前四章：第一章：防腐剂、死物与冷光长廊（上）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：发布正式线前四章",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "发布版_人偶番外.md",
+          "new_detail": "来源行 14-88",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 80,
+        "y": 100
+      }
+    },
+    {
+      "id": "renou-v01-a01-n002",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a01",
+      "chapter_no": 2,
+      "canonical_chapter_no": 1,
+      "part_label": "下",
+      "title": "第一章：防腐剂、死物与冷光长廊（下）",
+      "target_chars": "当前 3072 / 目标 3000-6000",
+      "current_chars": 3072,
+      "paragraph_count": 2,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/发布/发布版_人偶番外.md",
+      "source_file_name": "发布版_人偶番外.md",
+      "source_branch": "发布正式线前四章",
+      "source_line_start": 89,
+      "source_line_end": 150,
+      "mainline_step": "发布正式线前四章：第一章：防腐剂、死物与冷光长廊（下）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：发布正式线前四章",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "发布版_人偶番外.md",
+          "new_detail": "来源行 89-150",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 380,
+        "y": 100
+      }
+    },
+    {
+      "id": "renou-v01-a01-n003",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a01",
+      "chapter_no": 3,
+      "canonical_chapter_no": 2,
+      "part_label": "上",
+      "title": "第二章：漏斗形的白瓷与盲端通道（上）",
+      "target_chars": "当前 4407 / 目标 3000-6000",
+      "current_chars": 4407,
+      "paragraph_count": 1,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/发布/发布版_人偶番外.md",
+      "source_file_name": "发布版_人偶番外.md",
+      "source_branch": "发布正式线前四章",
+      "source_line_start": 151,
+      "source_line_end": 239,
+      "mainline_step": "发布正式线前四章：第二章：漏斗形的白瓷与盲端通道（上）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：发布正式线前四章",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "发布版_人偶番外.md",
+          "new_detail": "来源行 151-239",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 680,
+        "y": 100
+      }
+    },
+    {
+      "id": "renou-v01-a01-n004",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a01",
+      "chapter_no": 4,
+      "canonical_chapter_no": 2,
+      "part_label": "下",
+      "title": "第二章：漏斗形的白瓷与盲端通道（下）",
+      "target_chars": "当前 3465 / 目标 3000-6000",
+      "current_chars": 3465,
+      "paragraph_count": 1,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/发布/发布版_人偶番外.md",
+      "source_file_name": "发布版_人偶番外.md",
+      "source_branch": "发布正式线前四章",
+      "source_line_start": 240,
+      "source_line_end": 310,
+      "mainline_step": "发布正式线前四章：第二章：漏斗形的白瓷与盲端通道（下）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：发布正式线前四章",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "发布版_人偶番外.md",
+          "new_detail": "来源行 240-310",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 980,
+        "y": 100
+      }
+    },
+    {
+      "id": "renou-v01-a01-n005",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a01",
+      "chapter_no": 5,
+      "canonical_chapter_no": 3,
+      "part_label": "上",
+      "title": "第三章：残缺的白瓷与午夜的空白记录（上）",
+      "target_chars": "当前 4322 / 目标 3000-6000",
+      "current_chars": 4322,
+      "paragraph_count": 1,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/发布/发布版_人偶番外.md",
+      "source_file_name": "发布版_人偶番外.md",
+      "source_branch": "发布正式线前四章",
+      "source_line_start": 311,
+      "source_line_end": 405,
+      "mainline_step": "发布正式线前四章：第三章：残缺的白瓷与午夜的空白记录（上）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：发布正式线前四章",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "发布版_人偶番外.md",
+          "new_detail": "来源行 311-405",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 1280,
+        "y": 100
+      }
+    },
+    {
+      "id": "renou-v01-a01-n006",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a01",
+      "chapter_no": 6,
+      "canonical_chapter_no": 3,
+      "part_label": "下",
+      "title": "第三章：残缺的白瓷与午夜的空白记录（下）",
+      "target_chars": "当前 2757 / 目标 3000-6000",
+      "current_chars": 2757,
+      "paragraph_count": 1,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/发布/发布版_人偶番外.md",
+      "source_file_name": "发布版_人偶番外.md",
+      "source_branch": "发布正式线前四章",
+      "source_line_start": 406,
+      "source_line_end": 474,
+      "mainline_step": "发布正式线前四章：第三章：残缺的白瓷与午夜的空白记录（下）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：发布正式线前四章",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "发布版_人偶番外.md",
+          "new_detail": "来源行 406-474",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 1580,
+        "y": 100
+      }
+    },
+    {
+      "id": "renou-v01-a01-n007",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a01",
+      "chapter_no": 7,
+      "canonical_chapter_no": 4,
+      "part_label": "上",
+      "title": "第四章：双线并行的感官与代行者（上）",
+      "target_chars": "当前 4088 / 目标 3000-6000",
+      "current_chars": 4088,
+      "paragraph_count": 1,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/发布/发布版_人偶番外.md",
+      "source_file_name": "发布版_人偶番外.md",
+      "source_branch": "发布正式线前四章",
+      "source_line_start": 475,
+      "source_line_end": 551,
+      "mainline_step": "发布正式线前四章：第四章：双线并行的感官与代行者（上）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：发布正式线前四章",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "发布版_人偶番外.md",
+          "new_detail": "来源行 475-551",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 1880,
+        "y": 100
+      }
+    },
+    {
+      "id": "renou-v01-a01-n008",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a01",
+      "chapter_no": 8,
+      "canonical_chapter_no": 4,
+      "part_label": "中",
+      "title": "第四章：双线并行的感官与代行者（中）",
+      "target_chars": "当前 4362 / 目标 3000-6000",
+      "current_chars": 4362,
+      "paragraph_count": 1,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/发布/发布版_人偶番外.md",
+      "source_file_name": "发布版_人偶番外.md",
+      "source_branch": "发布正式线前四章",
+      "source_line_start": 552,
+      "source_line_end": 662,
+      "mainline_step": "发布正式线前四章：第四章：双线并行的感官与代行者（中）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：发布正式线前四章",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "发布版_人偶番外.md",
+          "new_detail": "来源行 552-662",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 2180,
+        "y": 100
+      }
+    },
+    {
+      "id": "renou-v01-a01-n009",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a01",
+      "chapter_no": 9,
+      "canonical_chapter_no": 4,
+      "part_label": "下",
+      "title": "第四章：双线并行的感官与代行者（下）",
+      "target_chars": "当前 2424 / 目标 3000-6000",
+      "current_chars": 2424,
+      "paragraph_count": 1,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/发布/发布版_人偶番外.md",
+      "source_file_name": "发布版_人偶番外.md",
+      "source_branch": "发布正式线前四章",
+      "source_line_start": 663,
+      "source_line_end": 721,
+      "mainline_step": "发布正式线前四章：第四章：双线并行的感官与代行者（下）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：发布正式线前四章",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "发布版_人偶番外.md",
+          "new_detail": "来源行 663-721",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 2480,
+        "y": 100
+      }
+    },
+    {
+      "id": "renou-v01-a01-n010",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a01",
+      "chapter_no": 10,
+      "canonical_chapter_no": 5,
+      "part_label": "成人化重设·上",
+      "title": "第五章：代行者的自我解析与崩坏的初体验（成人化重设·上）",
+      "target_chars": "当前 3891 / 目标 3000-6000",
+      "current_chars": 3891,
+      "paragraph_count": 78,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/分支/成人化重设/第五章（成人化重设·上）.md",
+      "source_file_name": "第五章（成人化重设·上）.md",
+      "source_branch": "成人化重设正式线",
+      "source_line_start": 1,
+      "source_line_end": 155,
+      "mainline_step": "成人化重设正式线：第五章：代行者的自我解析与崩坏的初体验（成人化重设·上）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：成人化重设正式线",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "第五章（成人化重设·上）.md",
+          "new_detail": "来源行 1-155",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 2780,
+        "y": 100
+      }
+    },
+    {
+      "id": "renou-v01-a02-n011",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a02",
+      "chapter_no": 11,
+      "canonical_chapter_no": 5,
+      "part_label": "成人化重设·中",
+      "title": "第五章：代行者的自我解析与崩坏的初体验（成人化重设·中）",
+      "target_chars": "当前 3717 / 目标 3000-6000",
+      "current_chars": 3717,
+      "paragraph_count": 98,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/分支/成人化重设/第五章（成人化重设·中）.md",
+      "source_file_name": "第五章（成人化重设·中）.md",
+      "source_branch": "成人化重设正式线",
+      "source_line_start": 1,
+      "source_line_end": 195,
+      "mainline_step": "成人化重设正式线：第五章：代行者的自我解析与崩坏的初体验（成人化重设·中）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：成人化重设正式线",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "第五章（成人化重设·中）.md",
+          "new_detail": "来源行 1-195",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 80,
+        "y": 360
+      }
+    },
+    {
+      "id": "renou-v01-a02-n012",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a02",
+      "chapter_no": 12,
+      "canonical_chapter_no": 5,
+      "part_label": "成人化重设·下",
+      "title": "第五章：代行者的自我解析与崩坏的初体验（成人化重设·下）",
+      "target_chars": "当前 4448 / 目标 3000-6000",
+      "current_chars": 4448,
+      "paragraph_count": 133,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/分支/成人化重设/第五章（成人化重设·下）.md",
+      "source_file_name": "第五章（成人化重设·下）.md",
+      "source_branch": "成人化重设正式线",
+      "source_line_start": 1,
+      "source_line_end": 265,
+      "mainline_step": "成人化重设正式线：第五章：代行者的自我解析与崩坏的初体验（成人化重设·下）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：成人化重设正式线",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "第五章（成人化重设·下）.md",
+          "new_detail": "来源行 1-265",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 380,
+        "y": 360
+      }
+    },
+    {
+      "id": "renou-v01-a02-n013",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a02",
+      "chapter_no": 13,
+      "canonical_chapter_no": 6,
+      "part_label": "成人化重设",
+      "title": "第六章：精英营的日常与膨胀的教具（成人化重设版）",
+      "target_chars": "当前 3729 / 目标 3000-6000",
+      "current_chars": 3729,
+      "paragraph_count": 78,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/分支/成人化重设/第六章（成人化重设）.md",
+      "source_file_name": "第六章（成人化重设）.md",
+      "source_branch": "成人化重设正式线",
+      "source_line_start": 1,
+      "source_line_end": 155,
+      "mainline_step": "成人化重设正式线：第六章：精英营的日常与膨胀的教具（成人化重设版）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：成人化重设正式线",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "第六章（成人化重设）.md",
+          "new_detail": "来源行 1-155",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 680,
+        "y": 360
+      }
+    },
+    {
+      "id": "renou-v01-a02-n014",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a02",
+      "chapter_no": 14,
+      "canonical_chapter_no": 7,
+      "part_label": "成人化重设·上",
+      "title": "第七章：资产回收与看门人的皮革触感（成人化重设版·上）",
+      "target_chars": "当前 3355 / 目标 3000-6000",
+      "current_chars": 3355,
+      "paragraph_count": 88,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/分支/成人化重设/第七章（成人化重设·上）.md",
+      "source_file_name": "第七章（成人化重设·上）.md",
+      "source_branch": "成人化重设正式线",
+      "source_line_start": 1,
+      "source_line_end": 175,
+      "mainline_step": "成人化重设正式线：第七章：资产回收与看门人的皮革触感（成人化重设版·上）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：成人化重设正式线",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "第七章（成人化重设·上）.md",
+          "new_detail": "来源行 1-175",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 980,
+        "y": 360
+      }
+    },
+    {
+      "id": "renou-v01-a02-n015",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a02",
+      "chapter_no": 15,
+      "canonical_chapter_no": 7,
+      "part_label": "成人化重设·下",
+      "title": "第七章：资产回收与看门人的皮革触感（成人化重设版·下）",
+      "target_chars": "当前 4771 / 目标 3000-6000",
+      "current_chars": 4771,
+      "paragraph_count": 168,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/分支/成人化重设/第七章（成人化重设·下）.md",
+      "source_file_name": "第七章（成人化重设·下）.md",
+      "source_branch": "成人化重设正式线",
+      "source_line_start": 1,
+      "source_line_end": 335,
+      "mainline_step": "成人化重设正式线：第七章：资产回收与看门人的皮革触感（成人化重设版·下）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：成人化重设正式线",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "第七章（成人化重设·下）.md",
+          "new_detail": "来源行 1-335",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 1280,
+        "y": 360
+      }
+    },
+    {
+      "id": "renou-v01-a02-n016",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a02",
+      "chapter_no": 16,
+      "canonical_chapter_no": 8,
+      "part_label": "成人化重设·上",
+      "title": "第八章：白瓷重塑、极效精油与双线崩坏的抛光（成人化重设版·上）",
+      "target_chars": "当前 4557 / 目标 3000-6000",
+      "current_chars": 4557,
+      "paragraph_count": 152,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/分支/成人化重设/第八章（成人化重设·上）.md",
+      "source_file_name": "第八章（成人化重设·上）.md",
+      "source_branch": "成人化重设正式线",
+      "source_line_start": 1,
+      "source_line_end": 303,
+      "mainline_step": "成人化重设正式线：第八章：白瓷重塑、极效精油与双线崩坏的抛光（成人化重设版·上）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：成人化重设正式线",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "第八章（成人化重设·上）.md",
+          "new_detail": "来源行 1-303",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 1580,
+        "y": 360
+      }
+    },
+    {
+      "id": "renou-v01-a02-n017",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a02",
+      "chapter_no": 17,
+      "canonical_chapter_no": 8,
+      "part_label": "成人化重设·中",
+      "title": "第八章：白瓷重塑、极效精油与双线崩坏的抛光（成人化重设版·中）",
+      "target_chars": "当前 4641 / 目标 3000-6000",
+      "current_chars": 4641,
+      "paragraph_count": 148,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/分支/成人化重设/第八章（成人化重设·中）.md",
+      "source_file_name": "第八章（成人化重设·中）.md",
+      "source_branch": "成人化重设正式线",
+      "source_line_start": 1,
+      "source_line_end": 295,
+      "mainline_step": "成人化重设正式线：第八章：白瓷重塑、极效精油与双线崩坏的抛光（成人化重设版·中）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：成人化重设正式线",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "第八章（成人化重设·中）.md",
+          "new_detail": "来源行 1-295",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 1880,
+        "y": 360
+      }
+    },
+    {
+      "id": "renou-v01-a02-n018",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a02",
+      "chapter_no": 18,
+      "canonical_chapter_no": 8,
+      "part_label": "成人化重设·下",
+      "title": "第八章：白瓷重塑、极效精油与双线崩坏的抛光（成人化重设版·下）",
+      "target_chars": "当前 2639 / 目标 3000-6000",
+      "current_chars": 2639,
+      "paragraph_count": 76,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/发布/发布版_人偶番外.md",
+      "source_file_name": "发布版_人偶番外.md",
+      "source_branch": "发布正式线整合段",
+      "source_line_start": 2300,
+      "source_line_end": 2455,
+      "mainline_step": "发布正式线整合段：第八章：白瓷重塑、极效精油与双线崩坏的抛光（成人化重设版·下）",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：发布正式线整合段",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "发布版_人偶番外.md",
+          "new_detail": "来源行 2300-2455",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 2180,
+        "y": 360
+      }
+    },
+    {
+      "id": "renou-v01-a02-n019",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a02",
+      "chapter_no": 19,
+      "canonical_chapter_no": 8,
+      "part_label": "增补·上",
+      "title": "第八章（增补·上）：双生陈列与自愿剥离的遗言",
+      "target_chars": "当前 1958 / 目标 3000-6000",
+      "current_chars": 1958,
+      "paragraph_count": 2,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/分支/增补/第八章（增补·上）.md",
+      "source_file_name": "第八章（增补·上）.md",
+      "source_branch": "增补分支",
+      "source_line_start": 1,
+      "source_line_end": 41,
+      "mainline_step": "增补分支：第八章（增补·上）：双生陈列与自愿剥离的遗言",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：增补分支",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "第八章（增补·上）.md",
+          "new_detail": "来源行 1-41",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 2480,
+        "y": 360
+      }
+    },
+    {
+      "id": "renou-v01-a02-n020",
+      "volume_id": "renou-v01",
+      "arc_id": "renou-v01-a02",
+      "chapter_no": 20,
+      "canonical_chapter_no": 9,
+      "part_label": "终章",
+      "title": "终章：完美倒错与感官的最终剥离",
+      "target_chars": "当前 3021 / 目标 3000-6000",
+      "current_chars": 3021,
+      "paragraph_count": 94,
+      "status": "loaded",
+      "source_path": "projects/pixiv novel/人偶番外/分支/成人化重设/终章：完美倒错与感官的最终剥离.md",
+      "source_file_name": "终章：完美倒错与感官的最终剥离.md",
+      "source_branch": "成人化重设正式线",
+      "source_line_start": 1,
+      "source_line_end": 187,
+      "mainline_step": "成人化重设正式线：终章：完美倒错与感官的最终剥离",
+      "subplot_steps": [
+        "待按正文细化角色状态变化",
+        "待按正文细化环境与设定增量"
+      ],
+      "chapter_start_hook": "已定位来源行；载入正文后补首段承接锚点。",
+      "chapter_end_hook": "已定位来源行；载入正文后补尾段钩子锚点。",
+      "selected_version": "source",
+      "reroll_slots": [
+        {
+          "version_id": "source",
+          "status": "selected",
+          "difference_note": "当前来源版本，未生成新候选。"
+        }
+      ],
+      "segment_reroll_table": [],
+      "character_delta_table": [],
+      "environment_delta_table": [],
+      "plot_delta_table": [
+        {
+          "plot_node": "正式线来源节点",
+          "progress": "来源：成人化重设正式线",
+          "mainline_impact": "待编辑时细化",
+          "subplot_impact": "待编辑时细化",
+          "future_dependency": "后续节点首尾衔接需检查",
+          "sync_status": "pending"
+        }
+      ],
+      "setting_delta_table": [
+        {
+          "setting_type": "source",
+          "target": "终章：完美倒错与感官的最终剥离.md",
+          "new_detail": "来源行 1-187",
+          "state_change": "已载入画布索引，未改正文",
+          "reusable_scope": "本次人偶番外编辑",
+          "sync_status": "pending"
+        }
+      ],
+      "sync_status": "pending",
+      "canvas_position": {
+        "x": 2780,
+        "y": 360
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "renou-v01-a01-n001",
+      "to": "renou-v01-a01-n002",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a01-n002",
+      "to": "renou-v01-a01-n003",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a01-n003",
+      "to": "renou-v01-a01-n004",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a01-n004",
+      "to": "renou-v01-a01-n005",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a01-n005",
+      "to": "renou-v01-a01-n006",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a01-n006",
+      "to": "renou-v01-a01-n007",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a01-n007",
+      "to": "renou-v01-a01-n008",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a01-n008",
+      "to": "renou-v01-a01-n009",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a01-n009",
+      "to": "renou-v01-a01-n010",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a01-n010",
+      "to": "renou-v01-a02-n011",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a02-n011",
+      "to": "renou-v01-a02-n012",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a02-n012",
+      "to": "renou-v01-a02-n013",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a02-n013",
+      "to": "renou-v01-a02-n014",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a02-n014",
+      "to": "renou-v01-a02-n015",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a02-n015",
+      "to": "renou-v01-a02-n016",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a02-n016",
+      "to": "renou-v01-a02-n017",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a02-n017",
+      "to": "renou-v01-a02-n018",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a02-n018",
+      "to": "renou-v01-a02-n019",
+      "type": "mainline"
+    },
+    {
+      "from": "renou-v01-a02-n019",
+      "to": "renou-v01-a02-n020",
+      "type": "mainline"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-﻿# Pixiv Novel 上下文路由
+# Pixiv Novel 上下文路由
 
 ## 路由原则
 
@@ -15,6 +15,16 @@
 - 人类纲要：`novel_project-brief.html`
 - 项目说明：`README.md`
 - 当前目录映射：`docs/current-layout.md`
+- 规则路由：`_pipeline/rule-router.md`
+- 项目级规则索引：`docs/rules/README.md`
+- 工具层与生成层边界：`docs/rules/layer-boundaries.md`
+- 路径结构与命名：`docs/rules/path-and-naming.md`
+- 故事画布：`_pipeline/story-canvas-workflow.md`
+- 三章剧情规划：`_pipeline/chapter-planning-workflow.md`
+- 章节首尾衔接：`_pipeline/chapter-continuity-workflow.md`
+- 文风质量检查：`_pipeline/style-quality-check-workflow.md`
+- 规避词表维护：`_pipeline/avoidance-lexicon-workflow.md`
+- 文本整理工作流：`_pipeline/text-organization-workflow.md`
 - 人物卡同步：`_pipeline/character-card-workflow.md`
 - Gemini 辅助写作：`_pipeline/gemini-assisted-writing-workflow.md`
 - Google Docs 同步：`_pipeline/google-docs-clasp-sync-workflow.md`
@@ -33,15 +43,23 @@
 ## 任务路由
 
 - 规则修正：读项目入口、`docs/current-layout.md` 和相关 `_pipeline/` 文件，不读正文。
-- 目录整理：读目录清单、`README.md`、`PROJECT.md`、`docs/current-layout.md`，必要时读 `_pipeline/tool-index.json`。
+- 规则分类或框架拆分：读项目入口、`_pipeline/rule-router.md`、`docs/rules/README.md` 和根 `docs/agent-rules/project-entry-governance.md`，不读正文。
+- 故事画布/章节节点/reroll：先读 `_pipeline/story-canvas-workflow.md`、`docs/rules/story-canvas.md` 和 `_ledger/story-canvas/story-canvas.schema.json`；只在需要时读取目标作品设定和人物卡。
+- 目录整理：读目录清单、`README.md`、`PROJECT.md`、`docs/current-layout.md`、`docs/rules/path-and-naming.md`，必要时读 `_pipeline/tool-index.json`。
 - 方法沉淀：先读已验证来源作品的轻量入口、相关 prompt、审稿记录或流程文件，再抽象到项目级 `docs/`、`prompts/` 或 `_pipeline/`。
-- 结构调整：读目录清单、作品轻量入口、`_ledger/iteration-ledger.md`、工具索引和可能引用路径；正文内容按需读取。
+- 结构调整：读目录清单、作品轻量入口、`docs/rules/path-and-naming.md`、`_ledger/iteration-ledger.md`、工具索引和可能引用路径；正文内容按需读取。
 - 设定整理：先读目标作品轻量入口和相关设定文件，再按需要读取目标章节。
+- 三章剧情规划：先读 `_pipeline/chapter-planning-workflow.md` 和 `docs/rules/longform-generation.md`，再读目标作品当前状态、故事圣经、风格指南、伏笔表和必要人物卡；不直接改正文。
 - 章节润色：先读目标章节，再读必要相邻章节、目标作品 `风格指南.md`、`当前状态.md` 和出场人物卡。
-- 续写：读最近主干章节、目标作品 `故事圣经.md`、`伏笔表.md`、`当前状态.md` 和出场人物卡。
+- 续写：读最近主干章节、`docs/rules/longform-generation.md`、目标作品 `故事圣经.md`、`伏笔表.md`、`当前状态.md` 和出场人物卡。
+- 首尾衔接检查：先读 `_pipeline/chapter-continuity-workflow.md`，再读目标章节和必要相邻章节。
+- 文风检查：先读 `_pipeline/style-quality-check-workflow.md`，再读目标作品 `风格指南.md`、目标正文和出场人物卡。
+- 规避词表扫描：先读 `_pipeline/avoidance-lexicon-workflow.md` 和作品级词表，再对目标正文做确定性搜索。
+- 文本整理：先读 `docs/rules/path-and-naming.md`、`_pipeline/text-organization-workflow.md` 和 `docs/current-layout.md`；涉及正文修改时再读备份流程。
 - 分支合并：读目标 `分支/`、对应 `主干/`、`设定/分支记录.md` 和必要人物卡。
 - 发布整理：读来源 `主干/` 或已确认分支、`发布/` 和发布目标要求，不直接从实验分支生成。
-- 工具维护：读 `90_工具/`、`_pipeline/tool-index.json` 和工具自身 README，不读作品正文。
+- 工具维护：读 `docs/rules/layer-boundaries.md`、`90_工具/`、工作区 `tools/`、`_pipeline/tool-index.json` 和工具自身 README，不读作品正文。
+- 生成规则或 prompt 修改：读 `docs/rules/layer-boundaries.md`、目标生成规则和 prompt 索引，不修改工具 UI、sidecar schema 或工具启动方式。
 - Gemini 辅助写作：先读 `_pipeline/gemini-assisted-writing-workflow.md`，再按目标作品读取设定、主干或分支。
 - Google Docs 同步：先读 `_pipeline/google-docs-clasp-sync-workflow.md`，再确认同步来源、目标文档和 `clasp` 环境。
 - 人物卡同步：先读 `_pipeline/character-card-workflow.md`，再读取或创建对应角色的独立人物卡。

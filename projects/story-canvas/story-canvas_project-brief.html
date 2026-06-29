@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>Story Canvas Project Brief</title>
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.65; margin: 40px auto; max-width: 920px; padding: 0 24px; color: #202124; }
+    h1, h2 { line-height: 1.25; }
+    code { background: #f1f3f4; padding: 2px 5px; border-radius: 4px; }
+    section { margin: 28px 0; }
+  </style>
+</head>
+<body>
+  <h1>Story Canvas</h1>
+  <section>
+    <h2>项目目标</h2>
+    <p>Story Canvas 是 KVA 的网页工具层项目，负责故事画布前后端、节点交互、sidecar、历史快照、回滚、数据契约和工具测试。</p>
+  </section>
+  <section>
+    <h2>当前状态</h2>
+    <p>项目已进入迁移完成态：工具实现由 <code>app/</code> 维护，旧工具路径只保留兼容包装器，正文旁 sidecar 不移动。</p>
+  </section>
+  <section>
+    <h2>关键入口</h2>
+    <ul>
+      <li><code>AGENTS.md</code>：工具层规则和读取顺序。</li>
+      <li><code>PROJECT.md</code>：迁移状态和项目记忆。</li>
+      <li><code>docs/data-contracts/</code>：sidecar 与生成请求契约。</li>
+      <li><code>_pipeline/</code>：工具路由和测试流程。</li>
+      <li><code>app/</code>：当前工具实现位置。</li>
+      <li><code>tools/story-canvas/</code>：旧命令兼容包装器。</li>
+    </ul>
+  </section>
+  <section>
+    <h2>下一步</h2>
+    <p>确认旧工具代码是迁入 <code>app/</code>，还是保留在工作区 <code>tools/</code> 并由本项目维护产品文档。</p>
+  </section>
+</body>
+</html>

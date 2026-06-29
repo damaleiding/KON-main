@@ -1,4 +1,6 @@
-﻿# Pixiv Novel 项目规则
+# Pixiv Novel 项目规则（历史归档）
+
+> 迁移完成提示：本目录已迁出，不再作为默认工作入口。生成层请使用 `projects/story-engine/`，工具层请使用 `projects/story-canvas/`。本目录仅用于历史对照、回滚参照和人工核查。
 
 ## 项目定位
 
@@ -18,19 +20,28 @@
 
 ## 读取顺序
 
-1. 先读本文件、`PROJECT.md`、`WORKFLOW.md` 和 `_pipeline/context-routes.md`。
+1. 先读本文件、`PROJECT.md`、`WORKFLOW.md`、`_pipeline/context-routes.md` 和 `_pipeline/rule-router.md`。
 2. 如果任务只涉及目录整理、工具登记或规则修正，不读取作品正文。
 3. 如果任务指向具体作品，先读该作品的轻量入口：`README.md`、`设定/当前状态.md`、`设定/分支记录.md` 或同类状态文件；没有入口时再按任务读取最小必要文件。
 4. 如果任务指向具体章节，优先读取目标章节，再按需要读取相邻章节、风格指南、故事圣经、伏笔表和出场人物卡。
 5. 如果任务会覆盖、拆分、合并、清理格式、修复编码或更新字数统计，必须先读 `_pipeline/text-version-backup-workflow.md` 并只备份本次会改动的文件。
 6. 如果任务涉及 Google Docs、`clasp` 部署或 Apps Script 上传，才读取 `_pipeline/google-docs-clasp-sync-workflow.md`。
 7. 如果任务涉及章节自检、生成后复查或用户明确要求检查章节，才读取 `_pipeline/chapter-self-check-workflow.md`。
+8. 如果任务涉及路径结构、文件命名、新增文件落点、生成结果归档或迁移规划，先读取 `docs/rules/path-and-naming.md`。
+9. 如果任务涉及故事画布、章节节点、reroll、三章规划、首尾衔接、文风校验、规避词表或文本整理，按 `_pipeline/rule-router.md` 读取对应专项工作流，不把全部规则一次性读入上下文。
 
 ## 触发式工作流
 
 - 人物卡：只有在任务涉及角色经历、关系、状态、心理、秘密、伏笔或出场角色一致性时，才按 `_pipeline/character-card-workflow.md` 读取或更新人物卡。
 - 正文备份：只有在将要修改既有正文、设定或发布稿时强制执行；纯阅读、统计、规划和报告不需要备份。
+- 故事画布：用于把章节作为剧情节点管理，支持节点 reroll、角色变化表、篇章/卷编排和卷核心方向锁定，按 `_pipeline/story-canvas-workflow.md` 执行。
 - 章节自检：用于生成、润色、批量修改、合并、发布前检查或用户指定检查；普通路径整理和规则修正不触发。
+- 三章规划：用于正式写作前确定每章 3000 到 6000 字、主线推进、分线变化和章节钩子，按 `_pipeline/chapter-planning-workflow.md` 执行。
+- 首尾衔接：用于续写、润色、拆章、合并和发布整理后检查上一章尾部与下一章开头是否串联，按 `_pipeline/chapter-continuity-workflow.md` 执行。
+- 文风校验：用于检查叙述声音、节奏、对白、设定呈现和修辞密度，按 `_pipeline/style-quality-check-workflow.md` 执行。
+- 规避词表：用于维护或扫描禁用/慎用表达，按 `_pipeline/avoidance-lexicon-workflow.md` 执行。
+- 文本整理：用于迁移、归类、清理临时文件和框架拆分，按 `_pipeline/text-organization-workflow.md` 执行。
+- 路径命名：用于新增文件、目录整理、命名统一、生成结果归档、发布稿落点和迁移准备，按 `docs/rules/path-and-naming.md` 执行。
 - 账本记录：大段改写、章节合并、发布整理、重要审稿结论和用户明确要求记录的修改应写入 `_ledger/`；轻量规则修正和纯查询只需在相关文档中体现。
 - Google Docs：本地正文仍是事实层；只有用户明确发出“上传/同步/发布”或任务目标就是同步时，才覆盖或追加到 Google 文档。
 - 经验复用：在 `曲影番外二` 等作品中验证有效的写作流程、审稿规则、提示词和工具，应沉淀到 `_pipeline/`、`prompts/`、`methods/` 或项目文档中，而不是只留在单个作品目录。
@@ -49,3 +60,4 @@
 - 正文不要在章尾使用总结、宣告、升华或“从此改变”的旁白；优先用具体动作、物件、声音或未完成的现场状态自然收束。
 - 下一章开头不要复述上一章结尾已经发生过的动作；如需承接，只保留新时间、新地点或新动作。
 - 设定不得在正文中以说明书方式硬讲；优先通过角色反应、物品细节、对话碎片和事件推进侧面带出。
+- 详细章节、文风、规避词和文本整理规则只维护在 `docs/rules/` 与 `_pipeline/`，本文件只保留路由和长期硬约束。

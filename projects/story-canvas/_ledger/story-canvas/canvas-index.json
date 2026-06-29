@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "work": "人偶番外",
+      "status": "loaded",
+      "canvas_path": "projects/story-canvas/_ledger/story-canvas/人偶番外.canvas.json",
+      "edit_queue_path": "projects/story-canvas/_ledger/story-canvas/人偶番外.canvas-edit-queue.md",
+      "node_count": 20,
+      "count_mode": "nonspace Unicode characters",
+      "current_total_chars": 72923,
+      "source_policy": "节点索引不复制整章正文；正文按节点来源文件载入工具后编辑。",
+      "updated_at": "2026-06-27"
+    }
+  ]
+}

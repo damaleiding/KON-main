@@ -64,7 +64,7 @@ node .\upload-markdown-to-drive-doc.js `
   --state "<repo-root>\tokens\google-docs-sync\曲影番外二_主干第一版润色.json"
 ```
 
-正文修改后仅标记待同步，不上传：
+正文修改后仅标记待同步，不上传，也不重建或改写 `GoogleDocs同步稿.md`：
 
 ```powershell
 node .\upload-markdown-to-drive-doc.js `
@@ -78,9 +78,15 @@ node .\upload-markdown-to-drive-doc.js `
 
 上传触发条件：
 
-- 本轮修改结束，进入稳定稿。
 - 用户明确说“上传”“同步”或“发布一下”。
-- 仍在连续修改时，只写入 `pending` 状态，不访问 Google Drive。
+- 上传前再从当前来源章节统一生成最新 `GoogleDocs同步稿.md`。
+- 仍在连续修改或用户未要求同步时，只写入 `pending` 状态和待同步范围，不访问 Google Drive，不更新同步稿。
+
+最小范围同步规则：
+
+- 对已绑定 Google Docs 的版本，上传时优先只同步本轮实际修改的章节、小节或稳定锚点范围。
+- 当前 `clasp run overwriteConfiguredDoc` 和 Drive `--mode update` 都是整篇覆盖工具；执行前应先确认是否接受整篇覆盖，或改用后续实现的局部替换工具。
+- 如果章节标题变更、锚点缺失、Google Docs 结构被人工改动，或工具无法稳定定位范围，则退回整篇覆盖，并在同步清单中记录原因。
 
 排版参数：
 
@@ -92,6 +98,7 @@ node .\upload-markdown-to-drive-doc.js `
 - 每次上传/覆盖都会在 `--state` 指定的本地状态文件中写入 `syncedAtLocal` 和 `syncedAtIso`。
 - 每次待同步标记都会写入 `pendingSinceLocal` 和 `pendingSinceIso`。
 - `syncedAtLocal` 格式为 `YYYY-MM-DD HH:mm:ss zzz`，时间精确到秒。
+- 同步清单应记录待同步范围、实际同步范围、是否使用整篇覆盖，以及未采用最小范围同步的原因。
 
 ## 注意事项
 

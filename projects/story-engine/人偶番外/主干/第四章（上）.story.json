@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "source_file": "第四章（上）.md",
+  "source_path": "projects/story-engine/人偶番外/主干/第四章（上）.md",
+  "source_hash": "d86452dfa61e0f20",
+  "title": "第四章：双线并行的感官与代行者（上）",
+  "chapter_title": "第四章：双线并行的感官与代行者",
+  "chapter_key": "0004::第四章：双线并行的感官与代行者",
+  "chapter_no": 4,
+  "part_label": "上",
+  "block_count": 19,
+  "primary_count": 2669,
+  "canvas_position": null,
+  "part_reroll_slots": [],
+  "blocks": [
+    {
+      "id": "B001",
+      "type": "heading",
+      "start_line": 1,
+      "end_line": 1,
+      "primary_count": 18,
+      "text_hash": "f705abebb0fc3589",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B002",
+      "type": "plot",
+      "start_line": 3,
+      "end_line": 5,
+      "primary_count": 157,
+      "text_hash": "6baf33f2226db187",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B003",
+      "type": "plot",
+      "start_line": 7,
+      "end_line": 8,
+      "primary_count": 92,
+      "text_hash": "9ad814ecabb7998b",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B004",
+      "type": "plot",
+      "start_line": 10,
+      "end_line": 12,
+      "primary_count": 157,
+      "text_hash": "9df7604b81d08101",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B005",
+      "type": "plot",
+      "start_line": 14,
+      "end_line": 15,
+      "primary_count": 187,
+      "text_hash": "9993cc0df1ac3eeb",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B006",
+      "type": "plot",
+      "start_line": 17,
+      "end_line": 19,
+      "primary_count": 219,
+      "text_hash": "c63dbd03ac378f07",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B007",
+      "type": "plot",
+      "start_line": 21,
+      "end_line": 24,
+      "primary_count": 214,
+      "text_hash": "964301fdbe6959a2",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B008",
+      "type": "plot",
+      "start_line": 26,
+      "end_line": 29,
+      "primary_count": 195,
+      "text_hash": "d1b681743fd8a046",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B009",
+      "type": "plot",
+      "start_line": 31,
+      "end_line": 35,
+      "primary_count": 213,
+      "text_hash": "f0b4e3ddca7bce14",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B010",
+      "type": "plot",
+      "start_line": 37,
+      "end_line": 38,
+      "primary_count": 96,
+      "text_hash": "fffa5e2e9a1f39e4",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B011",
+      "type": "plot",
+      "start_line": 40,
+      "end_line": 42,
+      "primary_count": 196,
+      "text_hash": "6666d7c309b329dd",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B012",
+      "type": "plot",
+      "start_line": 44,
+      "end_line": 46,
+      "primary_count": 176,
+      "text_hash": "8673473145049a02",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B013",
+      "type": "plot",
+      "start_line": 48,
+      "end_line": 51,
+      "primary_count": 152,
+      "text_hash": "574986bedec3e4be",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B014",
+      "type": "plot",
+      "start_line": 53,
+      "end_line": 55,
+      "primary_count": 118,
+      "text_hash": "20fec92cd105af62",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B015",
+      "type": "plot",
+      "start_line": 57,
+      "end_line": 58,
+      "primary_count": 32,
+      "text_hash": "4dc6971b4b92ef3a",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B016",
+      "type": "plot",
+      "start_line": 60,
+      "end_line": 63,
+      "primary_count": 221,
+      "text_hash": "11323927dad4084c",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B017",
+      "type": "plot",
+      "start_line": 65,
+      "end_line": 67,
+      "primary_count": 123,
+      "text_hash": "1ea9653e5f63b531",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B018",
+      "type": "plot",
+      "start_line": 69,
+      "end_line": 70,
+      "primary_count": 103,
+      "text_hash": "cb6ee65173c13acb",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B019",
+      "type": "heading",
+      "start_line": 72,
+      "end_line": 73,
+      "primary_count": 20,
+      "text_hash": "3e2c6308d6857f87",
+      "notes": "",
+      "reroll_slots": []
+    }
+  ],
+  "updated_at": "2026-06-28T15:58:54.300Z"
+}

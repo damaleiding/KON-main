@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "kind": "novel_story_canvas",
+  "description": "Story canvas index for chapter nodes, reroll slots, character deltas, arcs, and volume direction locks.",
+  "chapter_target_chars": {
+    "min": 3000,
+    "max": 6000,
+    "metric": "non_whitespace_unicode_chars"
+  },
+  "structure": {
+    "chapters_per_arc": 10,
+    "arcs_per_volume": 5,
+    "chapters_per_volume": 50
+  },
+  "volume": {
+    "id": "v01",
+    "title": "第一卷",
+    "core_direction": "",
+    "direction_locked": true,
+    "direction_change_requires_user_confirmation": true,
+    "arcs": []
+  },
+  "arc": {
+    "id": "v01-a01",
+    "volume_id": "v01",
+    "title": "",
+    "chapter_range": "1-10",
+    "arc_goal": "",
+    "arc_hook": ""
+  },
+  "chapter_node": {
+    "id": "v01-a01-ch001",
+    "volume_id": "v01",
+    "arc_id": "v01-a01",
+    "chapter_no": 1,
+    "title": "",
+    "target_chars": "3000-6000",
+    "status": "planned",
+    "mainline_step": "",
+    "subplot_steps": [],
+    "chapter_start_hook": "",
+    "chapter_end_hook": "",
+    "selected_version": "",
+    "reroll_slots": [],
+    "segment_reroll_table": [],
+    "character_delta_table": [],
+    "environment_delta_table": [],
+    "plot_delta_table": [],
+    "setting_delta_table": [],
+    "sync_status": "pending",
+    "canvas_position": {
+      "x": 0,
+      "y": 0
+    }
+  },
+  "reroll_slot": {
+    "version_id": "r001",
+    "status": "candidate",
+    "prompt_ref": "",
+    "output_ref": "",
+    "difference_note": "",
+    "decision": "pending"
+  },
+  "segment_reroll": {
+    "segment_id": "v01-a01-ch001-s001",
+    "anchor": {
+      "paragraph_no": 1,
+      "start_char": null,
+      "end_char": null,
+      "before_excerpt": "",
+      "source_excerpt": "",
+      "after_excerpt": ""
+    },
+    "reroll_goal": "",
+    "constraints": "",
+    "candidate_versions": [],
+    "selected_version": "",
+    "replace_status": "pending"
+  },
+  "segment_candidate": {
+    "version_id": "s001-r001",
+    "status": "candidate",
+    "prompt_ref": "",
+    "output_ref": "",
+    "difference_note": "",
+    "decision": "pending"
+  },
+  "character_delta": {
+    "character": "",
+    "new_action": "",
+    "state_change": "",
+    "relationship_change": "",
+    "new_secret_or_info": "",
+    "card_sync": "pending",
+    "source_version": ""
+  },
+  "environment_delta": {
+    "environment": "",
+    "new_detail": "",
+    "state_change": "",
+    "reuse_limit": "",
+    "setting_sync": "pending",
+    "source_version": ""
+  },
+  "plot_delta": {
+    "plot_node": "",
+    "progress": "",
+    "mainline_impact": "",
+    "subplot_impact": "",
+    "future_dependency": "",
+    "sync_status": "pending"
+  },
+  "setting_delta": {
+    "type": "world-rule",
+    "name": "",
+    "change": "",
+    "impact_scope": "",
+    "sync_target": "",
+    "sync_status": "pending"
+  }
+}

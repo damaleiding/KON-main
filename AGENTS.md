@@ -95,13 +95,22 @@ projects/<project-name>/
 根 `AGENTS.md` 只保留核心规则。执行具体任务时，按需读取以下高优先级规则：
 
 - `docs/agent-rules/project-structure.md`：目录结构、项目入口、人类 HTML 纲要、索引职责。
+- `docs/agent-rules/project-entry-governance.md`：项目 `AGENTS.md` / `PROJECT.md` / `WORKFLOW.md` 的职责边界、规则落点和修改流程。
 - `docs/agent-rules/ai-production.md`：AI 写作、prompt、参考资料和审稿记录规则。
+- `docs/agent-rules/prompt-generation.md`：Prompt 生成、修改、审稿、保存和段落扩写提示词运行规则。
 - `docs/agent-rules/subagent-collaboration.md`：Claude / DeepSeek 子 Agent 触发、分工、复查和跳过条件。
 - `docs/agent-rules/git-security.md`：Git 同步边界、安全隐私、外部资料与密钥处理。
 - `docs/agent-rules/writing-and-modification.md`：语言命名、修改联动、新项目/新工具要求。
+- `docs/agent-rules/novel-writing.md`：小说续写、润色、重写、设定呈现和首尾衔接规则。
+- `docs/agent-rules/plot-and-chapter-planning.md`：三章剧情单元、主线/分线、章节长度和写作前规划规则。
+- `docs/agent-rules/story-canvas.md`：无限画布、章节节点、reroll、角色变化表、10章篇章和50章卷规则。
+- `docs/agent-rules/chapter-governance.md`：章节拆分、命名、合并、相邻章节首尾检查和版本记录规则。
+- `docs/agent-rules/style-and-avoidance.md`：文风校验、规避词表、禁用/慎用表达和替换建议治理规则。
+- `docs/agent-rules/text-organization.md`：原文、主干、分支、发布、输出、账本和临时文件边界。
+- `docs/standards/`：编码、中文文本、脚本和流程事故复盘规范。
 
 ## 修改规则
 
 - 修改顶层核心规则时，同时检查 `README.md` 和 `docs/agent-rules/` 是否需要更新。
-- 修改项目级规则时，同时检查该项目的 `PROJECT.md`、`WORKFLOW.md`、`<project-name>_project-brief.html` 和 `_pipeline/`。
+- 修改项目级规则时，先按 `docs/agent-rules/project-entry-governance.md` 判断规则落点，并同步检查该项目的 `PROJECT.md`、`WORKFLOW.md`、`<project-name>_project-brief.html` 和 `_pipeline/`。
 - 新增项目时，应从 `templates/` 复制项目骨架，而不是临时散放文件。

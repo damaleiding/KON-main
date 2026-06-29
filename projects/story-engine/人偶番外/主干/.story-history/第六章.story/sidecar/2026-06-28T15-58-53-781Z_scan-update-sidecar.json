@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "source_file": "第六章.md",
+  "source_path": "projects/pixiv novel/人偶番外/主干/第六章.md",
+  "source_hash": "af72368b45ba60a0",
+  "title": "第六章：精英营的日常与膨胀的教具",
+  "chapter_title": "第六章：精英营的日常与膨胀的教具",
+  "chapter_key": "0006::第六章：精英营的日常与膨胀的教具",
+  "chapter_no": 6,
+  "part_label": "正文",
+  "block_count": 5,
+  "primary_count": 2430,
+  "canvas_position": null,
+  "blocks": [
+    {
+      "id": "B001",
+      "type": "heading",
+      "start_line": 1,
+      "end_line": 1,
+      "primary_count": 16,
+      "text_hash": "517ab35c7727cd0e",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B002",
+      "type": "plot",
+      "start_line": 3,
+      "end_line": 19,
+      "primary_count": 1131,
+      "text_hash": "c5b79a8d328cd15d",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B003",
+      "type": "plot",
+      "start_line": 21,
+      "end_line": 37,
+      "primary_count": 808,
+      "text_hash": "d41a9e63a7136e18",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B004",
+      "type": "plot",
+      "start_line": 39,
+      "end_line": 48,
+      "primary_count": 475,
+      "text_hash": "8b00122ae0a4f239",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B005",
+      "type": "heading",
+      "start_line": 50,
+      "end_line": 51,
+      "primary_count": 19,
+      "text_hash": "88d8daaa424ee825",
+      "notes": "",
+      "reroll_slots": []
+    }
+  ],
+  "updated_at": "2026-06-27T14:37:19.863Z"
+}

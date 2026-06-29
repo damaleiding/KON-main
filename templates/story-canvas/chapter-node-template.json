@@ -1,0 +1,107 @@
+{
+  "id": "v01-a01-ch001",
+  "volume_id": "v01",
+  "arc_id": "v01-a01",
+  "chapter_no": 1,
+  "title": "",
+  "target_chars": "3000-6000",
+  "status": "planned",
+  "mainline_step": "",
+  "subplot_steps": [],
+  "chapter_start_hook": "",
+  "chapter_end_hook": "",
+  "generation_priority": [
+    "later_direct_user_instruction",
+    "web_reroll_box_user_directive",
+    "locked_story_facts",
+    "story_card_and_longform_rules",
+    "default_style_preferences"
+  ],
+  "chapter_relay_card": {
+    "inherited_state": "",
+    "opening_pressure": "",
+    "core_action": "",
+    "verification_object_or_key_info": "",
+    "character_state_change": "",
+    "information_ledger_delta": "",
+    "resource_ledger_delta": "",
+    "relationship_ledger_delta": "",
+    "risk_ledger_delta": "",
+    "handoff_to_next_chapter": "",
+    "forbidden_breakpoints": ""
+  },
+  "selected_version": "",
+  "reroll_slots": [],
+  "segment_reroll_table": [
+    {
+      "segment_id": "v01-a01-ch001-s001",
+      "anchor": {
+        "paragraph_no": 1,
+        "start_char": null,
+        "end_char": null,
+        "before_excerpt": "",
+        "source_excerpt": "",
+        "after_excerpt": ""
+      },
+      "reroll_goal": "",
+      "instruction_priority": [
+        "later_direct_user_instruction",
+        "web_reroll_box_user_directive",
+        "locked_story_facts",
+        "story_card_and_longform_rules",
+        "default_style_preferences"
+      ],
+      "rule_conflict_policy": "网页重构框意见优先于故事卡/长篇生成规则；用户后续直接意见再优先于网页重构框。",
+      "constraints": "",
+      "candidate_versions": [],
+      "selected_version": "",
+      "replace_status": "pending"
+    }
+  ],
+  "character_delta_table": [
+    {
+      "character": "",
+      "new_action": "",
+      "state_change": "",
+      "relationship_change": "",
+      "new_secret_or_info": "",
+      "card_sync": "pending",
+      "source_version": ""
+    }
+  ],
+  "environment_delta_table": [
+    {
+      "environment": "",
+      "new_detail": "",
+      "state_change": "",
+      "reuse_limit": "",
+      "setting_sync": "pending",
+      "source_version": ""
+    }
+  ],
+  "plot_delta_table": [
+    {
+      "plot_node": "",
+      "progress": "",
+      "mainline_impact": "",
+      "subplot_impact": "",
+      "future_dependency": "",
+      "sync_status": "pending"
+    }
+  ],
+  "setting_delta_table": [
+    {
+      "type": "world-rule",
+      "name": "",
+      "change": "",
+      "impact_scope": "",
+      "sync_target": "",
+      "sync_status": "pending"
+    }
+  ],
+  "sync_status": "pending",
+  "canvas_position": {
+    "x": 0,
+    "y": 0
+  }
+}

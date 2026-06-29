@@ -36,6 +36,7 @@ projects/<project-name>/
 - `_pipeline/`：项目级路由、工具索引、技能索引和上下文索引配置。
 - `_ledger/`：生产账本、prompt 索引、审稿决策、版本流转和文本版本清单等事实记录。
 - `docs/`：项目文档、写作标准、制作记录、问题池和复盘。
+- `docs/rules/`：项目或作品级细分规则，例如文风、章节衔接、规避词表和文本整理细则。
 - `refs/`：项目参考资料、外部摘录、风格参考和治理索引。
 - `prompts/`：可复用 prompt、角色 prompt、风格 prompt、续写 prompt、润色 prompt。
 - `outputs/`：生成、改写、导出或发布前整理结果。
@@ -49,3 +50,9 @@ projects/<project-name>/
 - 人类阅读入口固定为项目根目录下的 `<project-name>_project-brief.html`。
 - 人类项目纲要应避免堆砌脚本细节，重点说明“这是干什么的、有什么文本和设定、从哪里开始、当前状态、下一步建议”。
 - 项目的目标、作用、目录结构、关键文本状态或工作流发生明显变化时，必须同步更新 `<project-name>_project-brief.html`。
+
+## 项目入口文件治理
+
+- `AGENTS.md`、`PROJECT.md`、`WORKFLOW.md` 的详细读写边界见 `project-entry-governance.md`。
+- 入口文件不得承载具体章节细则、prompt 长文、规避词表全文、单轮审稿记录或候选稿正文。
+- 写作规则、章节规则、风格词表、文本整理规则和账本事实应写入项目 `docs/rules/`、`_pipeline/`、`_ledger/`、`review/` 或作品 `设定/`。

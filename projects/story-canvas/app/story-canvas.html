@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Story Canvas</title>
+  <link rel="stylesheet" href="/assets/story-canvas.css">
+</head>
+<body>
+  <div class="app" id="appShell">
+    <aside class="sidebar" id="sidebar">
+      <button class="sidebar-toggle" id="toggleSidebarBtn" title="折叠左侧栏">收起</button>
+      <div class="sidebar-body">
+        <div class="brand">Story Canvas</div>
+        <div class="muted small">本地网页程序：读文件夹、建章节节点、维护同目录 sidecar JSON。</div>
+
+        <div class="section stack">
+          <div>
+            <div class="label">作品文件夹</div>
+            <input id="rootInput" value="projects/story-engine/人偶番外/主干">
+          </div>
+          <div class="row">
+            <button class="primary" id="scanBtn">读取文件夹</button>
+            <button id="savePositionsBtn">保存节点位置</button>
+          </div>
+          <div class="row">
+            <span class="pill good" id="liveStatus">实时同步：开</span>
+            <button id="toggleLiveBtn">暂停实时</button>
+          </div>
+          <div class="muted small" id="scanStatus">等待读取。</div>
+        </div>
+
+        <div class="section stack">
+          <div class="row">
+            <strong>章节节点</strong>
+            <span class="pill" id="groupCount">0</span>
+          </div>
+          <div class="chapter-list" id="chapterList"></div>
+        </div>
+
+        <div class="section stack">
+          <div class="row">
+            <strong>Agent 状态</strong>
+            <button id="refreshAgentsBtn">检查</button>
+          </div>
+          <div class="agent-status-list" id="agentStatusList">
+            <div class="empty">等待检查。</div>
+          </div>
+        </div>
+
+        <div class="section stack">
+          <div class="row">
+            <strong>Codex 队列</strong>
+            <button id="refreshCodexTasksBtn">刷新</button>
+          </div>
+          <div class="codex-task-list" id="codexTaskList">
+            <div class="empty">暂无桥接任务。</div>
+          </div>
+        </div>
+
+        <div class="section stack">
+          <strong>文件边界</strong>
+          <div class="muted small">每个 `.md/.txt` 旁边生成一个 `.story.json`，记录剧情块编号、行号、候选和节点位置。正文不复制进 JSON。</div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="canvas-shell">
+      <div class="topbar">
+        <div class="canvas-breadcrumb" id="canvasBreadcrumb">主线画布</div>
+        <div class="zoom-label" id="zoomLabel">zoom 100%</div>
+      </div>
+      <div class="floating-reroll" id="floatingReroll" hidden>
+        <div>
+          <div class="label" id="floatingRerollLabel">剧情块反馈</div>
+          <textarea id="floatingFeedback" placeholder="写你希望这一块怎么重构。这里的意见优先于故事卡/四账本/长篇生成规则；你后续新的直接意见再优先于这里。"></textarea>
+          <div class="muted small">优先级：后续用户直接意见 &gt; 本重构框意见 &gt; 锁定设定事实 &gt; 故事卡/四账本/长篇生成规则 &gt; 默认风格建议。</div>
+        </div>
+        <div class="floating-model-grid">
+          <div>
+            <div class="label">Agent / 底模</div>
+            <select id="floatingAgentSelect"></select>
+          </div>
+          <div>
+            <div class="label">模型</div>
+            <input id="floatingModelInput">
+          </div>
+          <div>
+            <div class="label">版本数</div>
+            <input id="floatingVersionCount" type="number" min="1" max="8" step="1">
+          </div>
+          <div>
+            <div class="label">目标字数</div>
+            <input id="floatingTargetChars" type="number" min="200" max="50000" step="100">
+          </div>
+        </div>
+        <div class="floating-actions">
+          <button id="floatingRecordBtn">只记录</button>
+          <button class="primary" id="floatingRollBtn">生成重Roll</button>
+        </div>
+        <div class="floating-status" id="floatingStatus"></div>
+      </div>
+      <div class="viewport" id="viewport">
+        <div class="world" id="world">
+          <svg class="edges" id="edges"></svg>
+          <div id="nodes"></div>
+        </div>
+      </div>
+      <div class="canvas-dock" aria-label="画布工具">
+        <button id="zoomOut" title="缩小">-</button>
+        <button id="zoomReset" title="重置缩放">100%</button>
+        <button id="zoomIn" title="放大">+</button>
+        <span class="dock-separator" aria-hidden="true"></span>
+        <button id="layoutBtn" title="整理章节节点">整理</button>
+      </div>
+    </main>
+
+    <aside class="inspector">
+      <div class="inspector-resizer" id="inspectorResizer" title="拖动调整右栏宽度"></div>
+      <div class="muted small" id="emptyHint">读取文件夹后，选择一个章节节点。</div>
+      <div class="stack" id="inspectorContent" hidden>
+        <div class="row">
+          <span class="pill good" id="chapterNoPill"></span>
+          <span class="pill" id="partCountPill"></span>
+          <span class="pill" id="charCountPill"></span>
+        </div>
+        <h2 id="inspectorTitle" style="font-size:18px;margin:0;"></h2>
+        <div class="muted small" id="relativeDir"></div>
+
+        <div class="inspector-tabs" id="inspectorTabs">
+          <button class="active" data-inspector-scroll="storyPanel">故事</button>
+          <button id="inspectorWorkTab" data-inspector-scroll="generatePanel">文本</button>
+          <button data-inspector-scroll="historyPanel">历史</button>
+        </div>
+
+        <div class="section stack" id="storyPanel">
+          <strong>当前文章部分</strong>
+          <div class="stack">
+            <div>
+              <div class="label">部分</div>
+              <input id="partLabel" readonly>
+            </div>
+            <div>
+              <div class="label">原文文件</div>
+              <input id="sourcePath" readonly>
+            </div>
+            <div>
+              <div class="label">同目录 JSON</div>
+              <input id="sidecarPath" readonly>
+            </div>
+          </div>
+        </div>
+
+        <div class="section stack" id="generatePanel">
+          <div class="row">
+            <strong id="generatePanelTitle">剧情块</strong>
+            <span class="pill" id="blockCountPill"></span>
+          </div>
+          <div class="muted small" id="generatePanelHint">每个深色块是一段剧情，可单独选中、记录 reroll 目标和候选。</div>
+          <div class="block-list" id="blockList"></div>
+        </div>
+
+        <div class="section stack" id="historyPanel">
+          <div class="row">
+            <strong>历史记录与回滚</strong>
+            <button id="refreshHistoryBtn">刷新历史</button>
+          </div>
+          <div class="muted small">正文快照、sidecar 快照和账本都保存在文章同目录附近。</div>
+          <div class="history-list" id="historyList"></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="/assets/story-canvas.js"></script>
+</body>
+</html>

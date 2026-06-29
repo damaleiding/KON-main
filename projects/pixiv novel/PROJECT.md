@@ -1,4 +1,6 @@
-﻿# Pixiv Novel 项目记忆
+# Pixiv Novel 项目记忆（历史归档）
+
+> 迁移完成提示：本目录已迁出，不再作为默认项目记忆入口。当前项目记忆见 `projects/story-engine/PROJECT.md` 和 `projects/story-canvas/PROJECT.md`。
 
 ## 核心目标
 
@@ -15,6 +17,8 @@
 
 - 已保留既有作品目录，避免破坏现有 Trae skill、脚本、Google Docs 同步稿和人工路径习惯。
 - 已补齐项目级入口：`AGENTS.md`、`PROJECT.md`、`WORKFLOW.md`、`novel_project-brief.html`、`_pipeline/`、`_ledger/`、`docs/`、`refs/`、`prompts/`、`outputs/`、`review/`、`trash/`、`_tmp/`。
+- 已新增项目级规则层：`docs/rules/` 和 `_pipeline/rule-router.md`，用于拆分故事画布、三章规划、章节衔接、文风校验、规避词表和文本整理规则。
+- 已新增路径与命名规范：`docs/rules/path-and-naming.md`，用于约束项目级和作品级路径结构、文件命名、各区域生成规则和生成后同步清单。
 - `pixiv novel` 的职责是统一项目规则、上下文路由、作品管理、经验复用、公共参考、公共工具登记和生产记录收口。
 - 后续需要为各作品补齐轻量索引，让定位更准确，避免每次任务读取过多正文。
 
@@ -30,7 +34,9 @@
 ## 待整理问题
 
 - 为每个作品补齐最小作品索引，记录作品目标、主干入口、设定入口、分支状态、发布状态和复用价值。
+- 按 `docs/rules/path-and-naming.md` 为后续新增文件统一落点；既有正文迁移前先生成迁移表，不直接重命名。
 - 把 `曲影番外二` 中已验证的写作规则、审稿规则、提示词和同步流程沉淀为项目级方法。
+- 为重点作品补齐作品级 `规避词表.md` 或在 `风格指南.md` 中加入禁用/慎用表达字段。
 - 更新 `docs/current-layout.md`，持续记录项目内目录职责和状态。
 - 将 `90_工具/` 中可复用脚本登记到 `_pipeline/tool-index.json`，能上移到工作区级 `tools/` 的再单独处理。
 - 为重要 prompt 建立 `prompts/` 分类，避免只留在聊天历史或 skill 内部。

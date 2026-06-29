@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "source_file": "第八章（上）.md",
+  "source_path": "projects/pixiv novel/人偶番外/主干/第八章（上）.md",
+  "source_hash": "7f493faf84db00bf",
+  "title": "第八章：白瓷重塑、极效精油与双线崩坏的抛光（上）",
+  "chapter_title": "第八章：白瓷重塑、极效精油与双线崩坏的抛光",
+  "chapter_key": "0008::第八章：白瓷重塑、极效精油与双线崩坏的抛光",
+  "chapter_no": 8,
+  "part_label": "上",
+  "block_count": 3,
+  "primary_count": 1637,
+  "canvas_position": null,
+  "blocks": [
+    {
+      "id": "B001",
+      "type": "heading",
+      "start_line": 1,
+      "end_line": 1,
+      "primary_count": 24,
+      "text_hash": "78eeb3921130615f",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B002",
+      "type": "plot",
+      "start_line": 3,
+      "end_line": 32,
+      "primary_count": 1613,
+      "text_hash": "5b0575f774c76c0b",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B003",
+      "type": "heading",
+      "start_line": 34,
+      "end_line": 35,
+      "primary_count": 19,
+      "text_hash": "85baf50812bf0d25",
+      "notes": "",
+      "reroll_slots": []
+    }
+  ],
+  "updated_at": "2026-06-27T14:37:19.847Z"
+}

@@ -1,4 +1,4 @@
-﻿{
+{
     "kind":  "kva_workspace_tool_index",
     "schema_version":  1,
     "generated_at":  "2026-05-30",
@@ -26,6 +26,17 @@
                                ],
                       "category":  "text",
                       "status":  "active"
+                  },
+                  {
+                      "id":  "story-canvas",
+                      "source":  "projects/story-canvas/app/server.mjs",
+                      "purpose":  "本地网页故事画布程序；读取作品文件夹，生成同目录 sidecar JSON，支持章节大节点展开、剧情块编号、段落 reroll、节点拖动、拖出续写草稿、生成请求记录、工作区实时保存、草稿 Delete 归档、画布撤销/重做，并记录用户重构框意见优先级",
+                      "deps":  [
+                                   "Node.js",
+                                   "Browser"
+                               ],
+                      "category":  "visual-planning",
+                      "status":  "active-migrated-to-project"
                   },
                   {
                       "id":  "production-ledger",

@@ -1,0 +1,48 @@
+{
+  "id": "draft-YYYYMMDD-HHMMSS-hash",
+  "after_group_key": "relative-dir::chapter-key",
+  "after_title": "",
+  "before_group_key": "",
+  "before_title": "",
+  "branch_from_group_key": "relative-dir::chapter-key",
+  "route_mode": "branch",
+  "title": "分支草稿：",
+  "file_path": ".story-canvas-drafts/draft-YYYYMMDD-HHMMSS-hash.md",
+  "status": "draft",
+  "split_plan": [],
+  "generation_settings": {
+    "agent": "trae-main",
+    "model": "trae-main",
+    "version_count": 3,
+    "target_chars": 3000,
+    "split_count": 1,
+    "split_mode": "single_segment",
+    "prompt_goal": ""
+  },
+  "generation_requests": [
+    {
+      "request_id": "gen-YYYYMMDD-HHMMSS-hash",
+      "status": "requested",
+      "agent": "trae-main",
+      "model": "trae-main",
+      "version_count": 3,
+      "target_chars": 3000,
+      "split_count": 1,
+      "split_mode": "single_segment",
+      "prompt_goal": "",
+      "route_mode": "branch",
+      "instruction_priority": [
+        "later_direct_user_instruction",
+        "web_reroll_box_user_directive",
+        "locked_story_facts",
+        "story_card_and_longform_rules",
+        "default_style_preferences"
+      ],
+      "rule_conflict_policy": "用户后续直接意见优先；其次执行网页重构框或生成请求意见。若与故事卡/四账本/长篇生成规则冲突，按用户具体意见执行，并在生成说明中标出冲突。",
+      "created_at": ""
+    }
+  ],
+  "candidate_versions": [],
+  "created_at": "",
+  "updated_at": ""
+}

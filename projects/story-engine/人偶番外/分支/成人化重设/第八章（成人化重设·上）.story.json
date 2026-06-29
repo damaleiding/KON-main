@@ -1,0 +1,1537 @@
+{
+  "schema_version": 1,
+  "source_file": "第八章（成人化重设·上）.md",
+  "source_path": "projects/story-engine/人偶番外/分支/成人化重设/第八章（成人化重设·上）.md",
+  "source_hash": "49287fa83af714ed",
+  "title": "第八章：白瓷重塑、极效精油与双线崩坏的抛光（成人化重设版·上）",
+  "chapter_title": "第八章：白瓷重塑、极效精油与双线崩坏的抛光",
+  "chapter_key": "0008::第八章：白瓷重塑、极效精油与双线崩坏的抛光",
+  "chapter_no": 8,
+  "part_label": "成人化重设版·上",
+  "block_count": 152,
+  "primary_count": 4557,
+  "canvas_position": null,
+  "blocks": [
+    {
+      "id": "B001",
+      "type": "heading",
+      "start_line": 1,
+      "end_line": 1,
+      "primary_count": 31,
+      "text_hash": "206779c7b4a40661",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B002",
+      "type": "plot",
+      "start_line": 3,
+      "end_line": 3,
+      "primary_count": 23,
+      "text_hash": "43bfdfd73cd054ef",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B003",
+      "type": "heading",
+      "start_line": 5,
+      "end_line": 5,
+      "primary_count": 87,
+      "text_hash": "31a648df24f34d7d",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B004",
+      "type": "plot",
+      "start_line": 7,
+      "end_line": 7,
+      "primary_count": 15,
+      "text_hash": "1f8c22afbf84a881",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B005",
+      "type": "plot",
+      "start_line": 9,
+      "end_line": 9,
+      "primary_count": 100,
+      "text_hash": "2ea61dfbb44d39cd",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B006",
+      "type": "plot",
+      "start_line": 11,
+      "end_line": 11,
+      "primary_count": 10,
+      "text_hash": "113878d0444dc1d2",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B007",
+      "type": "plot",
+      "start_line": 13,
+      "end_line": 13,
+      "primary_count": 101,
+      "text_hash": "cc56d7609c2faaf2",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B008",
+      "type": "plot",
+      "start_line": 15,
+      "end_line": 15,
+      "primary_count": 9,
+      "text_hash": "b517a792ef98158d",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B009",
+      "type": "plot",
+      "start_line": 17,
+      "end_line": 17,
+      "primary_count": 62,
+      "text_hash": "8d14062ea9469a39",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B010",
+      "type": "plot",
+      "start_line": 19,
+      "end_line": 19,
+      "primary_count": 7,
+      "text_hash": "f75569100742db46",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B011",
+      "type": "plot",
+      "start_line": 21,
+      "end_line": 21,
+      "primary_count": 11,
+      "text_hash": "59257a94c5ce08d4",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B012",
+      "type": "plot",
+      "start_line": 23,
+      "end_line": 23,
+      "primary_count": 12,
+      "text_hash": "123175131f090e3b",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B013",
+      "type": "plot",
+      "start_line": 25,
+      "end_line": 25,
+      "primary_count": 9,
+      "text_hash": "d44125cd0b1853df",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B014",
+      "type": "plot",
+      "start_line": 27,
+      "end_line": 27,
+      "primary_count": 7,
+      "text_hash": "7c8c6742990ace17",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B015",
+      "type": "plot",
+      "start_line": 29,
+      "end_line": 29,
+      "primary_count": 49,
+      "text_hash": "3b0635ae77ec465c",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B016",
+      "type": "plot",
+      "start_line": 31,
+      "end_line": 31,
+      "primary_count": 93,
+      "text_hash": "2d691aa5e049d856",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B017",
+      "type": "plot",
+      "start_line": 33,
+      "end_line": 33,
+      "primary_count": 13,
+      "text_hash": "890c2205ce6d2a91",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B018",
+      "type": "plot",
+      "start_line": 35,
+      "end_line": 35,
+      "primary_count": 13,
+      "text_hash": "1dddec97760a5a4f",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B019",
+      "type": "plot",
+      "start_line": 37,
+      "end_line": 37,
+      "primary_count": 71,
+      "text_hash": "04a10d096ebbe707",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B020",
+      "type": "plot",
+      "start_line": 39,
+      "end_line": 39,
+      "primary_count": 33,
+      "text_hash": "b2bff15c1cd4be8f",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B021",
+      "type": "plot",
+      "start_line": 41,
+      "end_line": 41,
+      "primary_count": 4,
+      "text_hash": "e6de2015e2e393ee",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B022",
+      "type": "plot",
+      "start_line": 43,
+      "end_line": 43,
+      "primary_count": 8,
+      "text_hash": "a18b51c686e09899",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B023",
+      "type": "plot",
+      "start_line": 45,
+      "end_line": 45,
+      "primary_count": 68,
+      "text_hash": "b8339cf4fd8bef66",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B024",
+      "type": "plot",
+      "start_line": 47,
+      "end_line": 47,
+      "primary_count": 8,
+      "text_hash": "e6c46b5b8eab92b5",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B025",
+      "type": "plot",
+      "start_line": 49,
+      "end_line": 49,
+      "primary_count": 97,
+      "text_hash": "f41e5705abdb59c7",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B026",
+      "type": "plot",
+      "start_line": 51,
+      "end_line": 51,
+      "primary_count": 8,
+      "text_hash": "b009c44429f223ab",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B027",
+      "type": "plot",
+      "start_line": 53,
+      "end_line": 53,
+      "primary_count": 21,
+      "text_hash": "f2915ac8a8200900",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B028",
+      "type": "plot",
+      "start_line": 55,
+      "end_line": 55,
+      "primary_count": 13,
+      "text_hash": "f35477b125c5dec2",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B029",
+      "type": "plot",
+      "start_line": 57,
+      "end_line": 57,
+      "primary_count": 101,
+      "text_hash": "ca39a965997e218d",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B030",
+      "type": "plot",
+      "start_line": 59,
+      "end_line": 59,
+      "primary_count": 9,
+      "text_hash": "9fca56cba97d7597",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B031",
+      "type": "plot",
+      "start_line": 61,
+      "end_line": 61,
+      "primary_count": 8,
+      "text_hash": "3273df7e5ca3ae57",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B032",
+      "type": "plot",
+      "start_line": 63,
+      "end_line": 63,
+      "primary_count": 59,
+      "text_hash": "7dc99d91f4617eae",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B033",
+      "type": "plot",
+      "start_line": 65,
+      "end_line": 65,
+      "primary_count": 11,
+      "text_hash": "da64a6b28433aa3f",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B034",
+      "type": "plot",
+      "start_line": 67,
+      "end_line": 67,
+      "primary_count": 12,
+      "text_hash": "f95ac06038bfb0c7",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B035",
+      "type": "plot",
+      "start_line": 69,
+      "end_line": 69,
+      "primary_count": 100,
+      "text_hash": "d48a83eeda4b8d58",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B036",
+      "type": "plot",
+      "start_line": 71,
+      "end_line": 71,
+      "primary_count": 11,
+      "text_hash": "6754f700c1b89eed",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B037",
+      "type": "plot",
+      "start_line": 73,
+      "end_line": 73,
+      "primary_count": 10,
+      "text_hash": "e7929464ba14f34a",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B038",
+      "type": "plot",
+      "start_line": 75,
+      "end_line": 75,
+      "primary_count": 7,
+      "text_hash": "f9a6edfdbc3f00be",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B039",
+      "type": "plot",
+      "start_line": 77,
+      "end_line": 77,
+      "primary_count": 24,
+      "text_hash": "2b2724f5cb516bf5",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B040",
+      "type": "plot",
+      "start_line": 79,
+      "end_line": 79,
+      "primary_count": 142,
+      "text_hash": "7360d2cd29847b8f",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B041",
+      "type": "plot",
+      "start_line": 81,
+      "end_line": 81,
+      "primary_count": 18,
+      "text_hash": "d525be45e44eb940",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B042",
+      "type": "plot",
+      "start_line": 83,
+      "end_line": 83,
+      "primary_count": 7,
+      "text_hash": "21eef75d3dc2cb67",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B043",
+      "type": "plot",
+      "start_line": 85,
+      "end_line": 85,
+      "primary_count": 9,
+      "text_hash": "288c0463eafd506c",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B044",
+      "type": "plot",
+      "start_line": 87,
+      "end_line": 87,
+      "primary_count": 54,
+      "text_hash": "80a837ad01afef2f",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B045",
+      "type": "plot",
+      "start_line": 89,
+      "end_line": 89,
+      "primary_count": 5,
+      "text_hash": "03555676d6e4d484",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B046",
+      "type": "plot",
+      "start_line": 91,
+      "end_line": 91,
+      "primary_count": 82,
+      "text_hash": "e6fbb9d8b0de93da",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B047",
+      "type": "plot",
+      "start_line": 93,
+      "end_line": 93,
+      "primary_count": 13,
+      "text_hash": "6c5a1122b7fafabf",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B048",
+      "type": "plot",
+      "start_line": 95,
+      "end_line": 95,
+      "primary_count": 90,
+      "text_hash": "a7fc5bcf75ea5013",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B049",
+      "type": "plot",
+      "start_line": 97,
+      "end_line": 97,
+      "primary_count": 6,
+      "text_hash": "3511e620bf4a8c49",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B050",
+      "type": "plot",
+      "start_line": 99,
+      "end_line": 99,
+      "primary_count": 12,
+      "text_hash": "858e5470f05c2306",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B051",
+      "type": "plot",
+      "start_line": 101,
+      "end_line": 101,
+      "primary_count": 15,
+      "text_hash": "7debdee74bd7963b",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B052",
+      "type": "plot",
+      "start_line": 103,
+      "end_line": 103,
+      "primary_count": 10,
+      "text_hash": "b412a7326f07f8b6",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B053",
+      "type": "plot",
+      "start_line": 105,
+      "end_line": 105,
+      "primary_count": 11,
+      "text_hash": "54528de9f6f2600e",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B054",
+      "type": "plot",
+      "start_line": 107,
+      "end_line": 107,
+      "primary_count": 98,
+      "text_hash": "db41641e28361596",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B055",
+      "type": "plot",
+      "start_line": 109,
+      "end_line": 109,
+      "primary_count": 14,
+      "text_hash": "3f0ec9779e6a1bfc",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B056",
+      "type": "plot",
+      "start_line": 111,
+      "end_line": 111,
+      "primary_count": 7,
+      "text_hash": "5765df1ab0529d0a",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B057",
+      "type": "plot",
+      "start_line": 113,
+      "end_line": 113,
+      "primary_count": 5,
+      "text_hash": "dbba839fa6358fb6",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B058",
+      "type": "plot",
+      "start_line": 115,
+      "end_line": 115,
+      "primary_count": 12,
+      "text_hash": "c117aaab83ea1561",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B059",
+      "type": "plot",
+      "start_line": 117,
+      "end_line": 117,
+      "primary_count": 31,
+      "text_hash": "3b5f54776818d560",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B060",
+      "type": "plot",
+      "start_line": 119,
+      "end_line": 119,
+      "primary_count": 6,
+      "text_hash": "33cddf489cc85fd7",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B061",
+      "type": "plot",
+      "start_line": 121,
+      "end_line": 121,
+      "primary_count": 11,
+      "text_hash": "ad9213e2e64b5cb1",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B062",
+      "type": "plot",
+      "start_line": 123,
+      "end_line": 123,
+      "primary_count": 7,
+      "text_hash": "0eea4ddeee866b27",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B063",
+      "type": "plot",
+      "start_line": 125,
+      "end_line": 125,
+      "primary_count": 17,
+      "text_hash": "6ca5535f9539679b",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B064",
+      "type": "plot",
+      "start_line": 127,
+      "end_line": 127,
+      "primary_count": 81,
+      "text_hash": "09332659dbc1b411",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B065",
+      "type": "plot",
+      "start_line": 129,
+      "end_line": 129,
+      "primary_count": 10,
+      "text_hash": "70fb8a3370632952",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B066",
+      "type": "plot",
+      "start_line": 131,
+      "end_line": 131,
+      "primary_count": 59,
+      "text_hash": "f9a3d051a919f6a2",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B067",
+      "type": "plot",
+      "start_line": 133,
+      "end_line": 133,
+      "primary_count": 73,
+      "text_hash": "b8df1a27d63f4e7d",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B068",
+      "type": "plot",
+      "start_line": 135,
+      "end_line": 135,
+      "primary_count": 8,
+      "text_hash": "6bf9bf36ba4f5a75",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B069",
+      "type": "plot",
+      "start_line": 137,
+      "end_line": 137,
+      "primary_count": 4,
+      "text_hash": "887969cbf23dab21",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B070",
+      "type": "plot",
+      "start_line": 139,
+      "end_line": 139,
+      "primary_count": 10,
+      "text_hash": "fd899b12bf745cd5",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B071",
+      "type": "plot",
+      "start_line": 141,
+      "end_line": 141,
+      "primary_count": 25,
+      "text_hash": "74e4acf036309c59",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B072",
+      "type": "plot",
+      "start_line": 143,
+      "end_line": 143,
+      "primary_count": 66,
+      "text_hash": "6be3a53db27abd0b",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B073",
+      "type": "plot",
+      "start_line": 145,
+      "end_line": 145,
+      "primary_count": 14,
+      "text_hash": "bf64e087e0017452",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B074",
+      "type": "plot",
+      "start_line": 147,
+      "end_line": 147,
+      "primary_count": 20,
+      "text_hash": "a5eae6240e561f31",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B075",
+      "type": "plot",
+      "start_line": 149,
+      "end_line": 149,
+      "primary_count": 9,
+      "text_hash": "e154f20eefef630e",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B076",
+      "type": "plot",
+      "start_line": 151,
+      "end_line": 151,
+      "primary_count": 109,
+      "text_hash": "ffd91410c5e1f87c",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B077",
+      "type": "plot",
+      "start_line": 153,
+      "end_line": 153,
+      "primary_count": 11,
+      "text_hash": "07eae11cfd714475",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B078",
+      "type": "plot",
+      "start_line": 155,
+      "end_line": 155,
+      "primary_count": 9,
+      "text_hash": "9deaed88421adadd",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B079",
+      "type": "plot",
+      "start_line": 157,
+      "end_line": 157,
+      "primary_count": 19,
+      "text_hash": "ee845bba187546f8",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B080",
+      "type": "plot",
+      "start_line": 159,
+      "end_line": 159,
+      "primary_count": 6,
+      "text_hash": "fbac12fc29f38854",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B081",
+      "type": "plot",
+      "start_line": 161,
+      "end_line": 161,
+      "primary_count": 6,
+      "text_hash": "172125f1c707b884",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B082",
+      "type": "plot",
+      "start_line": 163,
+      "end_line": 163,
+      "primary_count": 12,
+      "text_hash": "e5783ed09e528477",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B083",
+      "type": "plot",
+      "start_line": 165,
+      "end_line": 165,
+      "primary_count": 75,
+      "text_hash": "02fb83db2b8da4b3",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B084",
+      "type": "plot",
+      "start_line": 167,
+      "end_line": 167,
+      "primary_count": 5,
+      "text_hash": "42ea3eaa198f8e61",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B085",
+      "type": "plot",
+      "start_line": 169,
+      "end_line": 169,
+      "primary_count": 9,
+      "text_hash": "3dc1413a254da588",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B086",
+      "type": "plot",
+      "start_line": 171,
+      "end_line": 171,
+      "primary_count": 6,
+      "text_hash": "31c531f6336a86cc",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B087",
+      "type": "plot",
+      "start_line": 173,
+      "end_line": 173,
+      "primary_count": 121,
+      "text_hash": "d1845b550adc3120",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B088",
+      "type": "plot",
+      "start_line": 175,
+      "end_line": 175,
+      "primary_count": 13,
+      "text_hash": "0f1d9e2c4d305c42",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B089",
+      "type": "plot",
+      "start_line": 177,
+      "end_line": 177,
+      "primary_count": 15,
+      "text_hash": "1f5a4e1c3154d8a6",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B090",
+      "type": "plot",
+      "start_line": 179,
+      "end_line": 179,
+      "primary_count": 7,
+      "text_hash": "20183799d16e4675",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B091",
+      "type": "plot",
+      "start_line": 181,
+      "end_line": 181,
+      "primary_count": 5,
+      "text_hash": "71c4931b018c9c05",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B092",
+      "type": "plot",
+      "start_line": 183,
+      "end_line": 183,
+      "primary_count": 5,
+      "text_hash": "03555676d6e4d484",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B093",
+      "type": "plot",
+      "start_line": 185,
+      "end_line": 185,
+      "primary_count": 114,
+      "text_hash": "71c141e8dabb4972",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B094",
+      "type": "plot",
+      "start_line": 187,
+      "end_line": 187,
+      "primary_count": 12,
+      "text_hash": "ab30b5df1465bfc1",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B095",
+      "type": "plot",
+      "start_line": 189,
+      "end_line": 189,
+      "primary_count": 115,
+      "text_hash": "5a13f4c1ab94b0d6",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B096",
+      "type": "plot",
+      "start_line": 191,
+      "end_line": 191,
+      "primary_count": 24,
+      "text_hash": "6431b63e2130a50e",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B097",
+      "type": "plot",
+      "start_line": 193,
+      "end_line": 193,
+      "primary_count": 23,
+      "text_hash": "e4a4d2d928cd558d",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B098",
+      "type": "plot",
+      "start_line": 195,
+      "end_line": 195,
+      "primary_count": 7,
+      "text_hash": "35f23c49c1dd1fab",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B099",
+      "type": "plot",
+      "start_line": 197,
+      "end_line": 197,
+      "primary_count": 90,
+      "text_hash": "7802da603c718953",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B100",
+      "type": "plot",
+      "start_line": 199,
+      "end_line": 199,
+      "primary_count": 10,
+      "text_hash": "69886c347c8677e2",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B101",
+      "type": "plot",
+      "start_line": 201,
+      "end_line": 201,
+      "primary_count": 84,
+      "text_hash": "1a4dd3250263b87b",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B102",
+      "type": "plot",
+      "start_line": 203,
+      "end_line": 203,
+      "primary_count": 7,
+      "text_hash": "d6c1582998d13239",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B103",
+      "type": "plot",
+      "start_line": 205,
+      "end_line": 205,
+      "primary_count": 4,
+      "text_hash": "db87402cf454ab71",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B104",
+      "type": "plot",
+      "start_line": 207,
+      "end_line": 207,
+      "primary_count": 94,
+      "text_hash": "17a86e9ad073ed59",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B105",
+      "type": "plot",
+      "start_line": 209,
+      "end_line": 209,
+      "primary_count": 7,
+      "text_hash": "399634f33106b45c",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B106",
+      "type": "plot",
+      "start_line": 211,
+      "end_line": 211,
+      "primary_count": 9,
+      "text_hash": "cf257eef6f16b40c",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B107",
+      "type": "plot",
+      "start_line": 213,
+      "end_line": 213,
+      "primary_count": 23,
+      "text_hash": "080534286f0e35d5",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B108",
+      "type": "plot",
+      "start_line": 215,
+      "end_line": 215,
+      "primary_count": 13,
+      "text_hash": "12e433028d6c3d4c",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B109",
+      "type": "plot",
+      "start_line": 217,
+      "end_line": 217,
+      "primary_count": 7,
+      "text_hash": "8eb3cf143243f983",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B110",
+      "type": "plot",
+      "start_line": 219,
+      "end_line": 219,
+      "primary_count": 17,
+      "text_hash": "f439cd86d8de87b2",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B111",
+      "type": "plot",
+      "start_line": 221,
+      "end_line": 221,
+      "primary_count": 43,
+      "text_hash": "e20de1e03dd149a1",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B112",
+      "type": "plot",
+      "start_line": 223,
+      "end_line": 223,
+      "primary_count": 8,
+      "text_hash": "e7498e6eb7954aa6",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B113",
+      "type": "plot",
+      "start_line": 225,
+      "end_line": 225,
+      "primary_count": 7,
+      "text_hash": "695c727a3f687943",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B114",
+      "type": "plot",
+      "start_line": 227,
+      "end_line": 227,
+      "primary_count": 6,
+      "text_hash": "7db670bb16993bd0",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B115",
+      "type": "plot",
+      "start_line": 229,
+      "end_line": 229,
+      "primary_count": 12,
+      "text_hash": "807fd346d1bfeea0",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B116",
+      "type": "plot",
+      "start_line": 231,
+      "end_line": 231,
+      "primary_count": 11,
+      "text_hash": "c557635380f76635",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B117",
+      "type": "plot",
+      "start_line": 233,
+      "end_line": 233,
+      "primary_count": 10,
+      "text_hash": "72b86937f5ce3d2e",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B118",
+      "type": "plot",
+      "start_line": 235,
+      "end_line": 235,
+      "primary_count": 78,
+      "text_hash": "8c4667037f5f4b3d",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B119",
+      "type": "plot",
+      "start_line": 237,
+      "end_line": 237,
+      "primary_count": 21,
+      "text_hash": "30e82e14b8ebb445",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B120",
+      "type": "plot",
+      "start_line": 239,
+      "end_line": 239,
+      "primary_count": 29,
+      "text_hash": "9d51467d0bcc77be",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B121",
+      "type": "plot",
+      "start_line": 241,
+      "end_line": 241,
+      "primary_count": 26,
+      "text_hash": "3e1ea5b41a828261",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B122",
+      "type": "plot",
+      "start_line": 243,
+      "end_line": 243,
+      "primary_count": 75,
+      "text_hash": "265c7d4455482f67",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B123",
+      "type": "plot",
+      "start_line": 245,
+      "end_line": 245,
+      "primary_count": 9,
+      "text_hash": "1e9950d9db6efd65",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B124",
+      "type": "plot",
+      "start_line": 247,
+      "end_line": 247,
+      "primary_count": 16,
+      "text_hash": "9175cda3b83f2052",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B125",
+      "type": "plot",
+      "start_line": 249,
+      "end_line": 249,
+      "primary_count": 20,
+      "text_hash": "8b6b450d2eac4387",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B126",
+      "type": "plot",
+      "start_line": 251,
+      "end_line": 251,
+      "primary_count": 16,
+      "text_hash": "2d87535ddc3e81a3",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B127",
+      "type": "plot",
+      "start_line": 253,
+      "end_line": 253,
+      "primary_count": 19,
+      "text_hash": "94f48d15048b13cf",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B128",
+      "type": "plot",
+      "start_line": 255,
+      "end_line": 255,
+      "primary_count": 48,
+      "text_hash": "fe739372f6d91a19",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B129",
+      "type": "plot",
+      "start_line": 257,
+      "end_line": 257,
+      "primary_count": 7,
+      "text_hash": "a6c3d948541a5844",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B130",
+      "type": "plot",
+      "start_line": 259,
+      "end_line": 259,
+      "primary_count": 8,
+      "text_hash": "d7ac4d625a925692",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B131",
+      "type": "plot",
+      "start_line": 261,
+      "end_line": 261,
+      "primary_count": 9,
+      "text_hash": "9b3d8f07f00901fc",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B132",
+      "type": "plot",
+      "start_line": 263,
+      "end_line": 263,
+      "primary_count": 54,
+      "text_hash": "d4c1f58f4d7848a8",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B133",
+      "type": "plot",
+      "start_line": 265,
+      "end_line": 265,
+      "primary_count": 12,
+      "text_hash": "dfbf56a76dfb7ae5",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B134",
+      "type": "plot",
+      "start_line": 267,
+      "end_line": 267,
+      "primary_count": 5,
+      "text_hash": "bcb591515d7cb47c",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B135",
+      "type": "plot",
+      "start_line": 269,
+      "end_line": 269,
+      "primary_count": 15,
+      "text_hash": "e870b485641ec860",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B136",
+      "type": "plot",
+      "start_line": 271,
+      "end_line": 271,
+      "primary_count": 6,
+      "text_hash": "03bb2a1cfe60818a",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B137",
+      "type": "plot",
+      "start_line": 273,
+      "end_line": 273,
+      "primary_count": 35,
+      "text_hash": "c9d4996244fa3fcc",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B138",
+      "type": "plot",
+      "start_line": 275,
+      "end_line": 275,
+      "primary_count": 28,
+      "text_hash": "fb81e986ab2e3bf0",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B139",
+      "type": "plot",
+      "start_line": 277,
+      "end_line": 277,
+      "primary_count": 73,
+      "text_hash": "41d2fca7c9d770c1",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B140",
+      "type": "plot",
+      "start_line": 279,
+      "end_line": 279,
+      "primary_count": 31,
+      "text_hash": "7751c01281d1294d",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B141",
+      "type": "plot",
+      "start_line": 281,
+      "end_line": 281,
+      "primary_count": 89,
+      "text_hash": "ac915a519505ff23",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B142",
+      "type": "plot",
+      "start_line": 283,
+      "end_line": 283,
+      "primary_count": 40,
+      "text_hash": "3300f24b1cd0c42c",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B143",
+      "type": "plot",
+      "start_line": 285,
+      "end_line": 285,
+      "primary_count": 15,
+      "text_hash": "db00a96eb372970d",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B144",
+      "type": "plot",
+      "start_line": 287,
+      "end_line": 287,
+      "primary_count": 14,
+      "text_hash": "514e0adf05609248",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B145",
+      "type": "plot",
+      "start_line": 289,
+      "end_line": 289,
+      "primary_count": 8,
+      "text_hash": "4a8785dfe15828c9",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B146",
+      "type": "plot",
+      "start_line": 291,
+      "end_line": 291,
+      "primary_count": 7,
+      "text_hash": "b8cd7e945c541245",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B147",
+      "type": "plot",
+      "start_line": 293,
+      "end_line": 293,
+      "primary_count": 5,
+      "text_hash": "24cd83f2434df2aa",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B148",
+      "type": "plot",
+      "start_line": 295,
+      "end_line": 295,
+      "primary_count": 8,
+      "text_hash": "0173c557a7302652",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B149",
+      "type": "plot",
+      "start_line": 297,
+      "end_line": 297,
+      "primary_count": 12,
+      "text_hash": "8e1e1ff15347488f",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B150",
+      "type": "plot",
+      "start_line": 299,
+      "end_line": 299,
+      "primary_count": 5,
+      "text_hash": "f2b74d2018e7029b",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B151",
+      "type": "plot",
+      "start_line": 301,
+      "end_line": 301,
+      "primary_count": 108,
+      "text_hash": "0ee3aa31393e7422",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B152",
+      "type": "plot",
+      "start_line": 303,
+      "end_line": 303,
+      "primary_count": 20,
+      "text_hash": "d4b8df27589a6e94",
+      "notes": "",
+      "reroll_slots": []
+    }
+  ],
+  "updated_at": "2026-06-27T14:33:22.965Z"
+}

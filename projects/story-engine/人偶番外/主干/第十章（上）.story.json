@@ -1,0 +1,368 @@
+{
+  "schema_version": 1,
+  "source_file": "第十章（上）.md",
+  "source_path": "projects/story-engine/人偶番外/主干/第十章（上）.md",
+  "source_hash": "61292383090916ee",
+  "title": "第十章：双线映射与死物同侪的装箱前夜（上）",
+  "chapter_title": "第十章：双线映射与死物同侪的装箱前夜",
+  "chapter_key": "0010::第十章：双线映射与死物同侪的装箱前夜",
+  "chapter_no": 10,
+  "part_label": "上",
+  "block_count": 35,
+  "primary_count": 1985,
+  "canvas_position": null,
+  "part_reroll_slots": [],
+  "blocks": [
+    {
+      "id": "B001",
+      "type": "heading",
+      "start_line": 1,
+      "end_line": 1,
+      "primary_count": 21,
+      "text_hash": "58ee6ae47ac1a0ff",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B002",
+      "type": "plot",
+      "start_line": 3,
+      "end_line": 3,
+      "primary_count": 54,
+      "text_hash": "2a0f67bdb7f0c858",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B003",
+      "type": "plot",
+      "start_line": 5,
+      "end_line": 5,
+      "primary_count": 55,
+      "text_hash": "a52a0acb33d27dee",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B004",
+      "type": "plot",
+      "start_line": 7,
+      "end_line": 7,
+      "primary_count": 80,
+      "text_hash": "b17ae04fd521237d",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B005",
+      "type": "plot",
+      "start_line": 9,
+      "end_line": 9,
+      "primary_count": 105,
+      "text_hash": "dffc47e0cd3288d3",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B006",
+      "type": "plot",
+      "start_line": 11,
+      "end_line": 11,
+      "primary_count": 19,
+      "text_hash": "a77433b1d51dc0f5",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B007",
+      "type": "plot",
+      "start_line": 13,
+      "end_line": 13,
+      "primary_count": 138,
+      "text_hash": "6e94d9d5830ee066",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B008",
+      "type": "plot",
+      "start_line": 15,
+      "end_line": 15,
+      "primary_count": 49,
+      "text_hash": "2772f7bc9bd8f478",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B009",
+      "type": "plot",
+      "start_line": 17,
+      "end_line": 17,
+      "primary_count": 84,
+      "text_hash": "445d72712ab8914d",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B010",
+      "type": "plot",
+      "start_line": 19,
+      "end_line": 19,
+      "primary_count": 28,
+      "text_hash": "0ab271f6525ccaaa",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B011",
+      "type": "plot",
+      "start_line": 21,
+      "end_line": 21,
+      "primary_count": 145,
+      "text_hash": "83f1ee25143a3e22",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B012",
+      "type": "plot",
+      "start_line": 23,
+      "end_line": 23,
+      "primary_count": 6,
+      "text_hash": "0585f59ba56b1e0f",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B013",
+      "type": "plot",
+      "start_line": 25,
+      "end_line": 25,
+      "primary_count": 25,
+      "text_hash": "2eadf002c889d41f",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B014",
+      "type": "plot",
+      "start_line": 27,
+      "end_line": 27,
+      "primary_count": 112,
+      "text_hash": "f27a68c1ca061030",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B015",
+      "type": "plot",
+      "start_line": 29,
+      "end_line": 29,
+      "primary_count": 74,
+      "text_hash": "6dd6e460125252d6",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B016",
+      "type": "plot",
+      "start_line": 31,
+      "end_line": 31,
+      "primary_count": 16,
+      "text_hash": "1d7213bdbda404ee",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B017",
+      "type": "plot",
+      "start_line": 33,
+      "end_line": 33,
+      "primary_count": 48,
+      "text_hash": "07d3a19a50372933",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B018",
+      "type": "plot",
+      "start_line": 35,
+      "end_line": 35,
+      "primary_count": 81,
+      "text_hash": "0bc21ee7fbe198ee",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B019",
+      "type": "plot",
+      "start_line": 37,
+      "end_line": 37,
+      "primary_count": 56,
+      "text_hash": "282c782209d27c7e",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B020",
+      "type": "plot",
+      "start_line": 39,
+      "end_line": 39,
+      "primary_count": 79,
+      "text_hash": "1940f54cdca676ae",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B021",
+      "type": "plot",
+      "start_line": 41,
+      "end_line": 41,
+      "primary_count": 63,
+      "text_hash": "c19fa01480659d68",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B022",
+      "type": "plot",
+      "start_line": 43,
+      "end_line": 43,
+      "primary_count": 2,
+      "text_hash": "a7f878b8ced1a795",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B023",
+      "type": "plot",
+      "start_line": 45,
+      "end_line": 45,
+      "primary_count": 7,
+      "text_hash": "94b4d93560489cb0",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B024",
+      "type": "plot",
+      "start_line": 47,
+      "end_line": 47,
+      "primary_count": 52,
+      "text_hash": "110a0e98c0a96e21",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B025",
+      "type": "plot",
+      "start_line": 49,
+      "end_line": 49,
+      "primary_count": 65,
+      "text_hash": "ac7d64a9470ac1b2",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B026",
+      "type": "plot",
+      "start_line": 51,
+      "end_line": 51,
+      "primary_count": 34,
+      "text_hash": "69e6a4c577b40250",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B027",
+      "type": "plot",
+      "start_line": 53,
+      "end_line": 54,
+      "primary_count": 41,
+      "text_hash": "fda1c4db5ea8993f",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B028",
+      "type": "plot",
+      "start_line": 56,
+      "end_line": 56,
+      "primary_count": 22,
+      "text_hash": "6d0b126efd829fa7",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B029",
+      "type": "plot",
+      "start_line": 58,
+      "end_line": 59,
+      "primary_count": 96,
+      "text_hash": "7205d0d13ea1d446",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B030",
+      "type": "plot",
+      "start_line": 61,
+      "end_line": 61,
+      "primary_count": 59,
+      "text_hash": "870b397965640c89",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B031",
+      "type": "plot",
+      "start_line": 63,
+      "end_line": 64,
+      "primary_count": 48,
+      "text_hash": "6d9d47fd2117677b",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B032",
+      "type": "plot",
+      "start_line": 66,
+      "end_line": 67,
+      "primary_count": 118,
+      "text_hash": "2a89754b25a8756b",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B033",
+      "type": "plot",
+      "start_line": 69,
+      "end_line": 70,
+      "primary_count": 65,
+      "text_hash": "3b552c9d876ab536",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B034",
+      "type": "plot",
+      "start_line": 72,
+      "end_line": 72,
+      "primary_count": 28,
+      "text_hash": "3894da01e52a9c19",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B035",
+      "type": "plot",
+      "start_line": 74,
+      "end_line": 74,
+      "primary_count": 10,
+      "text_hash": "e189fcc1d9347c6b",
+      "notes": "",
+      "reroll_slots": []
+    }
+  ],
+  "updated_at": "2026-06-28T15:58:54.204Z"
+}

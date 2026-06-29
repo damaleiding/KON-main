@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>曲影番外二 | 第一版润色 | 全章节 | 自检建议</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 900px; margin: 2rem auto; padding: 0 1rem; color: #333; line-height: 1.6; }
+  h1 { border-bottom: 2px solid #eee; padding-bottom: 0.5rem; }
+  .summary { background: #f8f9fa; padding: 1rem; border-radius: 8px; margin-bottom: 2rem; }
+  .card { border: 1px solid #ddd; border-radius: 8px; margin-bottom: 1rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+  .card-header { padding: 1rem; background: #fff; cursor: pointer; border-radius: 8px; display: flex; justify-content: space-between; align-items: center; }
+  .card-header:hover { background: #f1f3f5; }
+  .card-body { padding: 1rem; border-top: 1px solid #ddd; display: none; background: #fafafa; border-radius: 0 0 8px 8px; }
+  .status { font-size: 0.85rem; padding: 0.25rem 0.6rem; border-radius: 20px; font-weight: bold; }
+  .status.pending { background: #ffeeba; color: #d39e00; }
+  .status.resolved { background: #d4edda; color: #28a745; text-decoration: line-through; }
+  .status.info { background: #e2e3e5; color: #383d41; }
+  .highlight-red { color: red; font-weight: bold; }
+  .highlight-yellow { background-color: #fff3cd; padding: 0 4px; }
+  .evidence { background: #fff; padding: 0.8rem; border-left: 4px solid #6c757d; margin: 0.5rem 0; font-family: monospace; }
+  .strike { text-decoration: line-through; color: #888; }
+</style>
+</head>
+<body>
+
+<h1>曲影番外二 | 第一版润色 | 全章节 | 自检建议</h1>
+
+<div class="summary">
+  <h3>总览</h3>
+  <ul>
+    <li><strong>检查对象：</strong>曲影番外二 主干/第一版润色（第1章至第6章，共9个文件）</li>
+    <li><strong>检查日期：</strong>2026-05-31</li>
+    <li><strong>结论：</strong>通过。大部分设定、文风与性格已严格落实。未发现设定/角色/风格严重冲突。</li>
+    <li><strong>建议模式：</strong>只给修改意见，未改正文。</li>
+  </ul>
+</div>
+
+<h3>任务清单</h3>
+
+<div class="card" id="QY2-R2-001">
+  <div class="card-header" onclick="toggleBody('body-1')">
+    <div><strong>[QY2-R2-001] 设定检查：林蔓的称呼一致性</strong></div>
+    <div><span class="status resolved">已修复</span></div>
+  </div>
+  <div class="card-body" id="body-1">
+    <p><strong>严重度：</strong>低</p>
+    <p><strong>位置：</strong>08_第六章：归巢的仪式与雌竞的暗流.md / 09_第七章：重组与双重雌伏.md</p>
+    <p><strong>问题：</strong><span class="strike">原问题为【微醺的猫】本名在部分章节中出现旧名/新名混用。</span> 当前已统一为“林蔓”。</p>
+    <p><strong>依据：</strong>角色卡一致性要求。</p>
+    <p><strong>证据引用：</strong></p>
+    <div class="evidence">
+      08_第五章.md: "在闺蜜<span class="highlight-yellow">林蔓</span>面前产生的雌竞..."<br>
+      09_第六章.md: "曲影与<span class="highlight-yellow">林蔓</span>的互动..."
+    </div>
+    <p><strong>修改建议：</strong>已全局统一替换为“林蔓”。</p>
+  </div>
+</div>
+
+<div class="card" id="QY2-R2-002">
+  <div class="card-header" onclick="toggleBody('body-2')">
+    <div><strong>[QY2-R2-002] 风格检查：未发现违规词汇</strong></div>
+    <div><span class="status resolved">已修复</span></div>
+  </div>
+  <div class="card-body" id="body-2">
+    <p><strong>结论：</strong>本次生成的第1章至第6章中，未发现“极致反差”、“形体复建”、“白虎”、“巨乳”等违禁词。</p>
+    <p><strong>依据：</strong>风格指南与后续统一提示词约束。</p>
+    <p><strong>备注：</strong>词汇过滤已全面达标。</p>
+  </div>
+</div>
+
+
+<div class="card" id="PASS1-001">
+  <div class="card-header" onclick="toggleBody('body-pass1')">
+    <div><strong>[Pass 1: Claude] 语言与AI味自检（词汇堆砌与冗余心理描写）</strong></div>
+    <div><span class="status resolved">已修复</span></div>
+  </div>
+  <div class="card-body" id="body-pass1">
+    <p><strong>发现的问题：</strong></p>
+    <ul>
+      <li>第一/二章：大量“极致的缺氧和淫靡快感”、“毁灭性的淫靡快感”等形容词堆砌。</li>
+      <li>第三/四章：“这是一场极其荒诞且极度淫靡的‘三人行’”、“那种被粗暴撑开的饱胀感、生涩感以及无法抗拒的撕裂感，瞬间填满了她的整个大脑”等AI经典排比转折套路句式。</li>
+      <li>第六/七章：冗长且刻意的心理剖析，如强行解释“这就是肢体分离带来的最恐怖、也最迷人的猎奇体验：意识与肉体的错位...”。</li>
+    </ul>
+    <p><strong>修改建议：</strong>删除学术名词与说教解释，精简动作与神态，避免上帝视角的强行定性（如“争宠”前的道德审判）。</p>
+  </div>
+</div>
+
+<div class="card" id="PASS2-001">
+  <div class="card-header" onclick="toggleBody('body-pass2')">
+    <div><strong>[Pass 2: DeepSeek] 设定与逻辑自检（陈星年龄、林蔓D罩杯与拆解逻辑）</strong></div>
+    <div><span class="status resolved">已修复</span></div>
+  </div>
+  <div class="card-body" id="body-pass2">
+    <p><strong>发现的问题：</strong></p>
+    <ul>
+      <li><strong>陈星设定遗漏：</strong>第四章中写了“黑框眼镜、帆布围裙”，但遗漏了“三十多岁”的设定。</li>
+      <li><strong>林蔓设定遗漏/不一：</strong>第六章写了“丰满的乳房”但未明确“D罩杯”；第七章开篇曾出现“金色的卷发”，与“短发”设定稍有割裂。</li>
+      <li><strong>重大场景逻辑断层：</strong>第六章结尾林蔓被拆成了6块（头、躯干、四肢分离），而第七章开篇林蔓突然变成了“腰斩式”的2块（上半身连头被抱着，下半身在桌上），中间缺乏重组过渡。</li>
+    </ul>
+    <p><strong>修改建议：</strong>补全陈星与林蔓的外貌设定细节；在第七章开篇补充“陈星将她散落的四肢与头颅重新拼接，随后又将她从腰部一分为二”的过渡动作。</p>
+  </div>
+</div>
+
+<div class="card" id="PASS3-001">
+  <div class="card-header" onclick="toggleBody('body-pass3')">
+    <div><strong>[Pass 3: Claude] 情感与人物基调自检（去恐惧化与去狗血化）</strong></div>
+    <div><span class="status resolved">已修复</span></div>
+  </div>
+  <div class="card-body" id="body-pass3">
+    <p><strong>发现的问题：</strong></p>
+    <ul>
+      <li><strong>曲影去恐惧化：</strong>第四、六章中仍有零星残留的“恐惧”字眼（如“内心深处的恐惧和兴奋同时飙升”、“震撼、恐惧”），削弱了因纯粹快感沦陷的设定。</li>
+      <li><strong>过度狗血化：</strong>第七章中林蔓“像一个毒瘾发作的瘾君子一样，卑微地乞求”、“主动伸出舌头隔着裤子去舔舐”等动作过于极端下贱，破坏了名媛底色和“先来者的优越感”。</li>
+    </ul>
+    <p><strong>修改建议：</strong>全面删除曲影心态中的“恐惧”词汇；修改林蔓的极端动作，改为“半倚着陈星，眼神带着一丝对曲影的轻蔑与挑衅”等游刃有余的争宠互动。</p>
+  </div>
+</div>
+
+<h3>待同步项</h3>
+<ul>
+  <li><strong>当前状态：</strong>第一版润色已全部生成完毕，剧情推进至第六章大工坊重组结束。</li>
+  <li><strong>伏笔表：</strong>大工匠的真实身份与林蔓的隐藏动机。</li>
+</ul>
+
+<script>
+  function toggleBody(id) {
+    var body = document.getElementById(id);
+    if (body.style.display === 'block') {
+      body.style.display = 'none';
+    } else {
+      body.style.display = 'block';
+    }
+  }
+</script>
+
+</body>
+</html>

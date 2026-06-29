@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "root": "projects/story-engine/人偶番外/主干",
+  "positions": {
+    ".::0004::第四章：双线并行的感官与代行者": {
+      "x": 261.7184727167533,
+      "y": -270.65586994525063
+    },
+    ".::0005::第五章：代行者的自我解析与崩坏的初体验": {
+      "x": 95.61592020264061,
+      "y": 133.28362249101085
+    },
+    ".::0006::第六章：精英营的日常与膨胀的教具": {
+      "x": 258.99212088938174,
+      "y": 600.1571208524821
+    },
+    ".::0007::第七章：资产回收与看门人的皮革触感": {
+      "x": 260,
+      "y": 810
+    },
+    ".::0008::第八章：白瓷重塑、极效精油与双线崩坏的抛光": {
+      "x": 260,
+      "y": 1040
+    },
+    ".::0009::第九章：暑期深养、软质皓齿与低频共振": {
+      "x": 260,
+      "y": 1270
+    },
+    ".::0009::第九章：四十八小时的逻辑重构与痴傻的初醒": {
+      "x": 260,
+      "y": 1500
+    },
+    ".::0010::第十章：双线映射与死物同侪的装箱前夜": {
+      "x": 260,
+      "y": 1730
+    },
+    ".::0011::第十一章：淫纹制服与低年级的试用期": {
+      "x": 260,
+      "y": 1958.3055605766722
+    },
+    "draft::draft-2026-06-28T17-28-04-337Z-806c6c": {
+      "x": 1619.890539231325,
+      "y": 110.26881952100345
+    },
+    "draft::draft-2026-06-28T17-28-05-653Z-c9c01d": {
+      "x": 1064.4215105205317,
+      "y": 114.20864766906857
+    },
+    "draft::draft-2026-06-28T18-23-22-817Z-f73e15": {
+      "x": 912.4327904978302,
+      "y": 11.533900978738998
+    }
+  },
+  "workspace_state": {
+    "transform": {
+      "x": 35.6,
+      "y": 272,
+      "scale": 0.627
+    },
+    "selected_group_id": "node-a43b776c0b310805",
+    "selected_part_path": "",
+    "selected_block_id": "",
+    "expanded_group_ids": [
+      "node-61c2361e79a8d731"
+    ],
+    "sidebar_collapsed": true,
+    "inspector_width": 451
+  },
+  "draft_nodes": [
+    {
+      "id": "draft-2026-06-28T16-38-34-669Z-13e0df",
+      "after_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "after_title": "第四章：双线并行的感官与代行者",
+      "title": "分支草稿：第四章：双线并行的感官与代行者",
+      "file_path": ".story-canvas-drafts/draft-2026-06-28T16-38-34-669Z-13e0df.md",
+      "status": "archived",
+      "split_plan": [],
+      "created_at": "2026-06-28T16:38:34.678Z",
+      "updated_at": "2026-06-28T17:27:57.726Z",
+      "archived_at": "2026-06-28T17:27:57.726Z"
+    },
+    {
+      "id": "draft-2026-06-28T17-04-23-455Z-7ecb15",
+      "after_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "after_title": "第四章：双线并行的感官与代行者",
+      "title": "分支草稿：第四章：双线并行的感官与代行者",
+      "file_path": ".story-canvas-drafts/draft-2026-06-28T17-04-23-455Z-7ecb15.md",
+      "status": "archived",
+      "split_plan": [],
+      "created_at": "2026-06-28T17:04:23.467Z",
+      "updated_at": "2026-06-28T17:27:51.265Z",
+      "archived_at": "2026-06-28T17:27:51.265Z"
+    },
+    {
+      "id": "draft-2026-06-28T17-28-04-337Z-806c6c",
+      "after_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "after_title": "第四章：双线并行的感官与代行者",
+      "before_group_key": "",
+      "before_title": "",
+      "branch_from_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "route_mode": "branch",
+      "title": "分支草稿：第四章：双线并行的感官与代行者",
+      "file_path": ".story-canvas-drafts/draft-2026-06-28T17-28-04-337Z-806c6c.md",
+      "status": "draft",
+      "split_plan": [],
+      "generation_settings": {
+        "agent": "trae-main",
+        "model": "gemini-3.5-flash",
+        "version_count": 2,
+        "target_chars": 6000,
+        "split_count": 1,
+        "split_mode": "single_segment",
+        "prompt_goal": "从当前章节拉出独立分支路线，保留主干事实，不自动合并。"
+      },
+      "generation_requests": [
+        {
+          "request_id": "gen-2026-06-28T18-32-45-914Z-3e3fb3",
+          "status": "requested",
+          "agent": "trae-main",
+          "model": "gemini-3.5-flash",
+          "version_count": 2,
+          "target_chars": 6000,
+          "split_count": 1,
+          "split_mode": "single_segment",
+          "prompt_goal": "从当前章节拉出独立分支路线，保留主干事实，不自动合并。",
+          "route_mode": "branch",
+          "user_directive": "从当前章节拉出独立分支路线，保留主干事实，不自动合并。",
+          "instruction_priority": [
+            "later_direct_user_instruction",
+            "web_reroll_box_user_directive",
+            "locked_story_facts",
+            "story_card_and_longform_rules",
+            "default_style_preferences"
+          ],
+          "generation_rule_pack": {
+            "id": "kva-longform-generation-v1",
+            "applies_rules": [
+              "story-canvas",
+              "longform-generation",
+              "chapter-relay-card",
+              "four-ledgers",
+              "scene-state-change",
+              "chapter-end-handoff"
+            ],
+            "priority_order": [
+              "later_direct_user_instruction",
+              "web_reroll_box_user_directive",
+              "locked_story_facts",
+              "story_card_and_longform_rules",
+              "default_style_preferences"
+            ],
+            "conflict_policy": "用户后续直接意见优先；其次执行网页重构框意见。若与故事卡/四账本/长篇生成规则冲突，按用户具体意见执行，并在生成说明中标出冲突。"
+          },
+          "rule_conflict_policy": "用户后续直接意见优先；其次执行网页重构框意见。若与故事卡/四账本/长篇生成规则冲突，按用户具体意见执行，并在生成说明中标出冲突。",
+          "created_at": "2026-06-28T18:32:45.915Z"
+        }
+      ],
+      "candidate_versions": [],
+      "created_at": "2026-06-28T17:28:04.362Z",
+      "updated_at": "2026-06-28T18:32:45.915Z"
+    },
+    {
+      "id": "draft-2026-06-28T17-28-05-653Z-c9c01d",
+      "after_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "after_title": "第四章：双线并行的感官与代行者",
+      "before_group_key": "",
+      "before_title": "",
+      "branch_from_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "route_mode": "branch",
+      "title": "分支草稿：第四章：双线并行的感官与代行者",
+      "file_path": ".story-canvas-drafts/draft-2026-06-28T17-28-05-653Z-c9c01d.md",
+      "status": "draft",
+      "split_plan": [],
+      "generation_settings": {
+        "agent": "trae-main",
+        "model": "trae-main",
+        "version_count": 3,
+        "target_chars": 3000,
+        "split_count": 1,
+        "split_mode": "single_segment",
+        "prompt_goal": "从当前章节拉出独立分支路线，保留主干事实，不自动合并。"
+      },
+      "generation_requests": [],
+      "candidate_versions": [],
+      "created_at": "2026-06-28T17:28:05.665Z",
+      "updated_at": "2026-06-28T17:28:05.665Z"
+    },
+    {
+      "id": "draft-2026-06-28T18-23-02-978Z-812bf5",
+      "after_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "after_title": "第四章：双线并行的感官与代行者",
+      "before_group_key": ".::0005::第五章：代行者的自我解析与崩坏的初体验",
+      "before_title": "第五章：代行者的自我解析与崩坏的初体验",
+      "branch_from_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "route_mode": "interstitial",
+      "title": "插入草稿：第四章：双线并行的感官与代行者",
+      "file_path": ".story-canvas-drafts/draft-2026-06-28T18-23-02-978Z-812bf5.md",
+      "status": "archived",
+      "split_plan": [],
+      "generation_settings": {
+        "agent": "trae-main",
+        "model": "trae-main",
+        "version_count": 3,
+        "target_chars": 3000,
+        "split_count": 1,
+        "split_mode": "single_segment",
+        "prompt_goal": "插入到相邻章节之间，补足承接、转折和上下文衔接。"
+      },
+      "generation_requests": [],
+      "candidate_versions": [],
+      "created_at": "2026-06-28T18:23:02.994Z",
+      "updated_at": "2026-06-28T18:23:12.881Z",
+      "archived_at": "2026-06-28T18:23:12.881Z"
+    },
+    {
+      "id": "draft-2026-06-28T18-23-16-572Z-a5ae58",
+      "after_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "after_title": "第四章：双线并行的感官与代行者",
+      "before_group_key": ".::0005::第五章：代行者的自我解析与崩坏的初体验",
+      "before_title": "第五章：代行者的自我解析与崩坏的初体验",
+      "branch_from_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "route_mode": "interstitial",
+      "title": "插入草稿：第四章：双线并行的感官与代行者",
+      "file_path": ".story-canvas-drafts/draft-2026-06-28T18-23-16-572Z-a5ae58.md",
+      "status": "archived",
+      "split_plan": [],
+      "generation_settings": {
+        "agent": "trae-main",
+        "model": "trae-main",
+        "version_count": 3,
+        "target_chars": 3000,
+        "split_count": 1,
+        "split_mode": "single_segment",
+        "prompt_goal": "插入到相邻章节之间，补足承接、转折和上下文衔接。"
+      },
+      "generation_requests": [],
+      "candidate_versions": [],
+      "created_at": "2026-06-28T18:23:16.580Z",
+      "updated_at": "2026-06-28T18:23:21.316Z",
+      "archived_at": "2026-06-28T18:23:21.316Z"
+    },
+    {
+      "id": "draft-2026-06-28T18-23-22-817Z-f73e15",
+      "after_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "after_title": "第四章：双线并行的感官与代行者",
+      "before_group_key": "",
+      "before_title": "",
+      "branch_from_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "route_mode": "branch",
+      "title": "分支草稿：第四章：双线并行的感官与代行者",
+      "file_path": ".story-canvas-drafts/draft-2026-06-28T18-23-22-817Z-f73e15.md",
+      "status": "archived",
+      "split_plan": [],
+      "generation_settings": {
+        "agent": "trae-main",
+        "model": "trae-main",
+        "version_count": 3,
+        "target_chars": 3000,
+        "split_count": 1,
+        "split_mode": "single_segment",
+        "prompt_goal": "从当前章节拉出独立分支路线，保留主干事实，不自动合并。"
+      },
+      "generation_requests": [],
+      "candidate_versions": [],
+      "created_at": "2026-06-28T18:23:22.825Z",
+      "updated_at": "2026-06-28T18:23:28.833Z",
+      "archived_at": "2026-06-28T18:23:28.833Z"
+    }
+  ],
+  "updated_at": "2026-06-29T15:29:30.631Z"
+}

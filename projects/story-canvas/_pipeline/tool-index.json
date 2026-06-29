@@ -1,0 +1,13 @@
+{
+  "project": "story-canvas",
+  "migration_status": "complete",
+  "tools": [
+    {
+      "name": "story-canvas",
+      "current_path": "projects/story-canvas/app/",
+      "future_path": "app/",
+      "status": "active",
+      "notes": "Implementation is maintained in project app; old workspace tools path is a lightweight compatibility wrapper."
+    }
+  ]
+}

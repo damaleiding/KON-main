@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "root": "projects/story-engine/人偶番外/主干",
+  "positions": {
+    ".::0004::第四章：双线并行的感官与代行者": {
+      "x": 264.056964939649,
+      "y": -55.631212430112384
+    },
+    ".::0005::第五章：代行者的自我解析与崩坏的初体验": {
+      "x": 260,
+      "y": 350
+    },
+    ".::0006::第六章：精英营的日常与膨胀的教具": {
+      "x": 260,
+      "y": 580
+    },
+    ".::0007::第七章：资产回收与看门人的皮革触感": {
+      "x": 260,
+      "y": 810
+    },
+    ".::0008::第八章：白瓷重塑、极效精油与双线崩坏的抛光": {
+      "x": 260,
+      "y": 1040
+    },
+    ".::0009::第九章：暑期深养、软质皓齿与低频共振": {
+      "x": 260,
+      "y": 1270
+    },
+    ".::0009::第九章：四十八小时的逻辑重构与痴傻的初醒": {
+      "x": 260,
+      "y": 1500
+    },
+    ".::0010::第十章：双线映射与死物同侪的装箱前夜": {
+      "x": 260,
+      "y": 1730
+    },
+    ".::0011::第十一章：淫纹制服与低年级的试用期": {
+      "x": 260,
+      "y": 1958.3055605766722
+    },
+    "draft::draft-2026-06-28T17-28-04-337Z-806c6c": {
+      "x": 1008.1568367937307,
+      "y": 77.79152838642061
+    },
+    "draft::draft-2026-06-28T17-28-05-653Z-c9c01d": {
+      "x": 377.1095385300324,
+      "y": 176.1010492675895
+    }
+  },
+  "workspace_state": {
+    "transform": {
+      "x": -153.2,
+      "y": 111.2,
+      "scale": 1.019
+    },
+    "selected_group_id": "node-a43b776c0b310805",
+    "selected_part_path": "",
+    "selected_block_id": "",
+    "expanded_group_ids": [],
+    "sidebar_collapsed": true,
+    "inspector_width": 520
+  },
+  "draft_nodes": [
+    {
+      "id": "draft-2026-06-28T16-38-34-669Z-13e0df",
+      "after_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "after_title": "第四章：双线并行的感官与代行者",
+      "title": "分支草稿：第四章：双线并行的感官与代行者",
+      "file_path": ".story-canvas-drafts/draft-2026-06-28T16-38-34-669Z-13e0df.md",
+      "status": "archived",
+      "split_plan": [],
+      "created_at": "2026-06-28T16:38:34.678Z",
+      "updated_at": "2026-06-28T17:27:57.726Z",
+      "archived_at": "2026-06-28T17:27:57.726Z"
+    },
+    {
+      "id": "draft-2026-06-28T17-04-23-455Z-7ecb15",
+      "after_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "after_title": "第四章：双线并行的感官与代行者",
+      "title": "分支草稿：第四章：双线并行的感官与代行者",
+      "file_path": ".story-canvas-drafts/draft-2026-06-28T17-04-23-455Z-7ecb15.md",
+      "status": "archived",
+      "split_plan": [],
+      "created_at": "2026-06-28T17:04:23.467Z",
+      "updated_at": "2026-06-28T17:27:51.265Z",
+      "archived_at": "2026-06-28T17:27:51.265Z"
+    },
+    {
+      "id": "draft-2026-06-28T17-28-04-337Z-806c6c",
+      "after_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "after_title": "第四章：双线并行的感官与代行者",
+      "before_group_key": "",
+      "before_title": "",
+      "branch_from_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "route_mode": "branch",
+      "title": "分支草稿：第四章：双线并行的感官与代行者",
+      "file_path": ".story-canvas-drafts/draft-2026-06-28T17-28-04-337Z-806c6c.md",
+      "status": "draft",
+      "split_plan": [],
+      "generation_settings": {
+        "agent": "trae-main",
+        "model": "trae-main",
+        "version_count": 3,
+        "target_chars": 3000,
+        "split_count": 1,
+        "split_mode": "single_segment",
+        "prompt_goal": "从当前章节拉出独立分支路线，保留主干事实，不自动合并。"
+      },
+      "generation_requests": [],
+      "candidate_versions": [],
+      "created_at": "2026-06-28T17:28:04.362Z",
+      "updated_at": "2026-06-28T17:28:04.362Z"
+    },
+    {
+      "id": "draft-2026-06-28T17-28-05-653Z-c9c01d",
+      "after_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "after_title": "第四章：双线并行的感官与代行者",
+      "before_group_key": "",
+      "before_title": "",
+      "branch_from_group_key": ".::0004::第四章：双线并行的感官与代行者",
+      "route_mode": "branch",
+      "title": "分支草稿：第四章：双线并行的感官与代行者",
+      "file_path": ".story-canvas-drafts/draft-2026-06-28T17-28-05-653Z-c9c01d.md",
+      "status": "draft",
+      "split_plan": [],
+      "generation_settings": {
+        "agent": "trae-main",
+        "model": "trae-main",
+        "version_count": 3,
+        "target_chars": 3000,
+        "split_count": 1,
+        "split_mode": "single_segment",
+        "prompt_goal": "从当前章节拉出独立分支路线，保留主干事实，不自动合并。"
+      },
+      "generation_requests": [],
+      "candidate_versions": [],
+      "created_at": "2026-06-28T17:28:05.665Z",
+      "updated_at": "2026-06-28T17:28:05.665Z"
+    }
+  ],
+  "updated_at": "2026-06-28T17:28:17.958Z"
+}

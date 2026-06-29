@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "source_file": "第七章（下）.md",
+  "source_path": "projects/pixiv novel/人偶番外/主干/第七章（下）.md",
+  "source_hash": "cee82ef6b1b629ee",
+  "title": "第七章：资产回收与看门人的皮革触感（下）",
+  "chapter_title": "第七章：资产回收与看门人的皮革触感",
+  "chapter_key": "0007::第七章：资产回收与看门人的皮革触感",
+  "chapter_no": 7,
+  "part_label": "下",
+  "block_count": 3,
+  "primary_count": 1874,
+  "canvas_position": null,
+  "blocks": [
+    {
+      "id": "B001",
+      "type": "heading",
+      "start_line": 1,
+      "end_line": 1,
+      "primary_count": 20,
+      "text_hash": "96a96e44c8a47aab",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B002",
+      "type": "plot",
+      "start_line": 3,
+      "end_line": 44,
+      "primary_count": 1854,
+      "text_hash": "600acc6f3ba2b7ae",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B003",
+      "type": "heading",
+      "start_line": 46,
+      "end_line": 47,
+      "primary_count": 19,
+      "text_hash": "85baf50812bf0d25",
+      "notes": "",
+      "reroll_slots": []
+    }
+  ],
+  "updated_at": "2026-06-27T14:37:19.869Z"
+}

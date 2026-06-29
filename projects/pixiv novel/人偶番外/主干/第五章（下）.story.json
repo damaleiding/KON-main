@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "source_file": "第五章（下）.md",
+  "source_path": "projects/pixiv novel/人偶番外/主干/第五章（下）.md",
+  "source_hash": "7969277fb0eab6a7",
+  "title": "第五章：代行者的自我解析与崩坏的初体验（下）",
+  "chapter_title": "第五章：代行者的自我解析与崩坏的初体验",
+  "chapter_key": "0005::第五章：代行者的自我解析与崩坏的初体验",
+  "chapter_no": 5,
+  "part_label": "下",
+  "block_count": 17,
+  "primary_count": 1904,
+  "canvas_position": null,
+  "part_reroll_slots": [],
+  "blocks": [
+    {
+      "id": "B001",
+      "type": "heading",
+      "start_line": 1,
+      "end_line": 1,
+      "primary_count": 22,
+      "text_hash": "4eda70c8629b4379",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B002",
+      "type": "plot",
+      "start_line": 3,
+      "end_line": 4,
+      "primary_count": 120,
+      "text_hash": "f54a5085db0e92f1",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B003",
+      "type": "plot",
+      "start_line": 6,
+      "end_line": 8,
+      "primary_count": 140,
+      "text_hash": "707e18ccffc7bd2c",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B004",
+      "type": "plot",
+      "start_line": 10,
+      "end_line": 12,
+      "primary_count": 141,
+      "text_hash": "1568b50085cbe2c9",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B005",
+      "type": "plot",
+      "start_line": 14,
+      "end_line": 15,
+      "primary_count": 120,
+      "text_hash": "338d6b0275b3849e",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B006",
+      "type": "plot",
+      "start_line": 17,
+      "end_line": 18,
+      "primary_count": 90,
+      "text_hash": "70a05671886e5a1b",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B007",
+      "type": "plot",
+      "start_line": 20,
+      "end_line": 24,
+      "primary_count": 168,
+      "text_hash": "5b9bf7bb52299463",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B008",
+      "type": "plot",
+      "start_line": 26,
+      "end_line": 29,
+      "primary_count": 80,
+      "text_hash": "b1765243bdb31853",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B009",
+      "type": "plot",
+      "start_line": 31,
+      "end_line": 34,
+      "primary_count": 130,
+      "text_hash": "974f3cf1f98f66a3",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B010",
+      "type": "plot",
+      "start_line": 36,
+      "end_line": 41,
+      "primary_count": 223,
+      "text_hash": "7b8e51e78b15cc9c",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B011",
+      "type": "plot",
+      "start_line": 43,
+      "end_line": 46,
+      "primary_count": 158,
+      "text_hash": "44784f55b4c6de12",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B012",
+      "type": "plot",
+      "start_line": 48,
+      "end_line": 50,
+      "primary_count": 62,
+      "text_hash": "8fa74ad24906bf2b",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B013",
+      "type": "plot",
+      "start_line": 52,
+      "end_line": 55,
+      "primary_count": 125,
+      "text_hash": "c1be1cf79f43e228",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B014",
+      "type": "plot",
+      "start_line": 57,
+      "end_line": 58,
+      "primary_count": 130,
+      "text_hash": "4cc607f93857e4d2",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B015",
+      "type": "plot",
+      "start_line": 60,
+      "end_line": 62,
+      "primary_count": 124,
+      "text_hash": "745bd1fadf530ef5",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B016",
+      "type": "plot",
+      "start_line": 64,
+      "end_line": 64,
+      "primary_count": 71,
+      "text_hash": "e8e8c35c32327c99",
+      "notes": "",
+      "reroll_slots": []
+    },
+    {
+      "id": "B017",
+      "type": "heading",
+      "start_line": 66,
+      "end_line": 67,
+      "primary_count": 20,
+      "text_hash": "e539ab89865ffd1b",
+      "notes": "",
+      "reroll_slots": []
+    }
+  ],
+  "updated_at": "2026-06-28T15:58:54.762Z"
+}

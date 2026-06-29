@@ -15,6 +15,7 @@
 | --- | --- | --- | --- |
 | project-harness | workflow | 工作区 doctor/self-test、上下文索引、参考图索引、Review Board、media manifest、generation capture、token meter | imported-needs-kva-adaptation |
 | word-count | text | 字数统计 CLI；用于章节、稿件、目录文本长度统计，Agent 遇到字数需求必须调用 | active |
+| story-canvas | visual-planning | 本地网页故事画布程序；当前实现位于 `projects/story-canvas/app/`，旧 `tools/story-canvas/` 仅保留命令兼容包装器 | active-migrated-to-project |
 | production-ledger | ledger | JSONL 生产账本、ingest、validate、find、recipe、prompt index | imported-needs-kva-adaptation |
 | imagine-cli-healthcheck | generation | Imagine CLI 登录态、网络、DNS、TLS、VPN 与真实提交链路检查 | imported |
 | imagine-video-async | generation | sd2 视频异步 submit/status/fetch、manifest 与媒体校验 | imported |
@@ -39,6 +40,7 @@
 - imported：已导入，基本可按原 README 使用。
 - active：已适配 KVA，可直接用于当前工作区。
 - promoted-from-project：从 KVA 项目内提升出来，需要后续继续参数化。
+- active-migrated-to-project：已迁入项目目录作为正式实现，工作区 `tools/` 下仅保留兼容入口或索引。
 - imported-needs-kva-adaptation：已导入，但还需要把旧项目路径改为 KVA 通用路径。
 - imported-needs-path-cleanup：已导入，但使用前要检查本机绝对路径和 DCC 软件路径。
 - imported-macos-only：当前 Windows 环境保留源码，运行依赖 macOS/Swift。

@@ -10,9 +10,18 @@
 ## 修改联动
 
 - 修改顶层规则时，同时检查 `README.md` 和 `docs/agent-rules/` 是否需要更新。
-- 修改项目级规则时，同时检查该项目的 `PROJECT.md`、`WORKFLOW.md`、`<project-name>_project-brief.html` 和 `_pipeline/`。
+- 修改项目级规则时，先按 `project-entry-governance.md` 判断规则落点，再检查该项目的 `PROJECT.md`、`WORKFLOW.md`、`<project-name>_project-brief.html` 和 `_pipeline/`。
 - 新增工具时，应提供入口、用途、输入输出、同步边界和最小使用示例。
 - 新增项目时，应从 `templates/` 复制项目骨架，而不是临时散放文件。
+
+## 规则分类
+
+- 小说续写、润色、重写和设定呈现：读取 `novel-writing.md`。
+- 三章剧情单元、主线/分线和章节长度规划：读取 `plot-and-chapter-planning.md`。
+- 章节拆分、合并、命名、首尾串联：读取 `chapter-governance.md`。
+- 文风校验、禁用词、慎用词、替代表达：读取 `style-and-avoidance.md`。
+- 原文、主干、分支、发布、输出和临时文件整理：读取 `text-organization.md`。
+- Prompt 生成、修改、审稿和保存：读取 `prompt-generation.md`。
 
 ## 工具触发
 
@@ -24,7 +33,7 @@
 推荐把复杂项目拆成多个协作窗口：
 
 - 设定窗口：整理世界观、角色、阵营、场景、道具、叙事规则和风格规则。
-- Prompt 窗口：把写作目标转成模型可执行的续写、润色、改写或审稿 prompt。
+- Prompt 窗口：按 `prompt-generation.md` 把写作目标转成模型可执行、可审稿、可复用的续写、润色、改写、段落扩写或审稿 prompt。
 - 生成窗口：调用文本生成、拆章、替换或整理工具，记录输出和生成配方。
 - 审稿窗口：对比候选稿、标记可用版本、记录否决原因和返工方向。
 - 写作窗口：处理剧情、章节、角色台词、伏笔回收和交接文档。

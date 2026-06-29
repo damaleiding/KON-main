@@ -110,6 +110,9 @@ tools/nuke-auto-keyer/**
 tools/prompt-audit/**
 
 # Root-level one-off local artifacts
+/append_md.py
+/generate.py
+/temp*.md
 temp_*.md
 temp_*.txt
 *.log

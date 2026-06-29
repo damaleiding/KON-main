@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "updated": "2026-06-29",
+  "scope": "Story Engine project tools",
+  "tools": [
+    {
+      "id": "google-docs-sync",
+      "path": "tools/google-docs-sync/",
+      "type": "publish-sync",
+      "status": "migrated",
+      "entrypoints": [
+        "tools/google-docs-sync/build-content.ps1",
+        "tools/google-docs-sync/upload-markdown-to-drive-doc.js"
+      ],
+      "notes": "Builds Apps Script content and can upload Markdown to Google Docs only when the user explicitly requests publishing or sync."
+    },
+    {
+      "id": "backup-text-version",
+      "path": "tools/scripts/backup-text-version.py",
+      "type": "text-safety",
+      "status": "active",
+      "entrypoints": [
+        "tools/scripts/backup-text-version.py"
+      ],
+      "notes": "Creates local backups before formal text edits."
+    },
+    {
+      "id": "verify-npm-global-path",
+      "path": "tools/scripts/verify-npm-global-path.ps1",
+      "type": "environment-check",
+      "status": "active",
+      "entrypoints": [
+        "tools/scripts/verify-npm-global-path.ps1"
+      ],
+      "notes": "Checks whether globally installed npm commands are reachable from PowerShell."
+    },
+    {
+      "id": "split-lemon-cards",
+      "path": "tools/scripts/split_lemon_cards.py",
+      "type": "legacy-helper",
+      "status": "needs-review",
+      "entrypoints": [
+        "tools/scripts/split_lemon_cards.py"
+      ],
+      "notes": "Migrated helper; keep out of default context until its input and output contract is documented."
+    },
+    {
+      "id": "replace-script",
+      "path": "tools/replace_script.py",
+      "type": "legacy-helper",
+      "status": "needs-review",
+      "entrypoints": [
+        "tools/replace_script.py"
+      ],
+      "notes": "Legacy batch replacement helper; evaluate before reuse."
+    }
+  ],
+  "cleanup_candidates": [
+    {
+      "path": "trash/scripts/20260629_migration-legacy/generate_report.py",
+      "status": "archived",
+      "candidate_action": "Do not use as a default review tool; parameterize before reuse."
+    },
+    {
+      "path": "trash/scripts/20260629_migration-legacy/modify_ch2_questionnaire.py",
+      "status": "archived",
+      "candidate_action": "Keep only for old-run reproducibility."
+    },
+    {
+      "path": "trash/scripts/20260629_migration-legacy/modify_ch3_long_marathon.py",
+      "status": "archived",
+      "candidate_action": "Keep only for old-run reproducibility."
+    },
+    {
+      "path": "trash/scripts/20260629_migration-legacy/modify_ch3_marathon.py",
+      "status": "archived",
+      "candidate_action": "Keep only for old-run reproducibility."
+    },
+    {
+      "path": "trash/scripts/20260629_migration-legacy/recount.py",
+      "status": "archived",
+      "candidate_action": "Use the workspace word-count tool instead."
+    }
+  ]
+}
